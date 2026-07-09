@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "Idioma",
+    "continents": {
+      "americas": "América",
+      "europe": "Europa",
+      "asia": "Asia",
+      "middleEast": "Oriente Medio"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Spencer",
+    "properties": "Propiedades",
+    "neighborhoods": "Barrios",
+    "buy": "Comprar",
+    "sell": "Vender",
+    "blog": "Perspectivas",
+    "tools": "Herramientas",
+    "mortgage": "Calculadora Hipotecaria",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "account": "Mi cuenta",
+    "accountMenu": "Menú de cuenta"
+  },
+  "hero": {
+    "headline": "Encuentre su próximo hogar con confianza",
+    "subtitle": "Experiencia local. Asesoramiento honesto. Datos precisos. Orientación personalizada para las mejores propiedades de Nueva York.",
+    "ctaBuy": "Buscar vivienda",
+    "ctaSell": "Vender su hogar",
+    "ctaTalk": "Hablar con Spencer"
+  },
+  "stats": {
+    "experience": "Años de experiencia",
+    "transactions": "Operaciones cerradas",
+    "volume": "Volumen total de ventas",
+    "neighborhoods": "Barrios de NYC"
+  },
+  "footer": {
+    "tagline": "Asesoría inmobiliaria de lujo en Nueva York",
+    "rights": "Todos los derechos reservados."
+  },
+  "properties": {
+    "title": "Propiedades destacadas",
+    "subtitle": "Selección de las mejores residencias de Nueva York"
+  },
+  "testimonials": {
+    "title": "Historias de clientes",
+    "subtitle": "Lo que dicen quienes trabajan con Spencer"
+  },
+  "videos": {
+    "title": "Perspectivas y recorridos",
+    "subtitle": "Videos sobre barrios, compra y mercado"
+  },
+  "social": {
+    "title": "Siga a Spencer",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "¿Listo para dar el siguiente paso?",
+    "readySubtitle": "Comprando o vendiendo, Spencer ofrece la experiencia y defensa que merece.",
+    "schedule": "Agendar una consulta"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "¿Comprar, vender o explorar el mercado? Spencer responde personalmente.",
+    "send": "Enviar mensaje",
+    "success": "¡Gracias! Spencer se pondrá en contacto pronto."
+  },
+  "blog": {
+    "title": "Perspectivas del mercado",
+    "subtitle": "Análisis experto del mercado inmobiliario de NYC",
+    "readMore": "Leer artículo",
+    "noPosts": "Aún no hay artículos.",
+    "back": "Volver a perspectivas"
+  },
+  "about": {
+    "title": "Su guía de confianza en bienes raíces de NYC",
+    "subtitle": "Spencer Ting aporta conocimiento profundo del mercado, defensa incansable y perspectiva global."
+  },
+  "pages": {
+    "notFound": {
+      "title": "Página no encontrada",
+      "back": "Volver al inicio"
+    }
+  }
+}

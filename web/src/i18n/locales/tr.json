@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "Dil",
+    "continents": {
+      "americas": "Amerika",
+      "europe": "Avrupa",
+      "asia": "Asya",
+      "middleEast": "Orta Doğu"
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Spencer Hakkında",
+    "properties": "Mülkler",
+    "neighborhoods": "Mahalleler",
+    "buy": "Satın Al",
+    "sell": "Sat",
+    "blog": "Piyasa İçgörüleri",
+    "tools": "Araçlar",
+    "mortgage": "Mortgage Hesaplayıcı",
+    "contact": "İletişim",
+    "login": "Giriş",
+    "logout": "Çıkış",
+    "account": "Hesabım",
+    "accountMenu": "Hesap menüsü"
+  },
+  "hero": {
+    "headline": "Bir sonraki evinizi güvenle bulun",
+    "subtitle": "Yerel uzmanlık. Dürüst tavsiye. Veriye dayalı içgörüler. New York'un en iyi mülkleri için kişisel rehberlik.",
+    "ctaBuy": "Ev bul",
+    "ctaSell": "Evinizi satın",
+    "ctaTalk": "Spencer ile konuşun"
+  },
+  "stats": {
+    "experience": "Yıllık deneyim",
+    "transactions": "Tamamlanan işlemler",
+    "volume": "Toplam satış hacmi",
+    "neighborhoods": "NYC mahalleleri"
+  },
+  "footer": {
+    "tagline": "New York'ta lüks gayrimenkul danışmanlığı",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "properties": {
+    "title": "Öne çıkan mülkler",
+    "subtitle": "New York'un en iyi konutlarından seçkiler"
+  },
+  "testimonials": {
+    "title": "Müşteri hikayeleri",
+    "subtitle": "Spencer ile çalışanların yorumları"
+  },
+  "videos": {
+    "title": "Piyasa içgörüleri ve turlar",
+    "subtitle": "Mahalleler, satın alma ve piyasa hakkında kısa videolar"
+  },
+  "social": {
+    "title": "Spencer'ı takip edin",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "Harekete geçmeye hazır mısınız?",
+    "readySubtitle": "Alırken veya satarken Spencer hak ettiğiniz uzmanlık ve savunuculuğu sunar.",
+    "schedule": "Danışmanlık planlayın"
+  },
+  "contact": {
+    "title": "İletişime geçin",
+    "subtitle": "Satın almak, satmak veya piyasayı keşfetmek mi? Spencer kişisel olarak yanıtlar.",
+    "send": "Mesaj gönder",
+    "success": "Teşekkürler! Spencer kısa sürede iletişime geçecek."
+  },
+  "blog": {
+    "title": "Piyasa içgörüleri",
+    "subtitle": "NYC gayrimenkul piyasası uzman analizi",
+    "readMore": "Makaleyi oku",
+    "noPosts": "Henüz makale yok.",
+    "back": "İçgörülere dön"
+  },
+  "about": {
+    "title": "NYC gayrimenkulünde güvenilir rehberiniz",
+    "subtitle": "Spencer Ting derin piyasa bilgisi, kararlı savunuculuk ve küresel bakış açısı getirir."
+  },
+  "pages": {
+    "notFound": {
+      "title": "Sayfa bulunamadı",
+      "back": "Ana sayfaya dön"
+    }
+  }
+}

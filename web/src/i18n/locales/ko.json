@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "언어",
+    "continents": {
+      "americas": "아메리카",
+      "europe": "유럽",
+      "asia": "아시아",
+      "middleEast": "중동"
+    }
+  },
+  "nav": {
+    "home": "홈",
+    "about": "Spencer 소개",
+    "properties": "매물",
+    "neighborhoods": "동네",
+    "buy": "구매",
+    "sell": "판매",
+    "blog": "시장 인사이트",
+    "tools": "도구",
+    "mortgage": "모기지 계산기",
+    "contact": "문의",
+    "login": "로그인",
+    "logout": "로그아웃",
+    "account": "내 계정",
+    "accountMenu": "계정 메뉴"
+  },
+  "hero": {
+    "headline": "자신 있게 다음 집을 찾으세요",
+    "subtitle": "현지 전문성. 정직한 조언. 데이터 기반 인사이트. 뉴욕 최고의 부동산을 위한 맞춤 안내.",
+    "ctaBuy": "집 찾기",
+    "ctaSell": "집 팔기",
+    "ctaTalk": "Spencer와 상담"
+  },
+  "stats": {
+    "experience": "년 경력",
+    "transactions": "완료 거래",
+    "volume": "총 판매 규모",
+    "neighborhoods": "NYC 동네"
+  },
+  "footer": {
+    "tagline": "뉴욕 럭셔리 부동산 자문",
+    "rights": "모든 권리 보유."
+  },
+  "properties": {
+    "title": "추천 매물",
+    "subtitle": "뉴욕 최고의 주거지 엄선"
+  },
+  "testimonials": {
+    "title": "고객 이야기",
+    "subtitle": "Spencer와 함께한 경험"
+  },
+  "videos": {
+    "title": "시장 인사이트 & 투어",
+    "subtitle": "동네, 구매 팁, 시장 동향 영상"
+  },
+  "social": {
+    "title": "Spencer 팔로우",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "다음 단계를 준비하셨나요?",
+    "readySubtitle": "구매든 판매든 Spencer가 필요한 전문성과 대변을 제공합니다.",
+    "schedule": "상담 예약"
+  },
+  "contact": {
+    "title": "문의하기",
+    "subtitle": "구매, 판매, 시장 탐색? Spencer가 직접 답변합니다.",
+    "send": "메시지 보내기",
+    "success": "감사합니다! Spencer가 곧 연락드립니다."
+  },
+  "blog": {
+    "title": "시장 인사이트",
+    "subtitle": "NYC 부동산 전문 분석",
+    "readMore": "기사 읽기",
+    "noPosts": "아직 게시된 기사가 없습니다.",
+    "back": "인사이트로 돌아가기"
+  },
+  "about": {
+    "title": "신뢰할 수 있는 NYC 부동산 가이드",
+    "subtitle": "Spencer Ting은 깊은 시장 지식, 끊임없는 대변, 글로벌 시각을 제공합니다."
+  },
+  "pages": {
+    "notFound": {
+      "title": "페이지를 찾을 수 없습니다",
+      "back": "홈으로"
+    }
+  }
+}

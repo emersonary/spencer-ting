@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "语言",
+    "continents": {
+      "americas": "美洲",
+      "europe": "欧洲",
+      "asia": "亚洲",
+      "middleEast": "中东"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于 Spencer",
+    "properties": "房源",
+    "neighborhoods": "社区",
+    "buy": "购房",
+    "sell": "售房",
+    "blog": "市场洞察",
+    "tools": "工具",
+    "mortgage": "房贷计算器",
+    "contact": "联系",
+    "login": "登录",
+    "logout": "退出",
+    "account": "我的账户",
+    "accountMenu": "账户菜单"
+  },
+  "hero": {
+    "headline": "自信地找到您的下一个家",
+    "subtitle": "本地专业经验。诚实建议。数据驱动洞察。为纽约顶级物业提供个性化指导。",
+    "ctaBuy": "找房",
+    "ctaSell": "出售房屋",
+    "ctaTalk": "联系 Spencer"
+  },
+  "stats": {
+    "experience": "年从业经验",
+    "transactions": "成交笔数",
+    "volume": "总销售额",
+    "neighborhoods": "纽约社区"
+  },
+  "footer": {
+    "tagline": "纽约市高端房地产顾问",
+    "rights": "版权所有。"
+  },
+  "properties": {
+    "title": "精选房源",
+    "subtitle": "纽约最优质住宅精选"
+  },
+  "testimonials": {
+    "title": "客户故事",
+    "subtitle": "客户如何评价与 Spencer 的合作"
+  },
+  "videos": {
+    "title": "市场洞察与导览",
+    "subtitle": "社区、购房技巧与市场动态短视频"
+  },
+  "social": {
+    "title": "关注 Spencer",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "准备好迈出下一步了吗？",
+    "readySubtitle": "无论买房还是卖房，Spencer 都为您提供应有的专业与捍卫。",
+    "schedule": "预约咨询"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "买房、卖房或了解市场？Spencer 亲自回复。",
+    "send": "发送消息",
+    "success": "谢谢！Spencer 将尽快与您联系。"
+  },
+  "blog": {
+    "title": "市场洞察",
+    "subtitle": "纽约房地产专家分析",
+    "readMore": "阅读文章",
+    "noPosts": "暂无文章。",
+    "back": "返回洞察"
+  },
+  "about": {
+    "title": "您值得信赖的纽约房地产向导",
+    "subtitle": "Spencer Ting 为每笔交易带来深厚的市场知识、坚定捍卫和全球视野。"
+  },
+  "pages": {
+    "notFound": {
+      "title": "页面未找到",
+      "back": "返回首页"
+    }
+  }
+}

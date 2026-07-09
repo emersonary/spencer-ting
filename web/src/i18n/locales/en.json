@@ -1,0 +1,278 @@
+{
+  "lang": {
+    "label": "Language",
+    "continents": {
+      "americas": "Americas",
+      "europe": "Europe",
+      "asia": "Asia",
+      "middleEast": "Middle East"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Spencer",
+    "properties": "Properties",
+    "neighborhoods": "Neighborhoods",
+    "buy": "Buy",
+    "sell": "Sell",
+    "blog": "Insights",
+    "tools": "Tools",
+    "mortgage": "Mortgage Calculator",
+    "contact": "Contact",
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "account": "My Account",
+    "accountMenu": "Account menu"
+  },
+  "common": {
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "logIn": "Log in",
+    "logInAction": "Log In",
+    "createAccount": "Create Account",
+    "login": "Login",
+    "register": "Register",
+    "logOut": "Log out"
+  },
+  "hero": {
+    "headline": "Find your next home with confidence",
+    "subtitle": "Local expertise. Honest advice. Data-driven insights. Personalized guidance for New York's finest properties.",
+    "ctaBuy": "Find a Home",
+    "ctaSell": "Sell Your Home",
+    "ctaTalk": "Talk to Spencer"
+  },
+  "stats": {
+    "experience": "Years Experience",
+    "transactions": "Transactions Closed",
+    "volume": "Total Sales Volume",
+    "neighborhoods": "NYC Neighborhoods"
+  },
+  "about": {
+    "title": "Your trusted guide to NYC real estate",
+    "subtitle": "Spencer Ting brings deep market knowledge, relentless advocacy, and a global perspective to every transaction.",
+    "bio1": "As a licensed New York real estate broker, Spencer specializes in luxury condominiums, townhouses, and investment properties across Manhattan and Brooklyn.",
+    "bio2": "Clients choose Spencer for his responsiveness, negotiation skills, and honest counsel — whether you're buying your first apartment or selling a multi-million dollar estate.",
+    "bio3": "Fluent in multiple languages and connected to a global network of buyers and sellers, Spencer makes complex NYC transactions feel effortless.",
+    "values": {
+      "knowledge": "Deep Market Knowledge",
+      "knowledgeDesc": "Neighborhood-level insights backed by data, not guesswork.",
+      "network": "Global Network",
+      "networkDesc": "Connections to qualified buyers and sellers worldwide.",
+      "advocacy": "Relentless Advocacy",
+      "advocacyDesc": "Your interests protected at every stage of the deal."
+    }
+  },
+  "properties": {
+    "title": "Featured Properties",
+    "subtitle": "Curated selection of New York's finest residences",
+    "search": "Search properties",
+    "searchPlaceholder": "Neighborhood, address, or keyword...",
+    "filters": "Filters",
+    "borough": "Borough",
+    "neighborhood": "Neighborhood",
+    "type": "Property Type",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "bedrooms": "Bedrooms",
+    "luxuryOnly": "Luxury only",
+    "all": "All",
+    "forSale": "For Sale",
+    "sold": "Sold",
+    "beds": "beds",
+    "baths": "baths",
+    "sqft": "sq ft",
+    "viewDetails": "View Details",
+    "noResults": "No properties match your search.",
+    "featured": "Featured",
+    "luxury": "Luxury",
+    "inquire": "Schedule a Viewing",
+    "features": "Features",
+    "description": "Description",
+    "monthlyHoa": "Monthly HOA",
+    "monthlyTaxes": "Monthly Taxes",
+    "yearBuilt": "Year Built",
+    "types": {
+      "condo": "Condo",
+      "co-op": "Co-op",
+      "townhouse": "Townhouse",
+      "penthouse": "Penthouse"
+    }
+  },
+  "mortgage": {
+    "title": "Mortgage Calculator",
+    "subtitle": "Estimate your monthly payment for NYC properties",
+    "homePrice": "Home Price",
+    "downPayment": "Down Payment",
+    "downPaymentPercent": "Down Payment %",
+    "interestRate": "Interest Rate",
+    "loanTerm": "Loan Term (years)",
+    "propertyTax": "Annual Property Tax",
+    "hoa": "Monthly HOA",
+    "insurance": "Annual Insurance",
+    "monthlyPayment": "Estimated Monthly Payment",
+    "principalInterest": "Principal & Interest",
+    "taxes": "Property Tax",
+    "hoaFee": "HOA",
+    "insuranceFee": "Insurance",
+    "total": "Total Monthly",
+    "disclaimer": "This calculator provides estimates only. Actual payments may vary. Consult a licensed mortgage professional."
+  },
+  "process": {
+    "buyTitle": "The Buying Process",
+    "buySubtitle": "A clear path from first conversation to keys in hand",
+    "sellTitle": "The Selling Process",
+    "sellSubtitle": "Maximize your property's value with a proven strategy",
+    "steps": {
+      "consult": "Meet Spencer",
+      "consultDesc": "Share your goals, timeline, and budget in a no-pressure consultation.",
+      "finance": "Financing",
+      "financeDesc": "Connect with trusted lenders and get pre-approved.",
+      "search": "Search",
+      "searchDesc": "Tour curated properties matched to your criteria.",
+      "offer": "Offer",
+      "offerDesc": "Strategic negotiation to secure the best terms.",
+      "inspection": "Inspection",
+      "inspectionDesc": "Due diligence with trusted professionals.",
+      "closing": "Closing",
+      "closingDesc": "Navigate contracts, board approvals, and closing.",
+      "moveIn": "Move In",
+      "moveInDesc": "Welcome home — with ongoing support after closing.",
+      "valuation": "Valuation",
+      "valuationDesc": "Data-driven pricing strategy for your property.",
+      "prepare": "Prepare",
+      "prepareDesc": "Staging, photography, and marketing materials.",
+      "market": "Market",
+      "marketDesc": "Premium listing across MLS, social, and global networks.",
+      "showings": "Showings",
+      "showingsDesc": "Qualified buyers, private tours, open houses.",
+      "negotiate": "Negotiate",
+      "negotiateDesc": "Expert negotiation for the strongest offer.",
+      "close": "Close",
+      "closeDesc": "Seamless closing and transition."
+    }
+  },
+  "neighborhoods": {
+    "title": "NYC Neighborhood Guides",
+    "subtitle": "Explore the neighborhoods that define New York living",
+    "avgPrice": "Avg. Price",
+    "vibe": "Character",
+    "transit": "Transit",
+    "readMore": "Explore"
+  },
+  "testimonials": {
+    "title": "Client Stories",
+    "subtitle": "What clients say about working with Spencer"
+  },
+  "videos": {
+    "title": "Market Insights & Tours",
+    "subtitle": "Short videos on neighborhoods, buying tips, and market updates"
+  },
+  "social": {
+    "title": "Follow Spencer",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "blog": {
+    "title": "Market Insights",
+    "subtitle": "Expert analysis on NYC real estate",
+    "readMore": "Read Article",
+    "noPosts": "No articles published yet.",
+    "back": "Back to Insights"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to buy, sell, or explore the market? Spencer responds personally.",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "intent": "I'm interested in",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Thank you! Spencer will be in touch shortly.",
+    "intents": {
+      "buy": "Buying a property",
+      "sell": "Selling a property",
+      "invest": "Investment opportunities",
+      "general": "General inquiry"
+    }
+  },
+  "footer": {
+    "tagline": "Luxury real estate advisory in New York City",
+    "rights": "All rights reserved."
+  },
+  "account": {
+    "signingIn": "Please wait…",
+    "errors": {
+      "invalidInput": "Please check your input and try again.",
+      "invalidCredentials": "Invalid email or password.",
+      "emailInUse": "This email is already registered.",
+      "permissionDenied": "You don't have permission for this action.",
+      "unavailable": "Service temporarily unavailable.",
+      "emailNotVerified": "Please verify your email before signing in.",
+      "generic": "Something went wrong. Please try again.",
+      "signInRequired": "Please sign in to continue.",
+      "passwordMismatch": "Passwords do not match."
+    }
+  },
+  "pages": {
+    "login": {
+      "hero": "Sign in to save properties and manage your account.",
+      "orContinueWith": "or",
+      "continueWithGoogle": "Continue with Google",
+      "emailVerified": "Your email is verified. You can sign in now.",
+      "emailVerifyInvalid": "That verification link is invalid or expired.",
+      "forgotPassword": "Forgot your password?"
+    },
+    "forgotPassword": {
+      "title": "Forgot your password?",
+      "hero": "We'll email you a link to reset it.",
+      "instructions": "Enter the email address for your account. If we find a match, we'll send reset instructions.",
+      "submit": "Send reset link",
+      "sent": "If an account exists with that email, we sent password reset instructions.",
+      "checkSpam": "If you don't see it, check your spam folder.",
+      "backToLogin": "Back to sign in"
+    },
+    "resetPassword": {
+      "title": "Choose a new password",
+      "hero": "Enter a new password for your account.",
+      "submit": "Update password",
+      "invalidLink": "That reset link is invalid or has expired.",
+      "requestNew": "Request a new reset link",
+      "successTitle": "Password updated",
+      "successHero": "You can sign in with your new password.",
+      "success": "Your password has been updated.",
+      "goToSignIn": "Go to sign in",
+      "backToLogin": "Back to sign in"
+    },
+    "verifyEmail": {
+      "title": "Check your email",
+      "hero": "One more step to activate your account.",
+      "instructions": "We sent a verification link to:",
+      "checkSpam": "If you don't see it, check your spam folder.",
+      "anyBrowser": "You can open the link in any browser. This page will update when your email is verified.",
+      "resend": "Resend verification email",
+      "resent": "Verification email sent.",
+      "backToLogin": "Back to sign in",
+      "verifiedTitle": "Email verified",
+      "verifiedHero": "Your account is ready.",
+      "verified": "Your email is verified. You can sign in now.",
+      "alreadyVerified": "This email was already verified. You can sign in now.",
+      "invalidLink": "That verification link is invalid or expired.",
+      "returnToSignIn": "Return to the browser where you started, or sign in here.",
+      "goToSignIn": "Go to sign in"
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "back": "Return Home"
+    }
+  },
+  "cta": {
+    "readyTitle": "Ready to make your move?",
+    "readySubtitle": "Whether buying or selling, Spencer provides the expertise and advocacy you deserve.",
+    "schedule": "Schedule a Consultation"
+  }
+}

@@ -1,0 +1,109 @@
+# Shipped to /opt/spencer-ting-api/config.yaml on deploy.
+# Secrets: /etc/spencer-ting-api.env (SPENCER_TING_* env vars).
+
+app:
+  name: spencer-ting api
+
+log:
+  level: info
+  format: json
+
+server:
+  http:
+    enabled: true
+    addr: "127.0.0.1:18084"
+  grpc:
+    enabled: true
+    addr: "127.0.0.1:50064"
+  websocket:
+    enabled: false
+    addr: ""
+
+database:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: ""
+  name: spencer_ting
+  sslmode: disable
+
+nats:
+  url: ""
+
+migrations:
+  path: /opt/spencer-ting-api/migrations
+
+accounts:
+  enabled: true
+  schema: account
+  tenancy:
+    enabled: false
+    default_tenant_id: spencer-ting
+  jwt_secret: ""
+  access_token_ttl: 24h
+  verification_token_ttl: 24h
+  password_reset_token_ttl: 1h
+  frontend_url: https://spencerting.solidia.app
+  api_public_url: https://spencerting.solidia.app
+  registration_enabled: true
+  register_as_admin: false
+  skip_email_verification: true
+  oauth:
+    enabled: true
+    state_cookie_name: spencer_ting_oauth_state
+    google:
+      enabled: true
+      client_id: ""
+      client_secret: ""
+      redirect_url: https://spencerting.solidia.app/account/google/callback
+    facebook:
+      enabled: false
+    apple:
+      enabled: false
+
+properties:
+  enabled: true
+
+posts:
+  launch_jwt_secret: ""
+  admin_url: https://admin.posts.awakenwomb.com
+  project_id: spencer-ting
+
+currency:
+  enabled: true
+  schema: currency
+  base_currency: USD
+  currencies:
+    - USD
+    - EUR
+    - GBP
+    - CNY
+  api_url: https://open.er-api.com/v6/latest/USD
+  update_interval: 1h
+
+language:
+  enabled: true
+  schema: language
+  default_language: en
+  languages:
+    - en
+    - es
+    - zh
+    - pt
+    - it
+    - de
+    - ru
+    - ar
+    - ja
+    - ko
+    - he
+    - tr
+
+email:
+  from: spencer@spencerting.com
+  brand: Spencer Ting
+  smtp:
+    host: ""
+    port: 587
+    username: ""
+    password: ""

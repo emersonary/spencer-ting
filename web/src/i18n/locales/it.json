@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "Lingua",
+    "continents": {
+      "americas": "Americhe",
+      "europe": "Europa",
+      "asia": "Asia",
+      "middleEast": "Medio Oriente"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Su Spencer",
+    "properties": "Proprietà",
+    "neighborhoods": "Quartieri",
+    "buy": "Acquista",
+    "sell": "Vendi",
+    "blog": "Approfondimenti",
+    "tools": "Strumenti",
+    "mortgage": "Calcolatore mutuo",
+    "contact": "Contatti",
+    "login": "Accedi",
+    "logout": "Esci",
+    "account": "Il mio account",
+    "accountMenu": "Menu account"
+  },
+  "hero": {
+    "headline": "Trova la tua prossima casa con fiducia",
+    "subtitle": "Competenza locale. Consigli onesti. Dati precisi. Guida personalizzata per le migliori proprietà di New York.",
+    "ctaBuy": "Cerca casa",
+    "ctaSell": "Vendi casa",
+    "ctaTalk": "Parla con Spencer"
+  },
+  "stats": {
+    "experience": "Anni di esperienza",
+    "transactions": "Transazioni concluse",
+    "volume": "Volume totale vendite",
+    "neighborhoods": "Quartieri di NYC"
+  },
+  "footer": {
+    "tagline": "Consulenza immobiliare di lusso a New York",
+    "rights": "Tutti i diritti riservati."
+  },
+  "properties": {
+    "title": "Proprietà in evidenza",
+    "subtitle": "Selezione delle migliori residenze di New York"
+  },
+  "testimonials": {
+    "title": "Storie dei clienti",
+    "subtitle": "Cosa dicono di Spencer"
+  },
+  "videos": {
+    "title": "Approfondimenti e tour",
+    "subtitle": "Video su quartieri, acquisto e mercato"
+  },
+  "social": {
+    "title": "Segui Spencer",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "Pronto a fare la mossa?",
+    "readySubtitle": "Che tu compri o venda, Spencer offre competenza e tutela.",
+    "schedule": "Prenota una consulenza"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Comprare, vendere o esplorare il mercato? Spencer risponde personalmente.",
+    "send": "Invia messaggio",
+    "success": "Grazie! Spencer ti contatterà a breve."
+  },
+  "blog": {
+    "title": "Approfondimenti di mercato",
+    "subtitle": "Analisi esperta del mercato immobiliare di NYC",
+    "readMore": "Leggi articolo",
+    "noPosts": "Nessun articolo ancora.",
+    "back": "Torna agli approfondimenti"
+  },
+  "about": {
+    "title": "La tua guida affidabile al mercato immobiliare di NYC",
+    "subtitle": "Spencer Ting porta profonda conoscenza del mercato, difesa instancabile e prospettiva globale."
+  },
+  "pages": {
+    "notFound": {
+      "title": "Pagina non trovata",
+      "back": "Torna alla home"
+    }
+  }
+}

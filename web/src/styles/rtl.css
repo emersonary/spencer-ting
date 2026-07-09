@@ -1,0 +1,10 @@
+[dir="rtl"] .header-nav,
+[dir="rtl"] .footer-grid,
+[dir="rtl"] .hero-actions {
+  direction: rtl;
+}
+
+[dir="rtl"] .lang-selector-dropdown {
+  left: auto;
+  right: 0;
+}

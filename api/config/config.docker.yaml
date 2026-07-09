@@ -1,0 +1,106 @@
+app:
+  name: spencer-ting api
+
+server:
+  http:
+    enabled: true
+    addr: ":8080"
+  grpc:
+    enabled: true
+    addr: ":50051"
+  websocket:
+    enabled: false
+    addr: ""
+
+log:
+  level: info
+  format: text
+
+database:
+  host: postgres
+  port: 5432
+  user: spencer_ting
+  password: spencer_ting
+  name: spencer_ting
+  sslmode: disable
+
+nats:
+  url: nats://nats:4222
+
+migrations:
+  path: migrations
+
+accounts:
+  enabled: true
+  schema: account
+  tenancy:
+    enabled: false
+    default_tenant_id: spencer-ting
+  jwt_secret: local-dev-jwt-secret-change-in-production
+  access_token_ttl: 24h
+  verification_token_ttl: 24h
+  password_reset_token_ttl: 1h
+  frontend_url: http://localhost:5182
+  api_public_url: http://localhost:8084
+  registration_enabled: true
+  register_as_admin: false
+  skip_email_verification: true
+  oauth:
+    enabled: true
+    state_cookie_name: spencer_ting_oauth_state
+    google:
+      enabled: true
+      client_id: ""
+      client_secret: ""
+      redirect_url: http://localhost:8084/account/google/callback
+    facebook:
+      enabled: false
+    apple:
+      enabled: false
+
+properties:
+  enabled: true
+
+posts:
+  launch_jwt_secret: local-dev-jwt-secret-change-in-production
+  admin_url: http://localhost:5176
+  project_id: spencer-ting
+
+currency:
+  enabled: true
+  schema: currency
+  base_currency: USD
+  currencies:
+    - USD
+    - EUR
+    - GBP
+    - CNY
+  api_url: https://open.er-api.com/v6/latest/USD
+  update_interval: 1h
+
+language:
+  enabled: true
+  schema: language
+  default_language: en
+  languages:
+    - en
+    - es
+    - zh
+    - pt
+    - it
+    - de
+    - ru
+    - ar
+    - ja
+    - ko
+    - he
+    - tr
+
+email:
+  from: spencer@spencerting.com
+  brand: Spencer Ting
+  smtp:
+    host: ""
+    port: 587
+    username: ""
+    password: ""

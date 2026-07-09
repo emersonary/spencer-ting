@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "שפה",
+    "continents": {
+      "americas": "אמריקה",
+      "europe": "אירופה",
+      "asia": "אסיה",
+      "middleEast": "המזרח התיכון"
+    }
+  },
+  "nav": {
+    "home": "בית",
+    "about": "על Spencer",
+    "properties": "נכסים",
+    "neighborhoods": "שכונות",
+    "buy": "קנייה",
+    "sell": "מכירה",
+    "blog": "תובנות שוק",
+    "tools": "כלים",
+    "mortgage": "מחשבון משכנתא",
+    "contact": "צור קשר",
+    "login": "התחברות",
+    "logout": "התנתקות",
+    "account": "החשבון שלי",
+    "accountMenu": "תפריט חשבון"
+  },
+  "hero": {
+    "headline": "מצאו את הבית הבא שלכם בביטחון",
+    "subtitle": "מומחיות מקומית. ייעוץ כנה. תובנות מבוססות נתונים. ליווי אישי לנכסים הטובים ביותר בניו יורק.",
+    "ctaBuy": "מצאו בית",
+    "ctaSell": "מכרו את הבית",
+    "ctaTalk": "דברו עם Spencer"
+  },
+  "stats": {
+    "experience": "שנות ניסיון",
+    "transactions": "עסקאות שנסגרו",
+    "volume": "נפח מכירות כולל",
+    "neighborhoods": "שכונות ב-NYC"
+  },
+  "footer": {
+    "tagline": "ייעוץ נדל״ן יוקרתי בניו יורק",
+    "rights": "כל הזכויות שמורות."
+  },
+  "properties": {
+    "title": "נכסים נבחרים",
+    "subtitle": "מבחר המגורים הטובים ביותר בניו יורק"
+  },
+  "testimonials": {
+    "title": "סיפורי לקוחות",
+    "subtitle": "מה לקוחות אומרים על Spencer"
+  },
+  "videos": {
+    "title": "תובנות וסיורים",
+    "subtitle": "סרטונים קצרים על שכונות, קנייה ושוק"
+  },
+  "social": {
+    "title": "עקבו אחר Spencer",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "מוכנים לצעד הבא?",
+    "readySubtitle": "בין אם קונים או מוכרים, Spencer מספק את המומחיות וההגנה שמגיעה לכם.",
+    "schedule": "קבעו ייעוץ"
+  },
+  "contact": {
+    "title": "צרו קשר",
+    "subtitle": "קנייה, מכירה או חקירת השוק? Spencer עונה באופן אישי.",
+    "send": "שלחו הודעה",
+    "success": "תודה! Spencer ייצור קשר בקרוב."
+  },
+  "blog": {
+    "title": "תובנות שוק",
+    "subtitle": "ניתוח מומחה של שוק הנדל״ן ב-NYC",
+    "readMore": "קראו מאמר",
+    "noPosts": "עדיין אין מאמרים.",
+    "back": "חזרה לתובנות"
+  },
+  "about": {
+    "title": "המדריך המהימן שלכם לנדל״ן ב-NYC",
+    "subtitle": "Spencer Ting מביא ידע שוק עמוק, הגנה בלתי מתפשרת ופרספקטיבה גלובלית."
+  },
+  "pages": {
+    "notFound": {
+      "title": "הדף לא נמצא",
+      "back": "חזרה לבית"
+    }
+  }
+}

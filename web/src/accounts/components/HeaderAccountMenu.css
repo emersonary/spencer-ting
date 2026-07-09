@@ -1,0 +1,58 @@
+.header-account-menu {
+  --appkit-account-trigger-size: calc(var(--header-top-control-height, 2rem) + 4px);
+  --appkit-account-trigger-radius: var(--radius);
+  --appkit-account-trigger-border: rgba(255, 255, 255, 0.35);
+  --appkit-account-trigger-fg: var(--color-cream);
+  --appkit-account-trigger-hover-border: var(--color-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--appkit-account-trigger-size);
+  height: var(--appkit-account-trigger-size);
+  flex-shrink: 0;
+}
+
+.header-account-menu .appkit-account-menu {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-account-menu .appkit-account-menu__sign-in-trigger,
+.header-account-menu .appkit-account-menu__avatar {
+  box-sizing: border-box;
+  width: var(--appkit-account-trigger-size);
+  height: var(--appkit-account-trigger-size);
+  padding: 0;
+  border-width: 2px;
+  border-radius: var(--radius);
+  line-height: 0;
+}
+
+.header-account-menu .appkit-account-menu__sign-in-trigger svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.header-account-menu .appkit-account-menu__avatar {
+  font-size: 0.72rem;
+}
+
+.header-account-menu .appkit-account-menu__panel {
+  width: min(200px, calc(100vw - 2rem));
+  background: var(--color-navy);
+  color: var(--color-cream);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow-lg);
+}
+
+.header-account-menu .appkit-account-menu__menu-item {
+  color: var(--color-cream);
+  border-color: rgba(248, 246, 241, 0.35);
+}
+
+.header-account-menu .appkit-account-menu__menu-item:hover:not(:disabled) {
+  background: rgba(248, 246, 241, 0.1);
+  color: var(--color-cream);
+}

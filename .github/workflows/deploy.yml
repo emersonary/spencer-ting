@@ -1,0 +1,214 @@
+name: Deploy Spencer Ting
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-spencer-ting-production
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Build web and API
+    runs-on: ubuntu-latest
+
+    env:
+      GOPRIVATE: github.com/emersonary/*
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout appkit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          APPKIT_REF: main
+        run: bash deploy/checkout-appkit.sh
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - uses: arduino/setup-protoc@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: api/go.mod
+          cache-dependency-path: api/go.sum
+
+      - name: Build web
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build API
+        working-directory: api
+        run: |
+          go mod edit -replace=github.com/emersonary/appkit=../../via-jeri/appkit/go
+          go mod edit -replace=github.com/emersonary/appkit/accounts=../../via-jeri/appkit/blocks/account/go
+          go mod edit -replace=github.com/emersonary/appkit/menu=../../via-jeri/appkit/blocks/menu/go
+          go mod edit -replace=github.com/emersonary/appkit/tenants=../../via-jeri/appkit/blocks/tenant/go
+          go mod tidy
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server ./cmd/server
+
+  deploy:
+    name: Deploy to Lightsail
+    runs-on: ubuntu-latest
+    needs: [test]
+    if: github.event_name != 'pull_request'
+
+    env:
+      GOPRIVATE: github.com/emersonary/*
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout appkit
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          APPKIT_REF: main
+        run: bash deploy/checkout-appkit.sh
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - uses: arduino/setup-protoc@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: api/go.mod
+          cache-dependency-path: api/go.sum
+
+      - name: Build web
+        working-directory: web
+        env:
+          VITE_API_URL: ""
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build API
+        working-directory: api
+        run: |
+          go mod edit -replace=github.com/emersonary/appkit=../../via-jeri/appkit/go
+          go mod edit -replace=github.com/emersonary/appkit/accounts=../../via-jeri/appkit/blocks/account/go
+          go mod edit -replace=github.com/emersonary/appkit/menu=../../via-jeri/appkit/blocks/menu/go
+          go mod edit -replace=github.com/emersonary/appkit/tenants=../../via-jeri/appkit/blocks/tenant/go
+          go mod tidy
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server ./cmd/server
+
+      - name: Publish to Lightsail
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          SPENCER_TING_DATABASE_PASSWORD: ${{ secrets.SPENCER_TING_DATABASE_PASSWORD }}
+          SPENCER_TING_ACCOUNTS_JWT_SECRET: ${{ secrets.SPENCER_TING_ACCOUNTS_JWT_SECRET }}
+          SPENCER_TING_POSTS_LAUNCH_JWT_SECRET: ${{ secrets.SPENCER_TING_POSTS_LAUNCH_JWT_SECRET }}
+          GODADDY_API_KEY: ${{ secrets.GODADDY_API_KEY }}
+          GODADDY_API_SECRET: ${{ secrets.GODADDY_API_SECRET }}
+        run: |
+          if [ -z "$DEPLOY_HOST" ] || [ -z "$DEPLOY_USER" ] || [ -z "$DEPLOY_SSH_KEY" ]; then
+            echo "Missing deploy secrets. Add DEPLOY_HOST, DEPLOY_USER, and DEPLOY_SSH_KEY in GitHub repo settings."
+            exit 1
+          fi
+
+          PORT="${DEPLOY_PORT:-22}"
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "$PORT" -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+          RSYNC_RSH="ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=yes"
+          TARGET="$DEPLOY_USER@$DEPLOY_HOST"
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'sudo mkdir -p /var/www/spencer-ting && sudo chown -R '"$DEPLOY_USER"':'"$DEPLOY_USER"' /var/www/spencer-ting'
+
+          rsync -avz --delete -e "$RSYNC_RSH" \
+            web/dist/ "$TARGET:/var/www/spencer-ting/"
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'sudo mkdir -p /opt/spencer-ting-api/migrations /opt/spencer-ting-api/config && sudo chown -R '"$DEPLOY_USER"':'"$DEPLOY_USER"' /opt/spencer-ting-api'
+
+          rsync -avz -e "$RSYNC_RSH" \
+            api/server \
+            "$TARGET:/opt/spencer-ting-api/server"
+          rsync -avz --delete -e "$RSYNC_RSH" \
+            api/migrations/ \
+            "$TARGET:/opt/spencer-ting-api/migrations/"
+          rsync -avz -e "$RSYNC_RSH" \
+            api/config/config.production.yaml \
+            "$TARGET:/opt/spencer-ting-api/config.yaml"
+
+          rsync -avz -e "$RSYNC_RSH" \
+            deploy/nginx-api-proxy.conf \
+            deploy/nginx-spencer-ting.conf \
+            deploy/spencer-ting-api.service \
+            deploy/install-systemd-service.sh \
+            deploy/install-nginx-site.sh \
+            deploy/check-service.sh \
+            deploy/configure-dns.sh \
+            "$TARGET:/tmp/"
+
+          if [ -n "$SPENCER_TING_DATABASE_PASSWORD" ]; then
+            DB_PASSWORD="$SPENCER_TING_DATABASE_PASSWORD"
+          else
+            echo "SPENCER_TING_DATABASE_PASSWORD not set; reusing VIA_JERI_DATABASE_PASSWORD from server."
+            DB_PASSWORD="$(ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+              "sudo awk 'BEGIN { FS=\"=\" } \$1 == \"VIA_JERI_DATABASE_PASSWORD\" { sub(/^[^=]*=/, \"\"); sub(/\r\$/, \"\"); print; exit }' /etc/viajeri-api.env 2>/dev/null || true")"
+          fi
+
+          if [ -z "$DB_PASSWORD" ]; then
+            DB_PASSWORD="$(ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+              "sudo awk 'BEGIN { FS=\"=\" } \$1 == \"IRON_MACHO_DATABASE_PASSWORD\" { sub(/^[^=]*=/, \"\"); sub(/\r\$/, \"\"); print; exit }' /etc/iron-macho-api.env 2>/dev/null || true")"
+          fi
+
+          if [ -z "$DB_PASSWORD" ]; then
+            echo "No database password available."
+            exit 1
+          fi
+
+          JWT_SECRET="${SPENCER_TING_ACCOUNTS_JWT_SECRET:-$(openssl rand -hex 32)}"
+          POSTS_JWT="${SPENCER_TING_POSTS_LAUNCH_JWT_SECRET:-$JWT_SECRET}"
+          ENV_B64="$(printf 'SPENCER_TING_DATABASE_PASSWORD=%s\nSPENCER_TING_ACCOUNTS_JWT_SECRET=%s\nSPENCER_TING_POSTS_LAUNCH_JWT_SECRET=%s\n' "$DB_PASSWORD" "$JWT_SECRET" "$POSTS_JWT" | base64 -w0)"
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            "set -e; printf '%s' '$ENV_B64' | base64 -d | sudo tee /etc/spencer-ting-api.env >/dev/null; sudo chmod 600 /etc/spencer-ting-api.env"
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'set -e; DB_PASSWORD="$(sudo awk '\''BEGIN { FS="=" } $1 == "SPENCER_TING_DATABASE_PASSWORD" { sub(/^[^=]*=/, ""); sub(/\r$/, ""); print; exit }'\'' /etc/spencer-ting-api.env)"; export PGPASSWORD="$DB_PASSWORD"; if ! psql -h 127.0.0.1 -U postgres -d postgres -tAc "SELECT 1 FROM pg_database WHERE datname = '\''spencer_ting'\''" | grep -q 1; then createdb -h 127.0.0.1 -U postgres spencer_ting; fi; unset PGPASSWORD'
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'set -e; bash /tmp/install-systemd-service.sh spencer-ting-api /opt/spencer-ting-api/server /tmp/spencer-ting-api.service /etc/spencer-ting-api.env'
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'set -e; bash /tmp/check-service.sh spencer-ting-api 18084 /healthz'
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'set -e; bash /tmp/install-nginx-site.sh /tmp/nginx-spencer-ting.conf /tmp/nginx-api-proxy.conf'
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            "set -e; GODADDY_API_KEY='${GODADDY_API_KEY:-}' GODADDY_API_SECRET='${GODADDY_API_SECRET:-}' bash /tmp/configure-dns.sh '$DEPLOY_HOST'"
+
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'if ! sudo test -f /etc/letsencrypt/live/spencerting.solidia.app/fullchain.pem; then
+               sudo certbot --nginx -d spencerting.solidia.app --non-interactive --agree-tos -m spencer@spencerting.com --redirect || true
+             fi
+             sudo nginx -t && sudo systemctl reload nginx'
+
+          echo "Spencer Ting deploy complete: https://spencerting.solidia.app"

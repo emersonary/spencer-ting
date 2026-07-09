@@ -1,0 +1,24 @@
+[Unit]
+Description=Spencer Ting API
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/spencer-ting-api
+Environment=SPENCER_TING_CONFIG=/opt/spencer-ting-api/config.yaml
+EnvironmentFile=-/etc/spencer-ting-api.env
+ExecStart=/opt/spencer-ting-api/server
+Restart=on-failure
+RestartSec=5
+
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/spencer-ting-api
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

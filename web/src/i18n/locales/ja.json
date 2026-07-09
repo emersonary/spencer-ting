@@ -1,0 +1,90 @@
+{
+  "lang": {
+    "label": "言語",
+    "continents": {
+      "americas": "アメリカ大陸",
+      "europe": "ヨーロッパ",
+      "asia": "アジア",
+      "middleEast": "中東"
+    }
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "Spencerについて",
+    "properties": "物件",
+    "neighborhoods": "エリア",
+    "buy": "購入",
+    "sell": "売却",
+    "blog": "マーケット洞察",
+    "tools": "ツール",
+    "mortgage": "住宅ローン計算",
+    "contact": "お問い合わせ",
+    "login": "ログイン",
+    "logout": "ログアウト",
+    "account": "マイアカウント",
+    "accountMenu": "アカウントメニュー"
+  },
+  "hero": {
+    "headline": "自信を持って次の住まいを見つける",
+    "subtitle": "地域の専門知識。誠実なアドバイス。データに基づく洞察。ニューヨーク最高級物件へのパーソナルガイド。",
+    "ctaBuy": "物件を探す",
+    "ctaSell": "物件を売る",
+    "ctaTalk": "Spencerに相談"
+  },
+  "stats": {
+    "experience": "年の経験",
+    "transactions": "成約件数",
+    "volume": "総売上高",
+    "neighborhoods": "NYCエリア"
+  },
+  "footer": {
+    "tagline": "ニューヨークの高級不動産アドバイザリー",
+    "rights": "無断転載を禁じます。"
+  },
+  "properties": {
+    "title": "注目物件",
+    "subtitle": "ニューヨーク最高の住まいの厳選"
+  },
+  "testimonials": {
+    "title": "お客様の声",
+    "subtitle": "Spencerとの取引について"
+  },
+  "videos": {
+    "title": "マーケット洞察とツアー",
+    "subtitle": "エリア、購入のヒント、市場動向の短編動画"
+  },
+  "social": {
+    "title": "Spencerをフォロー",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "instagramHandle": "@artgroup.nyc"
+  },
+  "cta": {
+    "readyTitle": "次の一歩の準備はできていますか？",
+    "readySubtitle": "購入でも売却でも、Spencerが求める専門性と擁護を提供します。",
+    "schedule": "相談を予約"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "購入、売却、市場の探索？Spencerが直接お返事します。",
+    "send": "メッセージを送信",
+    "success": "ありがとうございます。Spencerからすぐにご連絡します。"
+  },
+  "blog": {
+    "title": "マーケット洞察",
+    "subtitle": "NYC不動産の専門分析",
+    "readMore": "記事を読む",
+    "noPosts": "記事はまだありません。",
+    "back": "洞察に戻る"
+  },
+  "about": {
+    "title": "NYC不動産の信頼できるガイド",
+    "subtitle": "Spencer Tingは深い市場知識、粘り強い擁護、グローバルな視点をもたらします。"
+  },
+  "pages": {
+    "notFound": {
+      "title": "ページが見つかりません",
+      "back": "ホームに戻る"
+    }
+  }
+}

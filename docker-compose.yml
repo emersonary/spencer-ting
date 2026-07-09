@@ -1,0 +1,115 @@
+# Spencer Ting local stack. Run: docker compose up -d --build
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: spencer-ting-postgres
+    environment:
+      POSTGRES_USER: spencer_ting
+      POSTGRES_PASSWORD: spencer_ting
+      POSTGRES_DB: spencer_ting
+    ports:
+      - "5437:5432"
+    volumes:
+      - spencer_ting_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U spencer_ting -d spencer_ting"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  nats:
+    image: nats:latest
+    container_name: spencer-ting-nats
+    ports:
+      - "4226:4222"
+      - "8226:8222"
+    command: ["-js", "-m", "8222"]
+    volumes:
+      - spencer_ting_nats_data:/data
+
+  api:
+    build:
+      context: ..
+      dockerfile: spencer-ting/api/Dockerfile
+    container_name: spencer-ting-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+      nats:
+        condition: service_started
+    ports:
+      - "8084:8080"
+      - "50055:50051"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      SPENCER_TING_CONFIG: /app/config/config.yaml
+      SPENCER_TING_ACCOUNTS_JWT_SECRET: local-dev-jwt-secret-change-in-production
+      SPENCER_TING_ACCOUNTS_API_PUBLIC_URL: http://localhost:8084
+      SPENCER_TING_ACCOUNTS_GOOGLE_CLIENT_ID: ${SPENCER_TING_ACCOUNTS_GOOGLE_CLIENT_ID:-}
+      SPENCER_TING_ACCOUNTS_GOOGLE_CLIENT_SECRET: ${SPENCER_TING_ACCOUNTS_GOOGLE_CLIENT_SECRET:-}
+      SPENCER_TING_POSTS_LAUNCH_JWT_SECRET: local-dev-jwt-secret-change-in-production
+      SPENCER_TING_POSTS_ADMIN_URL: http://localhost:5176
+      SPENCER_TING_POSTS_PROJECT_ID: spencer-ting
+    volumes:
+      - ./api/config/config.docker.yaml:/app/config/config.yaml:ro
+      - ./api/migrations:/app/migrations:ro
+
+  web:
+    image: node:20-alpine
+    container_name: spencer-ting-web
+    depends_on:
+      - api
+      - posts-api
+    working_dir: /app
+    ports:
+      - "5182:5182"
+    environment:
+      VITE_API_URL: http://api:8080
+      VITE_POSTS_API_URL: http://posts-api:8080
+    command: sh -c "npm install && npm run generate:proto && npm run dev -- --host 0.0.0.0 --port 5182"
+    volumes:
+      - ./web:/app
+      - ./proto:/proto:ro
+      - spencer_ting_web_node_modules:/app/node_modules
+      - ../via-jeri/appkit/blocks/account/web:/via-jeri/appkit/blocks/account/web:ro
+
+  posts-api:
+    build:
+      context: ${DEV_ROOT:-..}
+      dockerfile: posts/api/Dockerfile
+    container_name: spencer-ting-posts-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8091:8080"
+      - "50056:50051"
+    environment:
+      POSTS_CONFIG: /app/config/config.yaml
+      POSTS_AUTH_JWT_SECRET: local-dev-jwt-secret-change-in-production
+    volumes:
+      - ${DEV_ROOT:-..}/posts/api/config/config.sahar.docker.yaml:/app/config/config.yaml:ro
+
+  posts-web:
+    image: node:20-alpine
+    container_name: spencer-ting-posts-web
+    depends_on:
+      - posts-api
+    working_dir: /app
+    ports:
+      - "5176:5176"
+    environment:
+      VITE_POSTS_API_URL: http://localhost:8091
+      POSTS_PROTO_DIR: /proto
+    command: sh -c "npm install && npm run generate:proto && npm run dev -- --host 0.0.0.0 --port 5176"
+    volumes:
+      - ${DEV_ROOT:-..}/posts/web:/app
+      - ${DEV_ROOT:-..}/posts/proto:/proto:ro
+
+volumes:
+  spencer_ting_postgres_data:
+  spencer_ting_nats_data:
+  spencer_ting_web_node_modules:
