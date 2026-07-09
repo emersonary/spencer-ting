@@ -73,3 +73,7 @@ Delphi7/
 DNS: add an `A` record `spencerting.solidia.app` → `16.60.173.233` at GoDaddy (or set `GODADDY_API_KEY` / `GODADDY_API_SECRET` repo secrets for automatic DNS). TLS is provisioned by certbot on deploy once DNS resolves.
 
 See [`deploy/README.md`](deploy/README.md) for server details.
+
+## Strategy
+
+Sell **Spencer**, not houses. The site positions Spencer as NYC's trusted luxury real estate advisor — with tools, guides, and curated properties that bring visitors back.
