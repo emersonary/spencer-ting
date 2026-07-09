@@ -59,6 +59,17 @@ Delphi7/
 - User login via appkit accounts
 - LinkedIn + Instagram integration (links; embed TBD)
 
-## Strategy
+## Production
 
-Sell **Spencer**, not houses. The site positions Spencer as NYC's trusted luxury real estate advisor — with tools, guides, and curated properties that bring visitors back.
+| Item | Value |
+|------|-------|
+| **URL** | https://spencerting.solidia.app |
+| **GitHub** | https://github.com/emersonary/spencer-ting |
+| **CI/CD** | `.github/workflows/deploy.yml` — auto-deploy on push to `master` |
+| **Server** | Shared Lightsail host (`16.60.173.233`) |
+| **Web root** | `/var/www/spencer-ting` |
+| **API** | `127.0.0.1:18084` (`spencer-ting-api.service`) |
+
+DNS: add an `A` record `spencerting.solidia.app` → `16.60.173.233` at GoDaddy (or set `GODADDY_API_KEY` / `GODADDY_API_SECRET` repo secrets for automatic DNS). TLS is provisioned by certbot on deploy once DNS resolves.
+
+See [`deploy/README.md`](deploy/README.md) for server details.
