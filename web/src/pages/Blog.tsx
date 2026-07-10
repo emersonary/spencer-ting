@@ -26,7 +26,7 @@ export function Blog() {
         </div>
 
         {loading ? (
-          <div className="page-loading">Loading...</div>
+          <div className="page-loading">{t('common.loading')}</div>
         ) : posts.length === 0 ? (
           <p className="text-center text-muted">{t('blog.noPosts')}</p>
         ) : (

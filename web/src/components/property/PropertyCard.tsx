@@ -7,7 +7,7 @@ type PropertyCardProps = {
 };
 
 export function PropertyCard({ property }: PropertyCardProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const image = property.imageUrls[0] ?? 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800';
 
   return (
@@ -17,7 +17,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
         {property.featured && <span className="property-badge">{t('properties.featured')}</span>}
       </div>
       <div className="property-card-body">
-        <div className="property-price">{formatPrice(property.price)}</div>
+        <div className="property-price">{formatPrice(property.price, i18n.language)}</div>
         <div className="property-address">
           {property.address} · {property.neighborhood}
         </div>

@@ -22,7 +22,8 @@
     "login": "Sign In",
     "logout": "Sign Out",
     "account": "My Account",
-    "accountMenu": "Account menu"
+    "accountMenu": "Account menu",
+    "blogAdmin": "Blog Admin"
   },
   "common": {
     "email": "Email",
@@ -35,7 +36,22 @@
     "createAccount": "Create Account",
     "login": "Login",
     "register": "Register",
-    "logOut": "Log out"
+    "logOut": "Log out",
+    "loading": "Loading...",
+    "propertyNotFound": "Property not found",
+    "toggleMenu": "Toggle menu"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "NYC Luxury Real Estate"
+  },
+  "meta": {
+    "title": "Spencer Ting | NYC Luxury Real Estate",
+    "description": "Spencer Ting — New York luxury real estate advisor. Local expertise, honest advice, data-driven insights."
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "Find your next home with confidence",
@@ -160,7 +176,63 @@
     "avgPrice": "Avg. Price",
     "vibe": "Character",
     "transit": "Transit",
-    "readMore": "Explore"
+    "readMore": "Explore",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "Industrial chic, celebrity haven"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "Classic elegance, museum mile"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "Historic charm, skyline views"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "Cast-iron lofts, art galleries"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "Tree-lined streets, bohemian soul"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "Waterfront lofts, tech hub"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "Spencer made our Tribeca purchase seamless. His market knowledge saved us months of searching.",
+        "author": "James & Sarah M.",
+        "role": "Tribeca Buyers"
+      },
+      "david": {
+        "quote": "We sold our townhouse above asking in two weeks. Spencer's marketing strategy was exceptional.",
+        "author": "David L.",
+        "role": "UES Seller"
+      },
+      "chen": {
+        "quote": "As international buyers, we needed someone who understood our needs. Spencer delivered beyond expectations.",
+        "author": "Chen Family",
+        "role": "Brooklyn Heights Buyers"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "Tribeca Market Update",
+      "coopCondo": "Co-op vs Condo in NYC",
+      "brooklynTour": "Brooklyn Heights Tour"
+    }
   },
   "testimonials": {
     "title": "Client Stories",
@@ -202,7 +274,10 @@
   },
   "footer": {
     "tagline": "Luxury real estate advisory in New York City",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "explore": "Explore",
+    "services": "Services",
+    "connect": "Connect"
   },
   "account": {
     "signingIn": "Please wait…",

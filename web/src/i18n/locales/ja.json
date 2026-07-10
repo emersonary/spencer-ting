@@ -15,43 +15,232 @@
     "neighborhoods": "エリア",
     "buy": "購入",
     "sell": "売却",
-    "blog": "マーケット洞察",
+    "blog": "インサイト",
     "tools": "ツール",
-    "mortgage": "住宅ローン計算",
+    "mortgage": "住宅ローン計算機",
     "contact": "お問い合わせ",
     "login": "ログイン",
     "logout": "ログアウト",
     "account": "マイアカウント",
-    "accountMenu": "アカウントメニュー"
+    "accountMenu": "アカウントメニュー",
+    "blogAdmin": "ブログ管理"
+  },
+  "common": {
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "confirmPassword": "パスワードの確認",
+    "firstName": "名",
+    "lastName": "姓",
+    "logIn": "ログイン",
+    "logInAction": "ログイン",
+    "createAccount": "アカウント作成",
+    "login": "ログイン",
+    "register": "登録",
+    "logOut": "ログアウト",
+    "loading": "読み込み中...",
+    "propertyNotFound": "物件が見つかりません",
+    "toggleMenu": "メニューを切り替え"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "NYCの高級不動産"
+  },
+  "meta": {
+    "title": "Spencer Ting | NYCの高級不動産",
+    "description": "Spencer Ting — ニューヨークの高級不動産アドバイザー。地域の専門知識、誠実なアドバイス、データに基づくインサイト。"
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "自信を持って次の住まいを見つける",
-    "subtitle": "地域の専門知識。誠実なアドバイス。データに基づく洞察。ニューヨーク最高級物件へのパーソナルガイド。",
+    "subtitle": "地域の専門知識。誠実なアドバイス。データに基づくインサイト。ニューヨーク最高の物件へのパーソナライズされたガイダンス。",
     "ctaBuy": "物件を探す",
-    "ctaSell": "物件を売る",
+    "ctaSell": "物件を売却",
     "ctaTalk": "Spencerに相談"
   },
   "stats": {
     "experience": "年の経験",
     "transactions": "成約件数",
     "volume": "総売上高",
-    "neighborhoods": "NYCエリア"
+    "neighborhoods": "NYCのエリア"
   },
-  "footer": {
-    "tagline": "ニューヨークの高級不動産アドバイザリー",
-    "rights": "無断転載を禁じます。"
+  "about": {
+    "title": "NYC不動産の信頼できるガイド",
+    "subtitle": "Spencer Tingは、深い市場知識、粘り強い擁護、グローバルな視点をすべての取引にもたらします。",
+    "bio1": "ニューヨークの免許を持つ不動産ブローカーとして、SpencerはManhattanとBrooklynの高級コンドミニアム、タウンハウス、投資物件を専門としています。",
+    "bio2": "クライアントはSpencerの迅速な対応、交渉力、誠実な助言を選びます — 初めてのアパート購入でも、数百万ドルの物件売却でも。",
+    "bio3": "複数言語に堪能で、世界中の買い手と売り手のネットワークとつながっているSpencerは、複雑なNYCの取引をスムーズに進めます。",
+    "values": {
+      "knowledge": "深い市場知識",
+      "knowledgeDesc": "推測ではなく、データに裏付けられたエリアレベルのインサイト。",
+      "network": "グローバルネットワーク",
+      "networkDesc": "世界中の資格を持つ買い手・売り手とのつながり。",
+      "advocacy": "粘り強い擁護",
+      "advocacyDesc": "取引のあらゆる段階でお客様の利益を守ります。"
+    }
   },
   "properties": {
     "title": "注目物件",
-    "subtitle": "ニューヨーク最高の住まいの厳選"
+    "subtitle": "ニューヨーク最高の住まいを厳選",
+    "search": "物件を検索",
+    "searchPlaceholder": "エリア、住所、キーワード...",
+    "filters": "フィルター",
+    "borough": "区",
+    "neighborhood": "エリア",
+    "type": "物件タイプ",
+    "minPrice": "最低価格",
+    "maxPrice": "最高価格",
+    "bedrooms": "寝室",
+    "luxuryOnly": "高級物件のみ",
+    "all": "すべて",
+    "forSale": "販売中",
+    "sold": "売却済み",
+    "beds": "寝室",
+    "baths": "浴室",
+    "sqft": "平方フィート",
+    "viewDetails": "詳細を見る",
+    "noResults": "検索条件に一致する物件がありません。",
+    "featured": "注目",
+    "luxury": "高級",
+    "inquire": "内見を予約",
+    "features": "特徴",
+    "description": "説明",
+    "monthlyHoa": "月額HOA費",
+    "monthlyTaxes": "月額税金",
+    "yearBuilt": "建築年",
+    "types": {
+      "condo": "コンドミニアム",
+      "co-op": "コープ",
+      "townhouse": "タウンハウス",
+      "penthouse": "ペントハウス"
+    }
+  },
+  "mortgage": {
+    "title": "住宅ローン計算機",
+    "subtitle": "NYC物件の月々の支払いを試算",
+    "homePrice": "物件価格",
+    "downPayment": "頭金",
+    "downPaymentPercent": "頭金率",
+    "interestRate": "金利",
+    "loanTerm": "ローン期間（年）",
+    "propertyTax": "年間固定資産税",
+    "hoa": "月額HOA費",
+    "insurance": "年間保険料",
+    "monthlyPayment": "推定月額支払い",
+    "principalInterest": "元本と利息",
+    "taxes": "固定資産税",
+    "hoaFee": "HOA",
+    "insuranceFee": "保険",
+    "total": "月額合計",
+    "disclaimer": "この計算機は推定値のみを提供します。実際の支払いは異なる場合があります。免許を持つ住宅ローンの専門家にご相談ください。"
+  },
+  "process": {
+    "buyTitle": "購入プロセス",
+    "buySubtitle": "最初の相談から鍵の受け取りまでの明確な道筋",
+    "sellTitle": "売却プロセス",
+    "sellSubtitle": "実績のある戦略で物件価値を最大化",
+    "steps": {
+      "consult": "Spencerと面談",
+      "consultDesc": "プレッシャーのない相談で、目標、スケジュール、予算を共有してください。",
+      "finance": "資金調達",
+      "financeDesc": "信頼できる貸し手とつながり、事前承認を取得。",
+      "search": "検索",
+      "searchDesc": "条件に合った厳選物件を内見。",
+      "offer": "オファー",
+      "offerDesc": "最良の条件を確保するための戦略的交渉。",
+      "inspection": "検査",
+      "inspectionDesc": "信頼できる専門家によるデューデリジェンス。",
+      "closing": "クロージング",
+      "closingDesc": "契約、理事会の承認、クロージングを進めます。",
+      "moveIn": "入居",
+      "moveInDesc": "ようこそ — クロージング後も継続的にサポート。",
+      "valuation": "査定",
+      "valuationDesc": "物件のデータに基づく価格戦略。",
+      "prepare": "準備",
+      "prepareDesc": "ステージング、撮影、マーケティング資料。",
+      "market": "市場投入",
+      "marketDesc": "MLS、SNS、グローバルネットワークでのプレミアム掲載。",
+      "showings": "内見",
+      "showingsDesc": "資格のある買い手、プライベートツアー、オープンハウス。",
+      "negotiate": "交渉",
+      "negotiateDesc": "最良のオファーのための専門的交渉。",
+      "close": "成約",
+      "closeDesc": "スムーズなクロージングと引き渡し。"
+    }
+  },
+  "neighborhoods": {
+    "title": "NYCエリアガイド",
+    "subtitle": "ニューヨークの生活を形作るエリアを探索",
+    "avgPrice": "平均価格",
+    "vibe": "特徴",
+    "transit": "交通",
+    "readMore": "探索",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "インダストリアルシック、セレブの聖地"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "クラシックな優雅さ、ミュージアムマイル"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "歴史的な魅力、スカイラインの眺望"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "鋳鉄造りのロフト、アートギャラリー"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "並木道、ボヘミアンな雰囲気"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "ウォーターフロントのロフト、テックハブ"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "SpencerのおかげでTribecaでの購入がスムーズでした。市場知識のおかげで何ヶ月もの探し物が省けました。",
+        "author": "James & Sarah M.",
+        "role": "Tribecaの買い手"
+      },
+      "david": {
+        "quote": "タウンハウスを2週間で希望価格以上で売却できました。Spencerのマーケティング戦略は素晴らしかったです。",
+        "author": "David L.",
+        "role": "UESの売り手"
+      },
+      "chen": {
+        "quote": "海外からの買い手として、私たちのニーズを理解してくれる人が必要でした。Spencerは期待を超えてくれました。",
+        "author": "Chen Family",
+        "role": "Brooklyn Heightsの買い手"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "Tribeca市場アップデート",
+      "coopCondo": "NYCのコープ vs コンドミニアム",
+      "brooklynTour": "Brooklyn Heightsツアー"
+    }
   },
   "testimonials": {
     "title": "お客様の声",
-    "subtitle": "Spencerとの取引について"
+    "subtitle": "Spencerとの取引についてお客様が語ること"
   },
   "videos": {
-    "title": "マーケット洞察とツアー",
-    "subtitle": "エリア、購入のヒント、市場動向の短編動画"
+    "title": "市場インサイトとツアー",
+    "subtitle": "エリア、購入のヒント、市場アップデートの短い動画"
   },
   "social": {
     "title": "Spencerをフォロー",
@@ -59,32 +248,106 @@
     "linkedin": "LinkedIn",
     "instagramHandle": "@artgroup.nyc"
   },
-  "cta": {
-    "readyTitle": "次の一歩の準備はできていますか？",
-    "readySubtitle": "購入でも売却でも、Spencerが求める専門性と擁護を提供します。",
-    "schedule": "相談を予約"
+  "blog": {
+    "title": "市場インサイト",
+    "subtitle": "NYC不動産の専門分析",
+    "readMore": "記事を読む",
+    "noPosts": "まだ記事が公開されていません。",
+    "back": "インサイトに戻る"
   },
   "contact": {
     "title": "お問い合わせ",
-    "subtitle": "購入、売却、市場の探索？Spencerが直接お返事します。",
+    "subtitle": "購入、売却、市場調査のご準備はできていますか？Spencerが直接お返事します。",
+    "name": "氏名",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "intent": "ご興味のある内容",
+    "message": "メッセージ",
     "send": "メッセージを送信",
-    "success": "ありがとうございます。Spencerからすぐにご連絡します。"
+    "success": "ありがとうございます！Spencerからまもなくご連絡いたします。",
+    "intents": {
+      "buy": "物件の購入",
+      "sell": "物件の売却",
+      "invest": "投資の機会",
+      "general": "一般的なお問い合わせ"
+    }
   },
-  "blog": {
-    "title": "マーケット洞察",
-    "subtitle": "NYC不動産の専門分析",
-    "readMore": "記事を読む",
-    "noPosts": "記事はまだありません。",
-    "back": "洞察に戻る"
+  "footer": {
+    "tagline": "ニューヨーク市の高級不動産アドバイザリー",
+    "rights": "無断転載を禁じます。",
+    "explore": "探索",
+    "services": "サービス",
+    "connect": "つながる"
   },
-  "about": {
-    "title": "NYC不動産の信頼できるガイド",
-    "subtitle": "Spencer Tingは深い市場知識、粘り強い擁護、グローバルな視点をもたらします。"
+  "account": {
+    "signingIn": "お待ちください…",
+    "errors": {
+      "invalidInput": "入力内容を確認して、もう一度お試しください。",
+      "invalidCredentials": "メールアドレスまたはパスワードが正しくありません。",
+      "emailInUse": "このメールアドレスは既に登録されています。",
+      "permissionDenied": "この操作の権限がありません。",
+      "unavailable": "サービスは一時的に利用できません。",
+      "emailNotVerified": "ログインする前にメールアドレスを確認してください。",
+      "generic": "問題が発生しました。もう一度お試しください。",
+      "signInRequired": "続行するにはログインしてください。",
+      "passwordMismatch": "パスワードが一致しません。"
+    }
   },
   "pages": {
+    "login": {
+      "hero": "ログインして物件を保存し、アカウントを管理しましょう。",
+      "orContinueWith": "または",
+      "continueWithGoogle": "Googleで続行",
+      "emailVerified": "メールアドレスが確認されました。ログインできます。",
+      "emailVerifyInvalid": "その確認リンクは無効または期限切れです。",
+      "forgotPassword": "パスワードをお忘れですか？"
+    },
+    "forgotPassword": {
+      "title": "パスワードをお忘れですか？",
+      "hero": "リセット用のリンクをメールでお送りします。",
+      "instructions": "アカウントのメールアドレスを入力してください。一致するアカウントが見つかった場合、リセット手順をお送りします。",
+      "submit": "リセットリンクを送信",
+      "sent": "そのメールアドレスのアカウントが存在する場合、パスワードリセットの手順を送信しました。",
+      "checkSpam": "届かない場合は、迷惑メールフォルダをご確認ください。",
+      "backToLogin": "ログインに戻る"
+    },
+    "resetPassword": {
+      "title": "新しいパスワードを設定",
+      "hero": "アカウントの新しいパスワードを入力してください。",
+      "submit": "パスワードを更新",
+      "invalidLink": "そのリセットリンクは無効または期限切れです。",
+      "requestNew": "新しいリセットリンクをリクエスト",
+      "successTitle": "パスワードを更新しました",
+      "successHero": "新しいパスワードでログインできます。",
+      "success": "パスワードが更新されました。",
+      "goToSignIn": "ログインへ",
+      "backToLogin": "ログインに戻る"
+    },
+    "verifyEmail": {
+      "title": "メールを確認してください",
+      "hero": "アカウントを有効化するあと一歩です。",
+      "instructions": "確認リンクを送信しました：",
+      "checkSpam": "届かない場合は、迷惑メールフォルダをご確認ください。",
+      "anyBrowser": "どのブラウザでもリンクを開けます。メールが確認されると、このページが更新されます。",
+      "resend": "確認メールを再送信",
+      "resent": "確認メールを送信しました。",
+      "backToLogin": "ログインに戻る",
+      "verifiedTitle": "メール確認完了",
+      "verifiedHero": "アカウントの準備ができました。",
+      "verified": "メールアドレスが確認されました。ログインできます。",
+      "alreadyVerified": "このメールアドレスは既に確認済みです。ログインできます。",
+      "invalidLink": "その確認リンクは無効または期限切れです。",
+      "returnToSignIn": "開始したブラウザに戻るか、ここでログインしてください。",
+      "goToSignIn": "ログインへ"
+    },
     "notFound": {
       "title": "ページが見つかりません",
       "back": "ホームに戻る"
     }
+  },
+  "cta": {
+    "readyTitle": "次の一歩を踏み出す準備はできていますか？",
+    "readySubtitle": "購入でも売却でも、Spencerはあなたにふさわしい専門知識と擁護を提供します。",
+    "schedule": "相談を予約"
   }
 }

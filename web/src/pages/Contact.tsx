@@ -76,10 +76,10 @@ export function Contact() {
 
         <div className="social-links" style={{ marginTop: '3rem' }}>
           <a href="https://www.linkedin.com/in/spencer-ting-212036337/" target="_blank" rel="noopener noreferrer" className="social-link">
-            LinkedIn
+            {t('social.linkedin')}
           </a>
           <a href="https://www.instagram.com/artgroup.nyc" target="_blank" rel="noopener noreferrer" className="social-link">
-            Instagram @artgroup.nyc
+            {t('social.instagram')} {t('social.instagramHandle')}
           </a>
         </div>
       </div>

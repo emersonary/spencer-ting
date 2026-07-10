@@ -18,8 +18,8 @@ export function PropertyDetail() {
       .finally(() => setLoading(false));
   }, [slug]);
 
-  if (loading) return <div className="page-loading">Loading...</div>;
-  if (!property) return <div className="page-loading">Property not found</div>;
+  if (loading) return <div className="page-loading">{t('common.loading')}</div>;
+  if (!property) return <div className="page-loading">{t('common.propertyNotFound')}</div>;
 
   return (
     <section className="section">

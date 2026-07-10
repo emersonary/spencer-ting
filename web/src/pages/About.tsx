@@ -11,7 +11,7 @@ export function About() {
           <div>
             <img
               src="/images/spencer-ting.png"
-              alt="Spencer Ting"
+              alt={t('brand.name')}
               style={{ borderRadius: '4px', boxShadow: 'var(--shadow-md)' }}
             />
           </div>

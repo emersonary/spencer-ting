@@ -155,7 +155,22 @@ class GrpcPropertyService {
 
 export const propertyService = new GrpcPropertyService();
 
-export function formatPrice(price: number, locale = 'en-US'): string {
+export function formatPrice(price: number, language = 'en'): string {
+  const localeMap: Record<string, string> = {
+    en: 'en-US',
+    es: 'es-US',
+    pt: 'pt-BR',
+    zh: 'zh-CN',
+    it: 'it-IT',
+    de: 'de-DE',
+    ru: 'ru-RU',
+    ar: 'ar-SA',
+    ja: 'ja-JP',
+    ko: 'ko-KR',
+    he: 'he-IL',
+    tr: 'tr-TR',
+  };
+  const locale = localeMap[language] ?? language;
   return new Intl.NumberFormat(locale, {
     style: 'currency',
     currency: 'USD',

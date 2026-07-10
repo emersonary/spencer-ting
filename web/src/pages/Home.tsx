@@ -5,17 +5,13 @@ import { PropertyCard } from '../components/property/PropertyCard';
 import { propertyService, type Property } from '../services/property';
 import '../styles/pages.css';
 
-const TESTIMONIALS = [
-  { quote: "Spencer made our Tribeca purchase seamless. His market knowledge saved us months of searching.", author: 'James & Sarah M.', role: 'Tribeca Buyers' },
-  { quote: "We sold our townhouse above asking in two weeks. Spencer's marketing strategy was exceptional.", author: 'David L.', role: 'UES Seller' },
-  { quote: "As international buyers, we needed someone who understood our needs. Spencer delivered beyond expectations.", author: 'Chen Family', role: 'Brooklyn Heights Buyers' },
-];
-
-const VIDEOS = [
-  { title: 'Tribeca Market Update', thumb: 'https://images.unsplash.com/photo-1480714378404-ce67fde3e916?w=600', url: '#' },
-  { title: 'Co-op vs Condo in NYC', thumb: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600', url: '#' },
-  { title: 'Brooklyn Heights Tour', thumb: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600', url: '#' },
-];
+const TESTIMONIAL_IDS = ['james', 'david', 'chen'] as const;
+const VIDEO_IDS = ['tribecaMarket', 'coopCondo', 'brooklynTour'] as const;
+const VIDEO_THUMBS: Record<(typeof VIDEO_IDS)[number], string> = {
+  tribecaMarket: 'https://images.unsplash.com/photo-1480714378404-ce67fde3e916?w=600',
+  coopCondo: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600',
+  brooklynTour: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600',
+};
 
 export function Home() {
   const { t } = useTranslation();
@@ -28,7 +24,20 @@ export function Home() {
   return (
     <>
       <section className="hero">
-        <div className="hero-bg" />
+        <div className="hero-bg" aria-hidden="true">
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/images/hero-nyc.jpg"
+          >
+            <source src="/videos/hero-central-park.mp4" type="video/mp4" />
+          </video>
+          <div className="hero-overlay" />
+        </div>
         <div className="container hero-content">
           <div className="hero-panel">
             <h1>{t('hero.headline')}</h1>
@@ -37,12 +46,6 @@ export function Home() {
               <AppLink to="/properties" className="btn btn-primary">{t('hero.ctaBuy')}</AppLink>
               <AppLink to="/sell" className="btn btn-outline">{t('hero.ctaSell')}</AppLink>
               <AppLink to="/contact" className="btn btn-outline">{t('hero.ctaTalk')}</AppLink>
-            </div>
-            <div className="hero-portrait">
-              <img
-                src="/images/spencer-ting.png"
-                alt="Spencer Ting"
-              />
             </div>
           </div>
         </div>
@@ -122,11 +125,11 @@ export function Home() {
             <p>{t('testimonials.subtitle')}</p>
           </div>
           <div className="grid-3">
-            {TESTIMONIALS.map((item) => (
-              <div key={item.author} className="card testimonial-card">
-                <p className="testimonial-quote">"{item.quote}"</p>
-                <div className="testimonial-author">{item.author}</div>
-                <div className="testimonial-role">{item.role}</div>
+            {TESTIMONIAL_IDS.map((id) => (
+              <div key={id} className="card testimonial-card">
+                <p className="testimonial-quote">"{t(`home.testimonials.${id}.quote`)}"</p>
+                <div className="testimonial-author">{t(`home.testimonials.${id}.author`)}</div>
+                <div className="testimonial-role">{t(`home.testimonials.${id}.role`)}</div>
               </div>
             ))}
           </div>
@@ -141,9 +144,9 @@ export function Home() {
             <p>{t('videos.subtitle')}</p>
           </div>
           <div className="video-grid">
-            {VIDEOS.map((video) => (
-              <a key={video.title} href={video.url} className="video-card">
-                <img src={video.thumb} alt={video.title} />
+            {VIDEO_IDS.map((id) => (
+              <a key={id} href="#" className="video-card">
+                <img src={VIDEO_THUMBS[id]} alt={t(`home.videos.${id}`)} />
                 <div className="video-card-overlay">
                   <div className="video-play-btn">▶</div>
                 </div>

@@ -38,8 +38,8 @@ export function Properties() {
           />
           <select value={borough} onChange={(e) => setBorough(e.target.value)}>
             <option value="">{t('properties.borough')}</option>
-            <option value="Manhattan">Manhattan</option>
-            <option value="Brooklyn">Brooklyn</option>
+            <option value="Manhattan">{t('boroughs.manhattan')}</option>
+            <option value="Brooklyn">{t('boroughs.brooklyn')}</option>
           </select>
           <select value={propertyType} onChange={(e) => setPropertyType(e.target.value)}>
             <option value="">{t('properties.type')}</option>
@@ -54,7 +54,7 @@ export function Properties() {
         </div>
 
         {loading ? (
-          <div className="page-loading">Loading...</div>
+          <div className="page-loading">{t('common.loading')}</div>
         ) : properties.length === 0 ? (
           <p className="text-center text-muted">{t('properties.noResults')}</p>
         ) : (

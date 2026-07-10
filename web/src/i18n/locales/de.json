@@ -16,17 +16,46 @@
     "buy": "Kaufen",
     "sell": "Verkaufen",
     "blog": "Einblicke",
-    "tools": "Tools",
+    "tools": "Werkzeuge",
     "mortgage": "Hypothekenrechner",
     "contact": "Kontakt",
     "login": "Anmelden",
     "logout": "Abmelden",
     "account": "Mein Konto",
-    "accountMenu": "Kontomenü"
+    "accountMenu": "Kontomenü",
+    "blogAdmin": "Blog-Administration"
+  },
+  "common": {
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "logIn": "Anmelden",
+    "logInAction": "Anmelden",
+    "createAccount": "Konto erstellen",
+    "login": "Login",
+    "register": "Registrieren",
+    "logOut": "Abmelden",
+    "loading": "Wird geladen...",
+    "propertyNotFound": "Immobilie nicht gefunden",
+    "toggleMenu": "Menü umschalten"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "Luxusimmobilien in NYC"
+  },
+  "meta": {
+    "title": "Spencer Ting | Luxusimmobilien in NYC",
+    "description": "Spencer Ting — Berater für Luxusimmobilien in New York. Lokale Expertise, ehrliche Beratung und datengestützte Einblicke."
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "Finden Sie Ihr nächstes Zuhause mit Vertrauen",
-    "subtitle": "Lokale Expertise. Ehrliche Beratung. Datenbasierte Einblicke. Persönliche Begleitung für New Yorks beste Immobilien.",
+    "subtitle": "Lokale Expertise. Ehrliche Beratung. Datengestützte Einblicke. Persönliche Begleitung für die besten Immobilien in New York.",
     "ctaBuy": "Immobilie finden",
     "ctaSell": "Immobilie verkaufen",
     "ctaTalk": "Mit Spencer sprechen"
@@ -37,21 +66,181 @@
     "volume": "Gesamtverkaufsvolumen",
     "neighborhoods": "NYC-Stadtteile"
   },
-  "footer": {
-    "tagline": "Luxus-Immobilienberatung in New York City",
-    "rights": "Alle Rechte vorbehalten."
+  "about": {
+    "title": "Ihr vertrauenswürdiger Führer im NYC-Immobilienmarkt",
+    "subtitle": "Spencer Ting bringt tiefes Marktwissen, unermüdliche Vertretung und eine globale Perspektive in jede Transaktion ein.",
+    "bio1": "Als lizenzierter Immobilienmakler in New York ist Spencer auf Luxus-Eigentumswohnungen, Townhouses und Investmentimmobilien in Manhattan und Brooklyn spezialisiert.",
+    "bio2": "Kunden wählen Spencer wegen seiner Reaktionsgeschwindigkeit, Verhandlungsfähigkeiten und ehrlichen Beratung — ob Sie Ihre erste Wohnung kaufen oder ein mehrmillionenschweres Anwesen verkaufen.",
+    "bio3": "Mit fließenden Sprachkenntnissen und einem globalen Netzwerk von Käufern und Verkäufern macht Spencer komplexe NYC-Transaktionen mühelos.",
+    "values": {
+      "knowledge": "Tiefes Marktwissen",
+      "knowledgeDesc": "Stadtteilbezogene Einblicke auf Basis von Daten, nicht von Vermutungen.",
+      "network": "Globales Netzwerk",
+      "networkDesc": "Verbindungen zu qualifizierten Käufern und Verkäufern weltweit.",
+      "advocacy": "Unermüdliche Vertretung",
+      "advocacyDesc": "Ihre Interessen werden in jeder Phase des Geschäfts geschützt."
+    }
   },
   "properties": {
     "title": "Ausgewählte Immobilien",
-    "subtitle": "Auswahl der besten Wohnungen in New York"
+    "subtitle": "Kuratierte Auswahl der besten Wohnungen in New York",
+    "search": "Immobilien suchen",
+    "searchPlaceholder": "Stadtteil, Adresse oder Stichwort...",
+    "filters": "Filter",
+    "borough": "Bezirk",
+    "neighborhood": "Stadtteil",
+    "type": "Immobilientyp",
+    "minPrice": "Mindestpreis",
+    "maxPrice": "Höchstpreis",
+    "bedrooms": "Schlafzimmer",
+    "luxuryOnly": "Nur Luxus",
+    "all": "Alle",
+    "forSale": "Zu verkaufen",
+    "sold": "Verkauft",
+    "beds": "Schlafz.",
+    "baths": "Bäder",
+    "sqft": "Quadratfuß",
+    "viewDetails": "Details ansehen",
+    "noResults": "Keine Immobilien entsprechen Ihrer Suche.",
+    "featured": "Empfohlen",
+    "luxury": "Luxus",
+    "inquire": "Besichtigung vereinbaren",
+    "features": "Ausstattung",
+    "description": "Beschreibung",
+    "monthlyHoa": "Monatliche HOA-Gebühr",
+    "monthlyTaxes": "Monatliche Steuern",
+    "yearBuilt": "Baujahr",
+    "types": {
+      "condo": "Eigentumswohnung",
+      "co-op": "Genossenschaft",
+      "townhouse": "Townhouse",
+      "penthouse": "Penthouse"
+    }
+  },
+  "mortgage": {
+    "title": "Hypothekenrechner",
+    "subtitle": "Schätzen Sie Ihre monatliche Rate für NYC-Immobilien",
+    "homePrice": "Kaufpreis",
+    "downPayment": "Anzahlung",
+    "downPaymentPercent": "Anzahlung %",
+    "interestRate": "Zinssatz",
+    "loanTerm": "Laufzeit (Jahre)",
+    "propertyTax": "Jährliche Grundsteuer",
+    "hoa": "Monatliche HOA-Gebühr",
+    "insurance": "Jährliche Versicherung",
+    "monthlyPayment": "Geschätzte monatliche Rate",
+    "principalInterest": "Tilgung & Zinsen",
+    "taxes": "Grundsteuer",
+    "hoaFee": "HOA",
+    "insuranceFee": "Versicherung",
+    "total": "Monatlich gesamt",
+    "disclaimer": "Dieser Rechner liefert nur Schätzungen. Die tatsächlichen Zahlungen können abweichen. Konsultieren Sie einen lizenzierten Hypothekenexperten."
+  },
+  "process": {
+    "buyTitle": "Der Kaufprozess",
+    "buySubtitle": "Ein klarer Weg vom ersten Gespräch bis zum Schlüssel in der Hand",
+    "sellTitle": "Der Verkaufsprozess",
+    "sellSubtitle": "Maximieren Sie den Wert Ihrer Immobilie mit einer bewährten Strategie",
+    "steps": {
+      "consult": "Spencer kennenlernen",
+      "consultDesc": "Teilen Sie Ihre Ziele, Zeitplan und Budget in einem unverbindlichen Beratungsgespräch.",
+      "finance": "Finanzierung",
+      "financeDesc": "Vernetzen Sie sich mit vertrauenswürdigen Kreditgebern und erhalten Sie eine Vorabgenehmigung.",
+      "search": "Suche",
+      "searchDesc": "Besichtigen Sie kuratierte Immobilien, die Ihren Kriterien entsprechen.",
+      "offer": "Angebot",
+      "offerDesc": "Strategische Verhandlung für die besten Konditionen.",
+      "inspection": "Inspektion",
+      "inspectionDesc": "Due Diligence mit vertrauenswürdigen Fachleuten.",
+      "closing": "Abschluss",
+      "closingDesc": "Verträge, Vorstandsgenehmigungen und Abschluss navigieren.",
+      "moveIn": "Einzug",
+      "moveInDesc": "Willkommen zu Hause — mit fortlaufender Unterstützung nach dem Abschluss.",
+      "valuation": "Bewertung",
+      "valuationDesc": "Datengestützte Preisstrategie für Ihre Immobilie.",
+      "prepare": "Vorbereitung",
+      "prepareDesc": "Staging, Fotografie und Marketingmaterialien.",
+      "market": "Vermarktung",
+      "marketDesc": "Premium-Listing auf MLS, Social Media und globalen Netzwerken.",
+      "showings": "Besichtigungen",
+      "showingsDesc": "Qualifizierte Käufer, private Touren, Open Houses.",
+      "negotiate": "Verhandlung",
+      "negotiateDesc": "Expertenverhandlung für das stärkste Angebot.",
+      "close": "Abschluss",
+      "closeDesc": "Reibungsloser Abschluss und Übergang."
+    }
+  },
+  "neighborhoods": {
+    "title": "NYC-Stadtteilführer",
+    "subtitle": "Entdecken Sie die Stadtteile, die das Leben in New York prägen",
+    "avgPrice": "Durchschn. Preis",
+    "vibe": "Charakter",
+    "transit": "Verkehr",
+    "readMore": "Entdecken",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "Industrial Chic, Prominenten-Treffpunkt"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "Klassische Eleganz, Museum Mile"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "Historischer Charme, Skyline-Blick"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "Gusseisen-Lofts, Kunstgalerien"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "Baumgesäumte Straßen, bohemische Seele"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "Waterfront-Lofts, Tech-Hub"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "Spencer hat unseren Kauf in Tribeca reibungslos gemacht. Sein Marktwissen hat uns Monate der Suche erspart.",
+        "author": "James & Sarah M.",
+        "role": "Käufer in Tribeca"
+      },
+      "david": {
+        "quote": "Wir haben unser Townhouse in zwei Wochen über dem Angebotspreis verkauft. Spencers Marketingstrategie war außergewöhnlich.",
+        "author": "David L.",
+        "role": "Verkäufer UES"
+      },
+      "chen": {
+        "quote": "Als internationale Käufer brauchten wir jemanden, der unsere Bedürfnisse versteht. Spencer hat unsere Erwartungen übertroffen.",
+        "author": "Chen Family",
+        "role": "Käufer in Brooklyn Heights"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "Tribeca-Marktupdate",
+      "coopCondo": "Genossenschaft vs. Eigentum in NYC",
+      "brooklynTour": "Brooklyn Heights Tour"
+    }
   },
   "testimonials": {
     "title": "Kundengeschichten",
-    "subtitle": "Was Kunden über Spencer sagen"
+    "subtitle": "Was Kunden über die Zusammenarbeit mit Spencer sagen"
   },
   "videos": {
     "title": "Markteinblicke & Touren",
-    "subtitle": "Kurzvideos zu Stadtteilen, Kauf und Markt"
+    "subtitle": "Kurze Videos über Stadtteile, Kauftipps und Marktupdates"
   },
   "social": {
     "title": "Spencer folgen",
@@ -59,32 +248,106 @@
     "linkedin": "LinkedIn",
     "instagramHandle": "@artgroup.nyc"
   },
-  "cta": {
-    "readyTitle": "Bereit für den nächsten Schritt?",
-    "readySubtitle": "Beim Kauf oder Verkauf bietet Spencer die Expertise und Vertretung, die Sie verdienen.",
-    "schedule": "Beratung vereinbaren"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "subtitle": "Kaufen, verkaufen oder Markt erkunden? Spencer antwortet persönlich.",
-    "send": "Nachricht senden",
-    "success": "Danke! Spencer meldet sich in Kürze."
-  },
   "blog": {
     "title": "Markteinblicke",
-    "subtitle": "Expertenanalyse des NYC-Immobilienmarkts",
+    "subtitle": "Expertenanalyse zum NYC-Immobilienmarkt",
     "readMore": "Artikel lesen",
-    "noPosts": "Noch keine Artikel.",
+    "noPosts": "Noch keine Artikel veröffentlicht.",
     "back": "Zurück zu Einblicke"
   },
-  "about": {
-    "title": "Ihr vertrauenswürdiger NYC-Immobilienführer",
-    "subtitle": "Spencer Ting bringt tiefes Marktwissen, beharrliche Vertretung und globale Perspektive."
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Bereit zu kaufen, zu verkaufen oder den Markt zu erkunden? Spencer antwortet persönlich.",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "intent": "Ich interessiere mich für",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Vielen Dank! Spencer wird sich in Kürze bei Ihnen melden.",
+    "intents": {
+      "buy": "Immobilie kaufen",
+      "sell": "Immobilie verkaufen",
+      "invest": "Investitionsmöglichkeiten",
+      "general": "Allgemeine Anfrage"
+    }
+  },
+  "footer": {
+    "tagline": "Luxusimmobilienberatung in New York City",
+    "rights": "Alle Rechte vorbehalten.",
+    "explore": "Entdecken",
+    "services": "Leistungen",
+    "connect": "Verbinden"
+  },
+  "account": {
+    "signingIn": "Bitte warten…",
+    "errors": {
+      "invalidInput": "Bitte überprüfen Sie Ihre Eingabe und versuchen Sie es erneut.",
+      "invalidCredentials": "Ungültige E-Mail oder Passwort.",
+      "emailInUse": "Diese E-Mail ist bereits registriert.",
+      "permissionDenied": "Sie haben keine Berechtigung für diese Aktion.",
+      "unavailable": "Dienst vorübergehend nicht verfügbar.",
+      "emailNotVerified": "Bitte bestätigen Sie Ihre E-Mail, bevor Sie sich anmelden.",
+      "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "signInRequired": "Bitte melden Sie sich an, um fortzufahren.",
+      "passwordMismatch": "Die Passwörter stimmen nicht überein."
+    }
   },
   "pages": {
+    "login": {
+      "hero": "Melden Sie sich an, um Immobilien zu speichern und Ihr Konto zu verwalten.",
+      "orContinueWith": "oder",
+      "continueWithGoogle": "Mit Google fortfahren",
+      "emailVerified": "Ihre E-Mail ist bestätigt. Sie können sich jetzt anmelden.",
+      "emailVerifyInvalid": "Dieser Bestätigungslink ist ungültig oder abgelaufen.",
+      "forgotPassword": "Passwort vergessen?"
+    },
+    "forgotPassword": {
+      "title": "Passwort vergessen?",
+      "hero": "Wir senden Ihnen einen Link per E-Mail zum Zurücksetzen.",
+      "instructions": "Geben Sie die E-Mail-Adresse Ihres Kontos ein. Wenn wir eine Übereinstimmung finden, senden wir Anweisungen zum Zurücksetzen.",
+      "submit": "Link zum Zurücksetzen senden",
+      "sent": "Wenn ein Konto mit dieser E-Mail existiert, haben wir Anweisungen zum Zurücksetzen des Passworts gesendet.",
+      "checkSpam": "Wenn Sie nichts sehen, prüfen Sie Ihren Spam-Ordner.",
+      "backToLogin": "Zurück zur Anmeldung"
+    },
+    "resetPassword": {
+      "title": "Neues Passwort wählen",
+      "hero": "Geben Sie ein neues Passwort für Ihr Konto ein.",
+      "submit": "Passwort aktualisieren",
+      "invalidLink": "Dieser Link zum Zurücksetzen ist ungültig oder abgelaufen.",
+      "requestNew": "Neuen Link zum Zurücksetzen anfordern",
+      "successTitle": "Passwort aktualisiert",
+      "successHero": "Sie können sich mit Ihrem neuen Passwort anmelden.",
+      "success": "Ihr Passwort wurde aktualisiert.",
+      "goToSignIn": "Zur Anmeldung",
+      "backToLogin": "Zurück zur Anmeldung"
+    },
+    "verifyEmail": {
+      "title": "E-Mail prüfen",
+      "hero": "Noch ein Schritt zur Aktivierung Ihres Kontos.",
+      "instructions": "Wir haben einen Bestätigungslink gesendet an:",
+      "checkSpam": "Wenn Sie nichts sehen, prüfen Sie Ihren Spam-Ordner.",
+      "anyBrowser": "Sie können den Link in jedem Browser öffnen. Diese Seite wird aktualisiert, wenn Ihre E-Mail bestätigt ist.",
+      "resend": "Bestätigungs-E-Mail erneut senden",
+      "resent": "Bestätigungs-E-Mail gesendet.",
+      "backToLogin": "Zurück zur Anmeldung",
+      "verifiedTitle": "E-Mail bestätigt",
+      "verifiedHero": "Ihr Konto ist bereit.",
+      "verified": "Ihre E-Mail ist bestätigt. Sie können sich jetzt anmelden.",
+      "alreadyVerified": "Diese E-Mail war bereits bestätigt. Sie können sich jetzt anmelden.",
+      "invalidLink": "Dieser Bestätigungslink ist ungültig oder abgelaufen.",
+      "returnToSignIn": "Kehren Sie zum Browser zurück, in dem Sie begonnen haben, oder melden Sie sich hier an.",
+      "goToSignIn": "Zur Anmeldung"
+    },
     "notFound": {
       "title": "Seite nicht gefunden",
       "back": "Zur Startseite"
     }
+  },
+  "cta": {
+    "readyTitle": "Bereit für den nächsten Schritt?",
+    "readySubtitle": "Ob Kauf oder Verkauf — Spencer bietet die Expertise und Vertretung, die Sie verdienen.",
+    "schedule": "Beratung vereinbaren"
   }
 }

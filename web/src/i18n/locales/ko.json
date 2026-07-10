@@ -15,60 +15,238 @@
     "neighborhoods": "동네",
     "buy": "구매",
     "sell": "판매",
-    "blog": "시장 인사이트",
+    "blog": "인사이트",
     "tools": "도구",
     "mortgage": "모기지 계산기",
     "contact": "문의",
     "login": "로그인",
     "logout": "로그아웃",
     "account": "내 계정",
-    "accountMenu": "계정 메뉴"
+    "accountMenu": "계정 메뉴",
+    "blogAdmin": "블로그 관리"
+  },
+  "common": {
+    "email": "이메일",
+    "password": "비밀번호",
+    "confirmPassword": "비밀번호 확인",
+    "firstName": "이름",
+    "lastName": "성",
+    "logIn": "로그인",
+    "logInAction": "로그인",
+    "createAccount": "계정 만들기",
+    "login": "로그인",
+    "register": "회원가입",
+    "logOut": "로그아웃",
+    "loading": "로딩 중...",
+    "propertyNotFound": "매물을 찾을 수 없습니다",
+    "toggleMenu": "메뉴 전환"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "NYC 럭셔리 부동산"
+  },
+  "meta": {
+    "title": "Spencer Ting | NYC 럭셔리 부동산",
+    "description": "Spencer Ting — 뉴욕 럭셔리 부동산 어드바이저. 현지 전문성, 솔직한 조언, 데이터 기반 인사이트."
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "자신 있게 다음 집을 찾으세요",
-    "subtitle": "현지 전문성. 정직한 조언. 데이터 기반 인사이트. 뉴욕 최고의 부동산을 위한 맞춤 안내.",
+    "subtitle": "현지 전문성. 솔직한 조언. 데이터 기반 인사이트. 뉴욕 최고의 부동산을 위한 맞춤형 안내.",
     "ctaBuy": "집 찾기",
     "ctaSell": "집 팔기",
     "ctaTalk": "Spencer와 상담"
   },
   "stats": {
-    "experience": "년 경력",
-    "transactions": "완료 거래",
+    "experience": "경력 연수",
+    "transactions": "완료된 거래",
     "volume": "총 판매 규모",
     "neighborhoods": "NYC 동네"
   },
-  "footer": {
-    "tagline": "뉴욕 럭셔리 부동산 자문",
-    "rights": "모든 권리 보유."
+  "about": {
+    "title": "NYC 부동산의 신뢰할 수 있는 가이드",
+    "subtitle": "Spencer Ting은 깊은 시장 지식, 끊임없는 대변, 글로벌 시각을 모든 거래에 가져옵니다.",
+    "bio1": "뉴욕 면허 부동산 브로커로서 Spencer는 Manhattan과 Brooklyn의 럭셔리 콘도, 타운하우스, 투자 부동산을 전문으로 합니다.",
+    "bio2": "고객들은 Spencer의 신속한 대응, 협상 능력, 솔직한 조언을 선택합니다 — 첫 아파트를 구매하든 수백만 달러 부동산을 판매하든.",
+    "bio3": "여러 언어에 능통하고 전 세계 매수자·매도자 네트워크와 연결된 Spencer는 복잡한 NYC 거래를 수월하게 만듭니다.",
+    "values": {
+      "knowledge": "깊은 시장 지식",
+      "knowledgeDesc": "추측이 아닌 데이터에 기반한 동네 수준의 인사이트.",
+      "network": "글로벌 네트워크",
+      "networkDesc": "전 세계 자격을 갖춘 매수자·매도자와의 연결.",
+      "advocacy": "끊임없는 대변",
+      "advocacyDesc": "거래의 모든 단계에서 고객의 이익을 보호합니다."
+    }
   },
   "properties": {
     "title": "추천 매물",
-    "subtitle": "뉴욕 최고의 주거지 엄선"
+    "subtitle": "뉴욕 최고의 주거지를 엄선",
+    "search": "매물 검색",
+    "searchPlaceholder": "동네, 주소 또는 키워드...",
+    "filters": "필터",
+    "borough": "구",
+    "neighborhood": "동네",
+    "type": "부동산 유형",
+    "minPrice": "최저 가격",
+    "maxPrice": "최고 가격",
+    "bedrooms": "침실",
+    "luxuryOnly": "럭셔리만",
+    "all": "전체",
+    "forSale": "매매",
+    "sold": "매각 완료",
+    "beds": "침실",
+    "baths": "욕실",
+    "sqft": "평방피트",
+    "viewDetails": "상세 보기",
+    "noResults": "검색 조건에 맞는 매물이 없습니다.",
+    "featured": "추천",
+    "luxury": "럭셔리",
+    "inquire": "방문 예약",
+    "features": "특징",
+    "description": "설명",
+    "monthlyHoa": "월 HOA 비용",
+    "monthlyTaxes": "월 세금",
+    "yearBuilt": "건축 연도",
+    "types": {
+      "condo": "콘도",
+      "co-op": "코옵",
+      "townhouse": "타운하우스",
+      "penthouse": "펜트하우스"
+    }
+  },
+  "mortgage": {
+    "title": "모기지 계산기",
+    "subtitle": "NYC 부동산의 월 상환액을 추정하세요",
+    "homePrice": "주택 가격",
+    "downPayment": "계약금",
+    "downPaymentPercent": "계약금 비율",
+    "interestRate": "이자율",
+    "loanTerm": "대출 기간(년)",
+    "propertyTax": "연간 재산세",
+    "hoa": "월 HOA 비용",
+    "insurance": "연간 보험료",
+    "monthlyPayment": "예상 월 상환액",
+    "principalInterest": "원금 및 이자",
+    "taxes": "재산세",
+    "hoaFee": "HOA",
+    "insuranceFee": "보험",
+    "total": "월 합계",
+    "disclaimer": "이 계산기는 추정치만 제공합니다. 실제 상환액은 다를 수 있습니다. 면허를 보유한 모기지 전문가와 상담하세요."
+  },
+  "process": {
+    "buyTitle": "구매 절차",
+    "buySubtitle": "첫 상담부터 열쇠 인도까지의 명확한 경로",
+    "sellTitle": "판매 절차",
+    "sellSubtitle": "검증된 전략으로 부동산 가치를 극대화",
+    "steps": {
+      "consult": "Spencer와 만나기",
+      "consultDesc": "부담 없는 상담에서 목표, 일정, 예산을 공유하세요.",
+      "finance": "자금 조달",
+      "financeDesc": "신뢰할 수 있는 대출 기관과 연결하고 사전 승인을 받으세요.",
+      "search": "검색",
+      "searchDesc": "조건에 맞는 엄선된 매물을 둘러보세요.",
+      "offer": "제안",
+      "offerDesc": "최상의 조건을 확보하기 위한 전략적 협상.",
+      "inspection": "검사",
+      "inspectionDesc": "신뢰할 수 있는 전문가와 함께 실사.",
+      "closing": "클로징",
+      "closingDesc": "계약, 이사회 승인, 클로징을 진행합니다.",
+      "moveIn": "입주",
+      "moveInDesc": "환영합니다 — 클로징 후에도 지속적인 지원.",
+      "valuation": "감정",
+      "valuationDesc": "부동산을 위한 데이터 기반 가격 전략.",
+      "prepare": "준비",
+      "prepareDesc": "스테이징, 사진 촬영, 마케팅 자료.",
+      "market": "시장 출시",
+      "marketDesc": "MLS, 소셜 미디어, 글로벌 네트워크에 프리미엄 등록.",
+      "showings": "방문",
+      "showingsDesc": "자격을 갖춘 매수자, 프라이빗 투어, 오픈하우스.",
+      "negotiate": "협상",
+      "negotiateDesc": "최상의 제안을 위한 전문 협상.",
+      "close": "성사",
+      "closeDesc": "원활한 클로징과 인수인계."
+    }
+  },
+  "neighborhoods": {
+    "title": "NYC 동네 가이드",
+    "subtitle": "뉴욕의 삶을 정의하는 동네를 탐색하세요",
+    "avgPrice": "평균 가격",
+    "vibe": "특성",
+    "transit": "교통",
+    "readMore": "탐색",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "인더스트리얼 시크, 유명인의 안식처"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "클래식한 우아함, 뮤지엄 마일"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "역사적 매력, 스카이라인 전망"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "주철 로프트, 아트 갤러리"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "나무가 늘어선 거리, 보헤미안 감성"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "워터프론트 로프트, 테크 허브"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "Spencer 덕분에 Tribeca 구매가 순조로웠습니다. 시장 지식으로 몇 달의 검색 시간을 절약했습니다.",
+        "author": "James & Sarah M.",
+        "role": "Tribeca 구매자"
+      },
+      "david": {
+        "quote": "타운하우스를 2주 만에 희망가 이상에 판매했습니다. Spencer의 마케팅 전략이 탁월했습니다.",
+        "author": "David L.",
+        "role": "UES 판매자"
+      },
+      "chen": {
+        "quote": "해외 구매자로서 우리의 필요를 이해해 줄 사람이 필요했습니다. Spencer는 기대를 뛰어넘었습니다.",
+        "author": "Chen Family",
+        "role": "Brooklyn Heights 구매자"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "Tribeca 시장 업데이트",
+      "coopCondo": "NYC 코옵 vs 콘도",
+      "brooklynTour": "Brooklyn Heights 투어"
+    }
   },
   "testimonials": {
     "title": "고객 이야기",
-    "subtitle": "Spencer와 함께한 경험"
+    "subtitle": "Spencer와 함께한 고객들의 이야기"
   },
   "videos": {
-    "title": "시장 인사이트 & 투어",
-    "subtitle": "동네, 구매 팁, 시장 동향 영상"
+    "title": "시장 인사이트 및 투어",
+    "subtitle": "동네, 구매 팁, 시장 업데이트에 관한 짧은 영상"
   },
   "social": {
     "title": "Spencer 팔로우",
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "instagramHandle": "@artgroup.nyc"
-  },
-  "cta": {
-    "readyTitle": "다음 단계를 준비하셨나요?",
-    "readySubtitle": "구매든 판매든 Spencer가 필요한 전문성과 대변을 제공합니다.",
-    "schedule": "상담 예약"
-  },
-  "contact": {
-    "title": "문의하기",
-    "subtitle": "구매, 판매, 시장 탐색? Spencer가 직접 답변합니다.",
-    "send": "메시지 보내기",
-    "success": "감사합니다! Spencer가 곧 연락드립니다."
   },
   "blog": {
     "title": "시장 인사이트",
@@ -77,14 +255,99 @@
     "noPosts": "아직 게시된 기사가 없습니다.",
     "back": "인사이트로 돌아가기"
   },
-  "about": {
-    "title": "신뢰할 수 있는 NYC 부동산 가이드",
-    "subtitle": "Spencer Ting은 깊은 시장 지식, 끊임없는 대변, 글로벌 시각을 제공합니다."
+  "contact": {
+    "title": "문의하기",
+    "subtitle": "구매, 판매 또는 시장 탐색을 준비하셨나요? Spencer가 직접 답변합니다.",
+    "name": "성명",
+    "email": "이메일",
+    "phone": "전화번호",
+    "intent": "관심 분야",
+    "message": "메시지",
+    "send": "메시지 보내기",
+    "success": "감사합니다! Spencer가 곧 연락드리겠습니다.",
+    "intents": {
+      "buy": "부동산 구매",
+      "sell": "부동산 판매",
+      "invest": "투자 기회",
+      "general": "일반 문의"
+    }
+  },
+  "footer": {
+    "tagline": "뉴욕시 럭셔리 부동산 자문",
+    "rights": "모든 권리 보유.",
+    "explore": "탐색",
+    "services": "서비스",
+    "connect": "연결"
+  },
+  "account": {
+    "signingIn": "잠시 기다려 주세요…",
+    "errors": {
+      "invalidInput": "입력 내용을 확인하고 다시 시도해 주세요.",
+      "invalidCredentials": "이메일 또는 비밀번호가 올바르지 않습니다.",
+      "emailInUse": "이 이메일은 이미 등록되어 있습니다.",
+      "permissionDenied": "이 작업에 대한 권한이 없습니다.",
+      "unavailable": "서비스를 일시적으로 사용할 수 없습니다.",
+      "emailNotVerified": "로그인하기 전에 이메일을 인증해 주세요.",
+      "generic": "문제가 발생했습니다. 다시 시도해 주세요.",
+      "signInRequired": "계속하려면 로그인해 주세요.",
+      "passwordMismatch": "비밀번호가 일치하지 않습니다."
+    }
   },
   "pages": {
+    "login": {
+      "hero": "로그인하여 매물을 저장하고 계정을 관리하세요.",
+      "orContinueWith": "또는",
+      "continueWithGoogle": "Google로 계속",
+      "emailVerified": "이메일이 인증되었습니다. 이제 로그인할 수 있습니다.",
+      "emailVerifyInvalid": "해당 인증 링크가 유효하지 않거나 만료되었습니다.",
+      "forgotPassword": "비밀번호를 잊으셨나요?"
+    },
+    "forgotPassword": {
+      "title": "비밀번호를 잊으셨나요?",
+      "hero": "재설정 링크를 이메일로 보내드립니다.",
+      "instructions": "계정의 이메일 주소를 입력하세요. 일치하는 계정이 있으면 재설정 안내를 보내드립니다.",
+      "submit": "재설정 링크 보내기",
+      "sent": "해당 이메일의 계정이 존재하면 비밀번호 재설정 안내를 보냈습니다.",
+      "checkSpam": "받지 못했다면 스팸 폴더를 확인하세요.",
+      "backToLogin": "로그인으로 돌아가기"
+    },
+    "resetPassword": {
+      "title": "새 비밀번호 선택",
+      "hero": "계정의 새 비밀번호를 입력하세요.",
+      "submit": "비밀번호 업데이트",
+      "invalidLink": "해당 재설정 링크가 유효하지 않거나 만료되었습니다.",
+      "requestNew": "새 재설정 링크 요청",
+      "successTitle": "비밀번호 업데이트됨",
+      "successHero": "새 비밀번호로 로그인할 수 있습니다.",
+      "success": "비밀번호가 업데이트되었습니다.",
+      "goToSignIn": "로그인으로 이동",
+      "backToLogin": "로그인으로 돌아가기"
+    },
+    "verifyEmail": {
+      "title": "이메일을 확인하세요",
+      "hero": "계정 활성화를 위한 마지막 단계입니다.",
+      "instructions": "인증 링크를 다음 주소로 보냈습니다:",
+      "checkSpam": "받지 못했다면 스팸 폴더를 확인하세요.",
+      "anyBrowser": "어떤 브라우저에서든 링크를 열 수 있습니다. 이메일이 인증되면 이 페이지가 업데이트됩니다.",
+      "resend": "인증 이메일 재전송",
+      "resent": "인증 이메일이 전송되었습니다.",
+      "backToLogin": "로그인으로 돌아가기",
+      "verifiedTitle": "이메일 인증 완료",
+      "verifiedHero": "계정이 준비되었습니다.",
+      "verified": "이메일이 인증되었습니다. 이제 로그인할 수 있습니다.",
+      "alreadyVerified": "이 이메일은 이미 인증되었습니다. 이제 로그인할 수 있습니다.",
+      "invalidLink": "해당 인증 링크가 유효하지 않거나 만료되었습니다.",
+      "returnToSignIn": "시작한 브라우저로 돌아가거나 여기서 로그인하세요.",
+      "goToSignIn": "로그인으로 이동"
+    },
     "notFound": {
       "title": "페이지를 찾을 수 없습니다",
-      "back": "홈으로"
+      "back": "홈으로 돌아가기"
     }
+  },
+  "cta": {
+    "readyTitle": "다음 단계를 준비하셨나요?",
+    "readySubtitle": "구매든 판매든, Spencer는 자격 있는 전문성과 대변을 제공합니다.",
+    "schedule": "상담 예약"
   }
 }

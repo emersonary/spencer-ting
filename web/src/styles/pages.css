@@ -11,14 +11,37 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      105deg,
-      rgba(26, 35, 50, 0.82) 0%,
-      rgba(26, 35, 50, 0.68) 45%,
-      rgba(26, 35, 50, 0.38) 100%
-    ),
-    url('/images/hero-nyc.jpg') center/cover no-repeat;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(26, 35, 50, 0.82) 0%,
+    rgba(26, 35, 50, 0.62) 45%,
+    rgba(26, 35, 50, 0.4) 100%
+  );
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
+
+  .hero-bg {
+    background: url('/images/hero-nyc.jpg') center/cover no-repeat;
+  }
 }
 
 .hero-content {
@@ -28,23 +51,17 @@
 }
 
 .hero-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-rows: auto auto auto;
-  column-gap: 3rem;
-  row-gap: 0;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 640px;
 }
 
 .hero-panel h1 {
-  grid-column: 1;
-  grid-row: 1;
   margin-bottom: 1.25rem;
 }
 
 .hero-panel > p {
-  grid-column: 1;
-  grid-row: 2;
   font-size: 1.125rem;
   color: rgba(248, 246, 241, 0.8);
   margin-bottom: 2rem;
@@ -52,14 +69,11 @@
 }
 
 .hero-actions {
-  grid-column: 1;
-  grid-row: 3;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
   width: 100%;
   max-width: 24rem;
-  align-self: end;
 }
 
 .hero-actions .btn {
@@ -73,39 +87,6 @@
 
 .hero-actions .btn:nth-child(3) {
   grid-column: 1 / -1;
-}
-
-.hero-portrait {
-  grid-column: 2;
-  grid-row: 1 / 4;
-  position: relative;
-  align-self: stretch;
-  display: flex;
-  min-height: 0;
-}
-
-.hero-portrait img {
-  height: 100%;
-  width: auto;
-  max-width: 240px;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
-  border: 3px solid var(--color-gold);
-}
-
-.hero-portrait::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  bottom: 10px;
-  left: 10px;
-  border: 1px solid var(--color-gold);
-  border-radius: var(--radius);
-  opacity: 0.4;
-  pointer-events: none;
 }
 
 .stats-bar {
@@ -469,16 +450,8 @@
   }
 
   .hero-panel {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-  }
-
-  .hero-panel h1,
-  .hero-panel > p,
-  .hero-actions {
-    grid-column: 1;
-    grid-row: auto;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-panel > p {
@@ -491,27 +464,6 @@
     margin-right: auto;
   }
 
-  .hero-portrait {
-    grid-column: 1;
-    grid-row: auto;
-    align-self: auto;
-    margin-top: 2rem;
-  }
-
-  .hero-portrait img {
-    width: 240px;
-    height: 300px;
-    max-width: none;
-    min-height: 0;
-  }
-  .hero-portrait::before {
-    top: -10px;
-    right: -10px;
-    bottom: auto;
-    left: auto;
-    width: 100%;
-    height: 100%;
-  }
   .video-grid { grid-template-columns: 1fr 1fr; }
   .mortgage-calc { grid-template-columns: 1fr; }
   .property-detail-gallery { grid-template-columns: 1fr; height: auto; }

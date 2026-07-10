@@ -8,6 +8,11 @@ export function HeaderAccountMenu() {
   const { t } = useTranslation();
   const { account, hasAccount, logout } = useAccount();
 
+  // Sign-in icon hidden for now; show account menu only when signed in.
+  if (!hasAccount) {
+    return null;
+  }
+
   return (
     <div className="header-account-menu">
       <AccountMenu

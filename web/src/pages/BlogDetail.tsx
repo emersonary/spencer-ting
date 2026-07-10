@@ -22,7 +22,7 @@ export function BlogDetail() {
       .finally(() => setLoading(false));
   }, [slug, i18n.language]);
 
-  if (loading) return <div className="page-loading">Loading...</div>;
+  if (loading) return <div className="page-loading">{t('common.loading')}</div>;
 
   return (
     <section className="section">

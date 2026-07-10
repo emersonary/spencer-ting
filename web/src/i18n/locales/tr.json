@@ -15,76 +15,339 @@
     "neighborhoods": "Mahalleler",
     "buy": "Satın Al",
     "sell": "Sat",
-    "blog": "Piyasa İçgörüleri",
+    "blog": "İçgörüler",
     "tools": "Araçlar",
     "mortgage": "Mortgage Hesaplayıcı",
     "contact": "İletişim",
-    "login": "Giriş",
-    "logout": "Çıkış",
+    "login": "Giriş Yap",
+    "logout": "Çıkış Yap",
     "account": "Hesabım",
-    "accountMenu": "Hesap menüsü"
+    "accountMenu": "Hesap menüsü",
+    "blogAdmin": "Blog Yönetimi"
+  },
+  "common": {
+    "email": "E-posta",
+    "password": "Şifre",
+    "confirmPassword": "Şifreyi onayla",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "logIn": "Giriş yap",
+    "logInAction": "Giriş Yap",
+    "createAccount": "Hesap Oluştur",
+    "login": "Giriş",
+    "register": "Kayıt Ol",
+    "logOut": "Çıkış yap",
+    "loading": "Yükleniyor...",
+    "propertyNotFound": "Mülk bulunamadı",
+    "toggleMenu": "Menüyü aç/kapat"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "NYC Lüks Gayrimenkul"
+  },
+  "meta": {
+    "title": "Spencer Ting | NYC Lüks Gayrimenkul",
+    "description": "Spencer Ting — New York lüks gayrimenkul danışmanı. Yerel uzmanlık, dürüst tavsiye ve veriye dayalı içgörüler."
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "Bir sonraki evinizi güvenle bulun",
-    "subtitle": "Yerel uzmanlık. Dürüst tavsiye. Veriye dayalı içgörüler. New York'un en iyi mülkleri için kişisel rehberlik.",
-    "ctaBuy": "Ev bul",
-    "ctaSell": "Evinizi satın",
-    "ctaTalk": "Spencer ile konuşun"
+    "subtitle": "Yerel uzmanlık. Dürüst tavsiye. Veriye dayalı içgörüler. New York'un en iyi mülkleri için kişiselleştirilmiş rehberlik.",
+    "ctaBuy": "Ev Bul",
+    "ctaSell": "Evinizi Satın",
+    "ctaTalk": "Spencer ile Konuşun"
   },
   "stats": {
-    "experience": "Yıllık deneyim",
-    "transactions": "Tamamlanan işlemler",
-    "volume": "Toplam satış hacmi",
-    "neighborhoods": "NYC mahalleleri"
+    "experience": "Yıllık Deneyim",
+    "transactions": "Tamamlanan İşlemler",
+    "volume": "Toplam Satış Hacmi",
+    "neighborhoods": "NYC Mahalleleri"
   },
-  "footer": {
-    "tagline": "New York'ta lüks gayrimenkul danışmanlığı",
-    "rights": "Tüm hakları saklıdır."
+  "about": {
+    "title": "NYC gayrimenkulünde güvenilir rehberiniz",
+    "subtitle": "Spencer Ting her işleme derin pazar bilgisi, amansız savunuculuk ve küresel bir bakış açısı getirir.",
+    "bio1": "Lisanslı New York gayrimenkul brokeri olarak Spencer, Manhattan ve Brooklyn'deki lüks daireler, şehir evleri ve yatırım mülklerinde uzmanlaşmıştır.",
+    "bio2": "Müşteriler Spencer'ı hızlı yanıt vermesi, müzakere becerileri ve dürüst danışmanlığı için tercih eder — ister ilk dairenizi alıyor olun ister milyonlarca dolarlık bir mülk satıyor olun.",
+    "bio3": "Birden fazla dilde akıcı ve dünya çapında alıcı ve satıcı ağına bağlı olan Spencer, karmaşık NYC işlemlerini zahmetsiz hale getirir.",
+    "values": {
+      "knowledge": "Derin Pazar Bilgisi",
+      "knowledgeDesc": "Tahminlere değil, verilere dayanan mahalle düzeyinde içgörüler.",
+      "network": "Küresel Ağ",
+      "networkDesc": "Dünya genelinde nitelikli alıcı ve satıcılarla bağlantılar.",
+      "advocacy": "Amansız Savunuculuk",
+      "advocacyDesc": "Çıkarlarınız anlaşmanın her aşamasında korunur."
+    }
   },
   "properties": {
-    "title": "Öne çıkan mülkler",
-    "subtitle": "New York'un en iyi konutlarından seçkiler"
+    "title": "Öne Çıkan Mülkler",
+    "subtitle": "New York'un en iyi konutlarından özenle seçilmiş koleksiyon",
+    "search": "Mülk ara",
+    "searchPlaceholder": "Mahalle, adres veya anahtar kelime...",
+    "filters": "Filtreler",
+    "borough": "İlçe",
+    "neighborhood": "Mahalle",
+    "type": "Mülk Türü",
+    "minPrice": "Min Fiyat",
+    "maxPrice": "Maks Fiyat",
+    "bedrooms": "Yatak Odaları",
+    "luxuryOnly": "Sadece lüks",
+    "all": "Tümü",
+    "forSale": "Satılık",
+    "sold": "Satıldı",
+    "beds": "yatak odası",
+    "baths": "banyo",
+    "sqft": "fit kare",
+    "viewDetails": "Detayları Gör",
+    "noResults": "Aramanızla eşleşen mülk bulunamadı.",
+    "featured": "Öne Çıkan",
+    "luxury": "Lüks",
+    "inquire": "Görüntüleme Planla",
+    "features": "Özellikler",
+    "description": "Açıklama",
+    "monthlyHoa": "Aylık HOA",
+    "monthlyTaxes": "Aylık Vergiler",
+    "yearBuilt": "Yapım Yılı",
+    "types": {
+      "condo": "Daire",
+      "co-op": "Kooperatif",
+      "townhouse": "Şehir Evi",
+      "penthouse": "Çatı Katı"
+    }
+  },
+  "mortgage": {
+    "title": "Mortgage Hesaplayıcı",
+    "subtitle": "NYC mülkleri için aylık ödemenizi tahmin edin",
+    "homePrice": "Ev Fiyatı",
+    "downPayment": "Peşinat",
+    "downPaymentPercent": "Peşinat %",
+    "interestRate": "Faiz Oranı",
+    "loanTerm": "Kredi Vadesi (yıl)",
+    "propertyTax": "Yıllık Emlak Vergisi",
+    "hoa": "Aylık HOA",
+    "insurance": "Yıllık Sigorta",
+    "monthlyPayment": "Tahmini Aylık Ödeme",
+    "principalInterest": "Anapara ve Faiz",
+    "taxes": "Emlak Vergisi",
+    "hoaFee": "HOA",
+    "insuranceFee": "Sigorta",
+    "total": "Aylık Toplam",
+    "disclaimer": "Bu hesaplayıcı yalnızca tahmin sağlar. Gerçek ödemeler farklılık gösterebilir. Lisanslı bir mortgage uzmanına danışın."
+  },
+  "process": {
+    "buyTitle": "Satın Alma Süreci",
+    "buySubtitle": "İlk görüşmeden anahtar teslimine kadar net bir yol",
+    "sellTitle": "Satış Süreci",
+    "sellSubtitle": "Kanıtlanmış bir stratejiyle mülkünüzün değerini maksimize edin",
+    "steps": {
+      "consult": "Spencer ile Tanışın",
+      "consultDesc": "Baskısız bir danışmanlıkta hedeflerinizi, zaman çizelgenizi ve bütçenizi paylaşın.",
+      "finance": "Finansman",
+      "financeDesc": "Güvenilir kredi verenlerle bağlantı kurun ve ön onay alın.",
+      "search": "Arama",
+      "searchDesc": "Kriterlerinize uygun seçilmiş mülkleri gezin.",
+      "offer": "Teklif",
+      "offerDesc": "En iyi şartları güvence altına almak için stratejik müzakere.",
+      "inspection": "Denetim",
+      "inspectionDesc": "Güvenilir profesyonellerle durum tespiti.",
+      "closing": "Kapanış",
+      "closingDesc": "Sözleşmeler, yönetim kurulu onayları ve kapanış sürecini yönetin.",
+      "moveIn": "Taşınma",
+      "moveInDesc": "Evinize hoş geldiniz — kapanış sonrası sürekli destek.",
+      "valuation": "Değerleme",
+      "valuationDesc": "Mülkünüz için veriye dayalı fiyatlandırma stratejisi.",
+      "prepare": "Hazırlık",
+      "prepareDesc": "Sahneleme, fotoğrafçılık ve pazarlama materyalleri.",
+      "market": "Pazarlama",
+      "marketDesc": "MLS, sosyal medya ve küresel ağlarda premium listeleme.",
+      "showings": "Gösterimler",
+      "showingsDesc": "Nitelikli alıcılar, özel turlar, açık evler.",
+      "negotiate": "Müzakere",
+      "negotiateDesc": "En güçlü teklif için uzman müzakere.",
+      "close": "Kapanış",
+      "closeDesc": "Sorunsuz kapanış ve geçiş."
+    }
+  },
+  "neighborhoods": {
+    "title": "NYC Mahalle Rehberleri",
+    "subtitle": "New York yaşamını tanımlayan mahalleleri keşfedin",
+    "avgPrice": "Ort. Fiyat",
+    "vibe": "Karakter",
+    "transit": "Ulaşım",
+    "readMore": "Keşfet",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "Endüstriyel şıklık, ünlülerin sığınağı"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "Klasik zarafet, müze caddesi"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "Tarihi cazibe, silüet manzaraları"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "Dökme demir loftlar, sanat galerileri"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "Ağaçlıklı sokaklar, bohem ruh"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "Sahil loftları, teknoloji merkezi"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "Spencer Tribeca'daki satın almamızı sorunsuz hale getirdi. Pazar bilgisi aylar süren aramadan bizi kurtardı.",
+        "author": "James & Sarah M.",
+        "role": "Tribeca Alıcıları"
+      },
+      "david": {
+        "quote": "Şehir evimizi iki haftada istenen fiyatın üzerinde sattık. Spencer'ın pazarlama stratejisi olağanüstüydü.",
+        "author": "David L.",
+        "role": "UES Satıcısı"
+      },
+      "chen": {
+        "quote": "Uluslararası alıcılar olarak ihtiyaçlarımızı anlayan birine ihtiyacımız vardı. Spencer beklentilerimizi aştı.",
+        "author": "Chen Family",
+        "role": "Brooklyn Heights Alıcıları"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "Tribeca Pazar Güncellemesi",
+      "coopCondo": "NYC'de Kooperatif vs Daire",
+      "brooklynTour": "Brooklyn Heights Turu"
+    }
   },
   "testimonials": {
-    "title": "Müşteri hikayeleri",
-    "subtitle": "Spencer ile çalışanların yorumları"
+    "title": "Müşteri Hikayeleri",
+    "subtitle": "Müşteriler Spencer ile çalışmak hakkında ne diyor"
   },
   "videos": {
-    "title": "Piyasa içgörüleri ve turlar",
-    "subtitle": "Mahalleler, satın alma ve piyasa hakkında kısa videolar"
+    "title": "Pazar İçgörüleri ve Turlar",
+    "subtitle": "Mahalleler, satın alma ipuçları ve pazar güncellemeleri hakkında kısa videolar"
   },
   "social": {
-    "title": "Spencer'ı takip edin",
+    "title": "Spencer'ı Takip Edin",
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "instagramHandle": "@artgroup.nyc"
   },
-  "cta": {
-    "readyTitle": "Harekete geçmeye hazır mısınız?",
-    "readySubtitle": "Alırken veya satarken Spencer hak ettiğiniz uzmanlık ve savunuculuğu sunar.",
-    "schedule": "Danışmanlık planlayın"
+  "blog": {
+    "title": "Pazar İçgörüleri",
+    "subtitle": "NYC gayrimenkulü hakkında uzman analizi",
+    "readMore": "Makaleyi Oku",
+    "noPosts": "Henüz yayınlanmış makale yok.",
+    "back": "İçgörülere Dön"
   },
   "contact": {
-    "title": "İletişime geçin",
-    "subtitle": "Satın almak, satmak veya piyasayı keşfetmek mi? Spencer kişisel olarak yanıtlar.",
-    "send": "Mesaj gönder",
-    "success": "Teşekkürler! Spencer kısa sürede iletişime geçecek."
+    "title": "İletişime Geçin",
+    "subtitle": "Satın almaya, satmaya veya pazarı keşfetmeye hazır mısınız? Spencer kişisel olarak yanıt verir.",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "intent": "İlgilendiğim konu",
+    "message": "Mesaj",
+    "send": "Mesaj Gönder",
+    "success": "Teşekkürler! Spencer kısa süre içinde sizinle iletişime geçecek.",
+    "intents": {
+      "buy": "Mülk satın alma",
+      "sell": "Mülk satma",
+      "invest": "Yatırım fırsatları",
+      "general": "Genel soru"
+    }
   },
-  "blog": {
-    "title": "Piyasa içgörüleri",
-    "subtitle": "NYC gayrimenkul piyasası uzman analizi",
-    "readMore": "Makaleyi oku",
-    "noPosts": "Henüz makale yok.",
-    "back": "İçgörülere dön"
+  "footer": {
+    "tagline": "New York City'de lüks gayrimenkul danışmanlığı",
+    "rights": "Tüm hakları saklıdır.",
+    "explore": "Keşfet",
+    "services": "Hizmetler",
+    "connect": "Bağlan"
   },
-  "about": {
-    "title": "NYC gayrimenkulünde güvenilir rehberiniz",
-    "subtitle": "Spencer Ting derin piyasa bilgisi, kararlı savunuculuk ve küresel bakış açısı getirir."
+  "account": {
+    "signingIn": "Lütfen bekleyin…",
+    "errors": {
+      "invalidInput": "Lütfen girişinizi kontrol edin ve tekrar deneyin.",
+      "invalidCredentials": "Geçersiz e-posta veya şifre.",
+      "emailInUse": "Bu e-posta zaten kayıtlı.",
+      "permissionDenied": "Bu işlem için izniniz yok.",
+      "unavailable": "Hizmet geçici olarak kullanılamıyor.",
+      "emailNotVerified": "Giriş yapmadan önce lütfen e-postanızı doğrulayın.",
+      "generic": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+      "signInRequired": "Devam etmek için lütfen giriş yapın.",
+      "passwordMismatch": "Şifreler eşleşmiyor."
+    }
   },
   "pages": {
+    "login": {
+      "hero": "Mülkleri kaydetmek ve hesabınızı yönetmek için giriş yapın.",
+      "orContinueWith": "veya",
+      "continueWithGoogle": "Google ile devam et",
+      "emailVerified": "E-postanız doğrulandı. Artık giriş yapabilirsiniz.",
+      "emailVerifyInvalid": "Bu doğrulama bağlantısı geçersiz veya süresi dolmuş.",
+      "forgotPassword": "Şifrenizi mi unuttunuz?"
+    },
+    "forgotPassword": {
+      "title": "Şifrenizi mi unuttunuz?",
+      "hero": "Sıfırlama bağlantısını e-posta ile göndereceğiz.",
+      "instructions": "Hesabınızın e-posta adresini girin. Eşleşme bulursak sıfırlama talimatlarını göndereceğiz.",
+      "submit": "Sıfırlama bağlantısı gönder",
+      "sent": "Bu e-posta ile bir hesap varsa, şifre sıfırlama talimatlarını gönderdik.",
+      "checkSpam": "Göremiyorsanız spam klasörünüzü kontrol edin.",
+      "backToLogin": "Girişe dön"
+    },
+    "resetPassword": {
+      "title": "Yeni şifre seçin",
+      "hero": "Hesabınız için yeni bir şifre girin.",
+      "submit": "Şifreyi güncelle",
+      "invalidLink": "Bu sıfırlama bağlantısı geçersiz veya süresi dolmuş.",
+      "requestNew": "Yeni sıfırlama bağlantısı iste",
+      "successTitle": "Şifre güncellendi",
+      "successHero": "Yeni şifrenizle giriş yapabilirsiniz.",
+      "success": "Şifreniz güncellendi.",
+      "goToSignIn": "Girişe git",
+      "backToLogin": "Girişe dön"
+    },
+    "verifyEmail": {
+      "title": "E-postanızı kontrol edin",
+      "hero": "Hesabınızı etkinleştirmek için bir adım daha.",
+      "instructions": "Doğrulama bağlantısını şu adrese gönderdik:",
+      "checkSpam": "Göremiyorsanız spam klasörünüzü kontrol edin.",
+      "anyBrowser": "Bağlantıyı herhangi bir tarayıcıda açabilirsiniz. E-postanız doğrulandığında bu sayfa güncellenecektir.",
+      "resend": "Doğrulama e-postasını yeniden gönder",
+      "resent": "Doğrulama e-postası gönderildi.",
+      "backToLogin": "Girişe dön",
+      "verifiedTitle": "E-posta doğrulandı",
+      "verifiedHero": "Hesabınız hazır.",
+      "verified": "E-postanız doğrulandı. Artık giriş yapabilirsiniz.",
+      "alreadyVerified": "Bu e-posta zaten doğrulanmıştı. Artık giriş yapabilirsiniz.",
+      "invalidLink": "Bu doğrulama bağlantısı geçersiz veya süresi dolmuş.",
+      "returnToSignIn": "Başladığınız tarayıcıya dönün veya buradan giriş yapın.",
+      "goToSignIn": "Girişe git"
+    },
     "notFound": {
-      "title": "Sayfa bulunamadı",
-      "back": "Ana sayfaya dön"
+      "title": "Sayfa Bulunamadı",
+      "back": "Ana Sayfaya Dön"
     }
+  },
+  "cta": {
+    "readyTitle": "Harekete geçmeye hazır mısınız?",
+    "readySubtitle": "İster alıyor ister satıyor olun, Spencer hak ettiğiniz uzmanlık ve savunuculuğu sağlar.",
+    "schedule": "Danışmanlık Planla"
   }
 }

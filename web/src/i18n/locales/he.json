@@ -10,48 +10,237 @@
   },
   "nav": {
     "home": "בית",
-    "about": "על Spencer",
+    "about": "אודות Spencer",
     "properties": "נכסים",
     "neighborhoods": "שכונות",
     "buy": "קנייה",
     "sell": "מכירה",
-    "blog": "תובנות שוק",
+    "blog": "תובנות",
     "tools": "כלים",
     "mortgage": "מחשבון משכנתא",
     "contact": "צור קשר",
     "login": "התחברות",
     "logout": "התנתקות",
     "account": "החשבון שלי",
-    "accountMenu": "תפריט חשבון"
+    "accountMenu": "תפריט חשבון",
+    "blogAdmin": "ניהול בלוג"
+  },
+  "common": {
+    "email": "אימייל",
+    "password": "סיסמה",
+    "confirmPassword": "אישור סיסמה",
+    "firstName": "שם פרטי",
+    "lastName": "שם משפחה",
+    "logIn": "התחברות",
+    "logInAction": "התחברות",
+    "createAccount": "יצירת חשבון",
+    "login": "התחברות",
+    "register": "הרשמה",
+    "logOut": "התנתקות",
+    "loading": "טוען...",
+    "propertyNotFound": "הנכס לא נמצא",
+    "toggleMenu": "החלפת תפריט"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "נדל\"ן יוקרה ב-NYC"
+  },
+  "meta": {
+    "title": "Spencer Ting | נדל\"ן יוקרה ב-NYC",
+    "description": "Spencer Ting — יועץ נדל\"ן יוקרה בניו יורק. מומחיות מקומית, ייעוץ כנה ותובנות מבוססות נתונים."
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "מצאו את הבית הבא שלכם בביטחון",
-    "subtitle": "מומחיות מקומית. ייעוץ כנה. תובנות מבוססות נתונים. ליווי אישי לנכסים הטובים ביותר בניו יורק.",
+    "subtitle": "מומחיות מקומית. ייעוץ כנה. תובנות מבוססות נתונים. ליווי אישי לנכסים הטובים ביותר של ניו יורק.",
     "ctaBuy": "מצאו בית",
-    "ctaSell": "מכרו את הבית",
+    "ctaSell": "מכרו את הבית שלכם",
     "ctaTalk": "דברו עם Spencer"
   },
   "stats": {
     "experience": "שנות ניסיון",
-    "transactions": "עסקאות שנסגרו",
+    "transactions": "עסקאות שהושלמו",
     "volume": "נפח מכירות כולל",
     "neighborhoods": "שכונות ב-NYC"
   },
-  "footer": {
-    "tagline": "ייעוץ נדל״ן יוקרתי בניו יורק",
-    "rights": "כל הזכויות שמורות."
+  "about": {
+    "title": "המדריך המהימן שלכם לנדל\"ן ב-NYC",
+    "subtitle": "Spencer Ting מביא ידע שוק עמוק, סנגוריה בלתי מתפשרת ופרספקטיבה גלובלית לכל עסקה.",
+    "bio1": "כמתווך נדל\"ן מורשה בניו יורק, Spencer מתמחה בדירות יוקרה, בתים צמודי קרקע ונכסי השקעה ב-Manhattan ו-Brooklyn.",
+    "bio2": "לקוחות בוחרים ב-Spencer בזכות המענה המהיר, כישורי המשא ומתן והייעוץ הכנה — בין אם אתם קונים את הדירה הראשונה או מוכרים נכס בשווי מיליונים.",
+    "bio3": "שולט במספר שפות ומחובר לרשת גלובלית של קונים ומוכרים, Spencer הופך עסקאות מורכבות ב-NYC לפשוטות וחלקות.",
+    "values": {
+      "knowledge": "ידע שוק עמוק",
+      "knowledgeDesc": "תובנות ברמת השכונה המבוססות על נתונים, לא על ניחושים.",
+      "network": "רשת גלובלית",
+      "networkDesc": "קשרים לקונים ומוכרים מוסמכים ברחבי העולם.",
+      "advocacy": "סנגוריה בלתי מתפשרת",
+      "advocacyDesc": "האינטרסים שלכם מוגנים בכל שלב של העסקה."
+    }
   },
   "properties": {
     "title": "נכסים נבחרים",
-    "subtitle": "מבחר המגורים הטובים ביותר בניו יורק"
+    "subtitle": "מבחר מוקפד של המגורים הטובים ביותר בניו יורק",
+    "search": "חיפוש נכסים",
+    "searchPlaceholder": "שכונה, כתובת או מילת מפתח...",
+    "filters": "מסננים",
+    "borough": "רובע",
+    "neighborhood": "שכונה",
+    "type": "סוג נכס",
+    "minPrice": "מחיר מינימום",
+    "maxPrice": "מחיר מקסימום",
+    "bedrooms": "חדרי שינה",
+    "luxuryOnly": "יוקרה בלבד",
+    "all": "הכל",
+    "forSale": "למכירה",
+    "sold": "נמכר",
+    "beds": "חדרי שינה",
+    "baths": "חדרי רחצה",
+    "sqft": "רגל רבוע",
+    "viewDetails": "צפייה בפרטים",
+    "noResults": "אין נכסים התואמים לחיפוש שלכם.",
+    "featured": "נבחר",
+    "luxury": "יוקרה",
+    "inquire": "תיאום ביקור",
+    "features": "מאפיינים",
+    "description": "תיאור",
+    "monthlyHoa": "דמי HOA חודשיים",
+    "monthlyTaxes": "מסים חודשיים",
+    "yearBuilt": "שנת בנייה",
+    "types": {
+      "condo": "קונדו",
+      "co-op": "קואופרטיב",
+      "townhouse": "בית צמוד קרקע",
+      "penthouse": "פנטהאוז"
+    }
+  },
+  "mortgage": {
+    "title": "מחשבון משכנתא",
+    "subtitle": "העריכו את התשלום החודשי לנכסים ב-NYC",
+    "homePrice": "מחיר הבית",
+    "downPayment": "מקדמה",
+    "downPaymentPercent": "אחוז מקדמה",
+    "interestRate": "ריבית",
+    "loanTerm": "תקופת ההלוואה (שנים)",
+    "propertyTax": "מס רכוש שנתי",
+    "hoa": "דמי HOA חודשיים",
+    "insurance": "ביטוח שנתי",
+    "monthlyPayment": "תשלום חודשי משוער",
+    "principalInterest": "קרן וריבית",
+    "taxes": "מס רכוש",
+    "hoaFee": "HOA",
+    "insuranceFee": "ביטוח",
+    "total": "סה\"כ חודשי",
+    "disclaimer": "מחשבון זה מספק הערכות בלבד. התשלומים בפועל עשויים להשתנות. התייעצו עם מומחה משכנתאות מורשה."
+  },
+  "process": {
+    "buyTitle": "תהליך הקנייה",
+    "buySubtitle": "מסלול ברור מהשיחה הראשונה ועד המפתחות ביד",
+    "sellTitle": "תהליך המכירה",
+    "sellSubtitle": "מקסמו את ערך הנכס שלכם עם אסטרטגיה מוכחת",
+    "steps": {
+      "consult": "פגישה עם Spencer",
+      "consultDesc": "שתפו את המטרות, לוח הזמנים והתקציב שלכם בייעוץ ללא לחץ.",
+      "finance": "מימון",
+      "financeDesc": "התחברו למלווים מהימנים וקבלו אישור מוקדם.",
+      "search": "חיפוש",
+      "searchDesc": "סיירו בנכסים נבחרים המתאימים לקריטריונים שלכם.",
+      "offer": "הצעה",
+      "offerDesc": "משא ומתן אסטרטגי להשגת התנאים הטובים ביותר.",
+      "inspection": "בדיקה",
+      "inspectionDesc": "בדיקת נאותות עם אנשי מקצוע מהימנים.",
+      "closing": "סגירה",
+      "closingDesc": "ניווט בחוזים, אישורי ועד וסגירת העסקה.",
+      "moveIn": "מעבר דירה",
+      "moveInDesc": "ברוכים הבאים הביתה — עם תמיכה מתמשכת לאחר הסגירה.",
+      "valuation": "הערכת שווי",
+      "valuationDesc": "אסטרטגיית תמחור מבוססת נתונים לנכס שלכם.",
+      "prepare": "הכנה",
+      "prepareDesc": "עיצוב, צילום וחומרי שיווק.",
+      "market": "שיווק",
+      "marketDesc": "פרסום פרימיום ב-MLS, ברשתות חברתיות וברשתות גלובליות.",
+      "showings": "ביקורים",
+      "showingsDesc": "קונים מוסמכים, סיורים פרטיים וימי פתוח.",
+      "negotiate": "משא ומתן",
+      "negotiateDesc": "משא ומתן מקצועי להצעה החזקה ביותר.",
+      "close": "סגירה",
+      "closeDesc": "סגירה ומעבר חלק."
+    }
+  },
+  "neighborhoods": {
+    "title": "מדריכי שכונות ב-NYC",
+    "subtitle": "גלו את השכונות שמגדירות את החיים בניו יורק",
+    "avgPrice": "מחיר ממוצע",
+    "vibe": "אופי",
+    "transit": "תחבורה",
+    "readMore": "גלו",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "שיק תעשייתי, מקלט של סלבריטאים"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "אלגנטיות קלאסית, שדרת המוזיאונים"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "קסם היסטורי, נוף לקו הרקיע"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "לופטים מברזל יצוק, גלריות אמנות"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "רחובות מוצלים, נשמה בוהמיינית"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "לופטים על הטיילת, מרכז טכנולוגי"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "Spencer הפך את הקנייה שלנו ב-Tribeca לחלקה. הידע שלו בשוק חסך לנו חודשים של חיפוש.",
+        "author": "James & Sarah M.",
+        "role": "קונים ב-Tribeca"
+      },
+      "david": {
+        "quote": "מכרנו את בית הצמוד קרקע מעל המחיר המבוקש תוך שבועיים. אסטרטגיית השיווק של Spencer הייתה יוצאת דופן.",
+        "author": "David L.",
+        "role": "מוכר ב-UES"
+      },
+      "chen": {
+        "quote": "כקונים בינלאומיים, היינו זקוקים למישהו שהבין את הצרכים שלנו. Spencer עלה על הציפיות.",
+        "author": "Chen Family",
+        "role": "קונים ב-Brooklyn Heights"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "עדכון שוק Tribeca",
+      "coopCondo": "קואופרטיב מול קונדו ב-NYC",
+      "brooklynTour": "סיור ב-Brooklyn Heights"
+    }
   },
   "testimonials": {
     "title": "סיפורי לקוחות",
-    "subtitle": "מה לקוחות אומרים על Spencer"
+    "subtitle": "מה לקוחות אומרים על העבודה עם Spencer"
   },
   "videos": {
-    "title": "תובנות וסיורים",
-    "subtitle": "סרטונים קצרים על שכונות, קנייה ושוק"
+    "title": "תובנות שוק וסיורים",
+    "subtitle": "סרטונים קצרים על שכונות, טיפים לקנייה ועדכוני שוק"
   },
   "social": {
     "title": "עקבו אחר Spencer",
@@ -59,32 +248,106 @@
     "linkedin": "LinkedIn",
     "instagramHandle": "@artgroup.nyc"
   },
-  "cta": {
-    "readyTitle": "מוכנים לצעד הבא?",
-    "readySubtitle": "בין אם קונים או מוכרים, Spencer מספק את המומחיות וההגנה שמגיעה לכם.",
-    "schedule": "קבעו ייעוץ"
+  "blog": {
+    "title": "תובנות שוק",
+    "subtitle": "ניתוח מומחה של נדל\"ן ב-NYC",
+    "readMore": "קראו את המאמר",
+    "noPosts": "עדיין לא פורסמו מאמרים.",
+    "back": "חזרה לתובנות"
   },
   "contact": {
     "title": "צרו קשר",
-    "subtitle": "קנייה, מכירה או חקירת השוק? Spencer עונה באופן אישי.",
-    "send": "שלחו הודעה",
-    "success": "תודה! Spencer ייצור קשר בקרוב."
+    "subtitle": "מוכנים לקנות, למכור או לחקור את השוק? Spencer עונה באופן אישי.",
+    "name": "שם מלא",
+    "email": "אימייל",
+    "phone": "טלפון",
+    "intent": "אני מתעניין ב",
+    "message": "הודעה",
+    "send": "שליחת הודעה",
+    "success": "תודה! Spencer ייצור איתכם קשר בקרוב.",
+    "intents": {
+      "buy": "קניית נכס",
+      "sell": "מכירת נכס",
+      "invest": "הזדמנויות השקעה",
+      "general": "פנייה כללית"
+    }
   },
-  "blog": {
-    "title": "תובנות שוק",
-    "subtitle": "ניתוח מומחה של שוק הנדל״ן ב-NYC",
-    "readMore": "קראו מאמר",
-    "noPosts": "עדיין אין מאמרים.",
-    "back": "חזרה לתובנות"
+  "footer": {
+    "tagline": "ייעוץ נדל\"ן יוקרה בעיר ניו יורק",
+    "rights": "כל הזכויות שמורות.",
+    "explore": "גלו",
+    "services": "שירותים",
+    "connect": "התחברו"
   },
-  "about": {
-    "title": "המדריך המהימן שלכם לנדל״ן ב-NYC",
-    "subtitle": "Spencer Ting מביא ידע שוק עמוק, הגנה בלתי מתפשרת ופרספקטיבה גלובלית."
+  "account": {
+    "signingIn": "אנא המתינו…",
+    "errors": {
+      "invalidInput": "אנא בדקו את הקלט ונסו שוב.",
+      "invalidCredentials": "אימייל או סיסמה שגויים.",
+      "emailInUse": "אימייל זה כבר רשום.",
+      "permissionDenied": "אין לכם הרשאה לפעולה זו.",
+      "unavailable": "השירות אינו זמין זמנית.",
+      "emailNotVerified": "אנא אמתו את האימייל לפני ההתחברות.",
+      "generic": "משהו השתבש. אנא נסו שוב.",
+      "signInRequired": "אנא התחברו כדי להמשיך.",
+      "passwordMismatch": "הסיסמאות אינן תואמות."
+    }
   },
   "pages": {
+    "login": {
+      "hero": "התחברו כדי לשמור נכסים ולנהל את החשבון שלכם.",
+      "orContinueWith": "או",
+      "continueWithGoogle": "המשך עם Google",
+      "emailVerified": "האימייל שלכם אומת. כעת תוכלו להתחבר.",
+      "emailVerifyInvalid": "קישור האימות אינו תקף או שפג תוקפו.",
+      "forgotPassword": "שכחתם את הסיסמה?"
+    },
+    "forgotPassword": {
+      "title": "שכחתם את הסיסמה?",
+      "hero": "נשלח לכם קישור באימייל לאיפוס.",
+      "instructions": "הזינו את כתובת האימייל של החשבון. אם נמצאה התאמה, נשלח הוראות לאיפוס.",
+      "submit": "שליחת קישור איפוס",
+      "sent": "אם קיים חשבון עם אימייל זה, שלחנו הוראות לאיפוס סיסמה.",
+      "checkSpam": "אם לא מצאתם, בדקו את תיקיית הספאם.",
+      "backToLogin": "חזרה להתחברות"
+    },
+    "resetPassword": {
+      "title": "בחרו סיסמה חדשה",
+      "hero": "הזינו סיסמה חדשה לחשבון שלכם.",
+      "submit": "עדכון סיסמה",
+      "invalidLink": "קישור האיפוס אינו תקף או שפג תוקפו.",
+      "requestNew": "בקשת קישור איפוס חדש",
+      "successTitle": "הסיסמה עודכנה",
+      "successHero": "תוכלו להתחבר עם הסיסמה החדשה.",
+      "success": "הסיסמה שלכם עודכנה.",
+      "goToSignIn": "מעבר להתחברות",
+      "backToLogin": "חזרה להתחברות"
+    },
+    "verifyEmail": {
+      "title": "בדקו את האימייל שלכם",
+      "hero": "עוד צעד אחד להפעלת החשבון.",
+      "instructions": "שלחנו קישור אימות ל:",
+      "checkSpam": "אם לא מצאתם, בדקו את תיקיית הספאם.",
+      "anyBrowser": "ניתן לפתוח את הקישור בכל דפדפן. דף זה יתעדכן כשהאימייל יאומת.",
+      "resend": "שליחה חוזרת של אימייל אימות",
+      "resent": "אימייל אימות נשלח.",
+      "backToLogin": "חזרה להתחברות",
+      "verifiedTitle": "האימייל אומת",
+      "verifiedHero": "החשבון שלכם מוכן.",
+      "verified": "האימייל שלכם אומת. כעת תוכלו להתחבר.",
+      "alreadyVerified": "אימייל זה כבר אומת. כעת תוכלו להתחבר.",
+      "invalidLink": "קישור האימות אינו תקף או שפג תוקפו.",
+      "returnToSignIn": "חזרו לדפדפן שבו התחלתם, או התחברו כאן.",
+      "goToSignIn": "מעבר להתחברות"
+    },
     "notFound": {
       "title": "הדף לא נמצא",
-      "back": "חזרה לבית"
+      "back": "חזרה לדף הבית"
     }
+  },
+  "cta": {
+    "readyTitle": "מוכנים לעשות את הצעד הבא?",
+    "readySubtitle": "בין אם קונים או מוכרים, Spencer מספק את המומחיות והסנגוריה שמגיעות לכם.",
+    "schedule": "תיאום ייעוץ"
   }
 }

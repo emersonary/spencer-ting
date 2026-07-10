@@ -19,7 +19,7 @@ export const languageLabels: Record<SupportedLanguage, string> = {
   en: 'English',
   es: 'Español',
   zh: '中文（简体）',
-  pt: 'Português',
+  pt: 'Português (Brasil)',
   it: 'Italiano',
   de: 'Deutsch',
   ru: 'Русский',

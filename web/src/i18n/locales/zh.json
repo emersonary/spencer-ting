@@ -18,40 +18,229 @@
     "blog": "市场洞察",
     "tools": "工具",
     "mortgage": "房贷计算器",
-    "contact": "联系",
+    "contact": "联系我们",
     "login": "登录",
     "logout": "退出",
     "account": "我的账户",
-    "accountMenu": "账户菜单"
+    "accountMenu": "账户菜单",
+    "blogAdmin": "博客管理"
+  },
+  "common": {
+    "email": "电子邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "firstName": "名",
+    "lastName": "姓",
+    "logIn": "登录",
+    "logInAction": "登录",
+    "createAccount": "创建账户",
+    "login": "登录",
+    "register": "注册",
+    "logOut": "退出",
+    "loading": "加载中...",
+    "propertyNotFound": "未找到房源",
+    "toggleMenu": "切换菜单"
+  },
+  "brand": {
+    "name": "Spencer Ting",
+    "tagline": "NYC 豪华房地产"
+  },
+  "meta": {
+    "title": "Spencer Ting | NYC 豪华房地产",
+    "description": "Spencer Ting — 纽约豪华房地产顾问。本地专业知识、诚实建议、数据驱动洞察。"
+  },
+  "boroughs": {
+    "manhattan": "Manhattan",
+    "brooklyn": "Brooklyn"
   },
   "hero": {
     "headline": "自信地找到您的下一个家",
-    "subtitle": "本地专业经验。诚实建议。数据驱动洞察。为纽约顶级物业提供个性化指导。",
-    "ctaBuy": "找房",
-    "ctaSell": "出售房屋",
+    "subtitle": "本地专业知识。诚实建议。数据驱动洞察。为纽约最优质房产提供个性化指导。",
+    "ctaBuy": "寻找房源",
+    "ctaSell": "出售房产",
     "ctaTalk": "联系 Spencer"
   },
   "stats": {
-    "experience": "年从业经验",
+    "experience": "从业年限",
     "transactions": "成交笔数",
     "volume": "总销售额",
-    "neighborhoods": "纽约社区"
+    "neighborhoods": "NYC 社区"
   },
-  "footer": {
-    "tagline": "纽约市高端房地产顾问",
-    "rights": "版权所有。"
+  "about": {
+    "title": "您信赖的 NYC 房地产向导",
+    "subtitle": "Spencer Ting 为每笔交易带来深厚的市场知识、不懈的倡导和全球视野。",
+    "bio1": "作为持牌纽约房地产经纪人，Spencer 专注于 Manhattan 和 Brooklyn 的豪华公寓、联排别墅和投资物业。",
+    "bio2": "客户选择 Spencer 是因为他的响应速度、谈判技巧和诚实建议——无论您是购买第一套公寓还是出售价值数百万美元的房产。",
+    "bio3": "精通多种语言，并与全球买家和卖家网络相连，Spencer 让复杂的 NYC 交易变得轻松自如。",
+    "values": {
+      "knowledge": "深厚的市场知识",
+      "knowledgeDesc": "以数据为支撑、而非猜测的社区级洞察。",
+      "network": "全球网络",
+      "networkDesc": "与全球合格买家和卖家建立联系。",
+      "advocacy": "不懈的倡导",
+      "advocacyDesc": "在交易的每个阶段保护您的利益。"
+    }
   },
   "properties": {
     "title": "精选房源",
-    "subtitle": "纽约最优质住宅精选"
+    "subtitle": "精心甄选纽约最优质住宅",
+    "search": "搜索房源",
+    "searchPlaceholder": "社区、地址或关键词...",
+    "filters": "筛选",
+    "borough": "行政区",
+    "neighborhood": "社区",
+    "type": "物业类型",
+    "minPrice": "最低价格",
+    "maxPrice": "最高价格",
+    "bedrooms": "卧室",
+    "luxuryOnly": "仅豪华",
+    "all": "全部",
+    "forSale": "在售",
+    "sold": "已售",
+    "beds": "卧",
+    "baths": "卫",
+    "sqft": "平方英尺",
+    "viewDetails": "查看详情",
+    "noResults": "没有符合您搜索条件的房源。",
+    "featured": "精选",
+    "luxury": "豪华",
+    "inquire": "预约看房",
+    "features": "特色",
+    "description": "描述",
+    "monthlyHoa": "月度物业费",
+    "monthlyTaxes": "月度税费",
+    "yearBuilt": "建造年份",
+    "types": {
+      "condo": "公寓",
+      "co-op": "合作公寓",
+      "townhouse": "联排别墅",
+      "penthouse": "顶层公寓"
+    }
+  },
+  "mortgage": {
+    "title": "房贷计算器",
+    "subtitle": "估算 NYC 房产的月供",
+    "homePrice": "房价",
+    "downPayment": "首付",
+    "downPaymentPercent": "首付比例",
+    "interestRate": "利率",
+    "loanTerm": "贷款期限（年）",
+    "propertyTax": "年度房产税",
+    "hoa": "月度物业费",
+    "insurance": "年度保险",
+    "monthlyPayment": "预估月供",
+    "principalInterest": "本金与利息",
+    "taxes": "房产税",
+    "hoaFee": "物业费",
+    "insuranceFee": "保险",
+    "total": "月度总计",
+    "disclaimer": "本计算器仅提供估算。实际还款可能有所不同。请咨询持牌房贷专业人士。"
+  },
+  "process": {
+    "buyTitle": "购房流程",
+    "buySubtitle": "从初次沟通到拿到钥匙的清晰路径",
+    "sellTitle": "售房流程",
+    "sellSubtitle": "以成熟策略最大化您的房产价值",
+    "steps": {
+      "consult": "与 Spencer 会面",
+      "consultDesc": "在无压力咨询中分享您的目标、时间表和预算。",
+      "finance": "融资",
+      "financeDesc": "联系可信赖的贷款机构并获得预批准。",
+      "search": "搜索",
+      "searchDesc": "参观符合您条件的精选房源。",
+      "offer": "出价",
+      "offerDesc": "战略性谈判以争取最佳条款。",
+      "inspection": "验房",
+      "inspectionDesc": "与可信赖的专业人士进行尽职调查。",
+      "closing": "过户",
+      "closingDesc": "处理合同、董事会审批和过户事宜。",
+      "moveIn": "入住",
+      "moveInDesc": "欢迎回家——过户后持续提供支持。",
+      "valuation": "估价",
+      "valuationDesc": "为您的房产制定数据驱动的定价策略。",
+      "prepare": "准备",
+      "prepareDesc": "布置、摄影和营销材料。",
+      "market": "上市",
+      "marketDesc": "在 MLS、社交媒体和全球网络上进行优质挂牌。",
+      "showings": "看房",
+      "showingsDesc": "合格买家、私人参观和开放日。",
+      "negotiate": "谈判",
+      "negotiateDesc": "专业谈判以争取最优报价。",
+      "close": "成交",
+      "closeDesc": "顺利过户和交接。"
+    }
+  },
+  "neighborhoods": {
+    "title": "NYC 社区指南",
+    "subtitle": "探索定义纽约生活的社区",
+    "avgPrice": "均价",
+    "vibe": "特色",
+    "transit": "交通",
+    "readMore": "探索",
+    "items": {
+      "tribeca": {
+        "name": "Tribeca",
+        "avgPrice": "$3.2M",
+        "vibe": "工业时尚风，名人聚集地"
+      },
+      "ues": {
+        "name": "Upper East Side",
+        "avgPrice": "$2.8M",
+        "vibe": "经典优雅，博物馆大道"
+      },
+      "brooklynHeights": {
+        "name": "Brooklyn Heights",
+        "avgPrice": "$1.9M",
+        "vibe": "历史魅力，天际线景观"
+      },
+      "soho": {
+        "name": "SoHo",
+        "avgPrice": "$4.1M",
+        "vibe": "铸铁阁楼，艺术画廊"
+      },
+      "westVillage": {
+        "name": "West Village",
+        "avgPrice": "$2.5M",
+        "vibe": "绿树成荫的街道，波西米亚风情"
+      },
+      "dumbo": {
+        "name": "DUMBO",
+        "avgPrice": "$2.1M",
+        "vibe": "滨水阁楼，科技中心"
+      }
+    }
+  },
+  "home": {
+    "testimonials": {
+      "james": {
+        "quote": "Spencer 让我们的 Tribeca 购房过程非常顺利。他的市场知识为我们节省了数月的搜索时间。",
+        "author": "James & Sarah M.",
+        "role": "Tribeca 买家"
+      },
+      "david": {
+        "quote": "我们在两周内以高于要价的价格售出了联排别墅。Spencer 的营销策略非常出色。",
+        "author": "David L.",
+        "role": "UES 卖家"
+      },
+      "chen": {
+        "quote": "作为国际买家，我们需要一位理解我们需求的人。Spencer 超出了我们的期望。",
+        "author": "Chen Family",
+        "role": "Brooklyn Heights 买家"
+      }
+    },
+    "videos": {
+      "tribecaMarket": "Tribeca 市场动态",
+      "coopCondo": "NYC 合作公寓与产权公寓对比",
+      "brooklynTour": "Brooklyn Heights 导览"
+    }
   },
   "testimonials": {
     "title": "客户故事",
-    "subtitle": "客户如何评价与 Spencer 的合作"
+    "subtitle": "客户对与 Spencer 合作的评价"
   },
   "videos": {
     "title": "市场洞察与导览",
-    "subtitle": "社区、购房技巧与市场动态短视频"
+    "subtitle": "关于社区、购房技巧和市场动态的短视频"
   },
   "social": {
     "title": "关注 Spencer",
@@ -59,32 +248,106 @@
     "linkedin": "LinkedIn",
     "instagramHandle": "@artgroup.nyc"
   },
-  "cta": {
-    "readyTitle": "准备好迈出下一步了吗？",
-    "readySubtitle": "无论买房还是卖房，Spencer 都为您提供应有的专业与捍卫。",
-    "schedule": "预约咨询"
+  "blog": {
+    "title": "市场洞察",
+    "subtitle": "NYC 房地产专家分析",
+    "readMore": "阅读文章",
+    "noPosts": "暂无已发布文章。",
+    "back": "返回市场洞察"
   },
   "contact": {
     "title": "联系我们",
-    "subtitle": "买房、卖房或了解市场？Spencer 亲自回复。",
+    "subtitle": "准备购房、售房或了解市场？Spencer 亲自回复。",
+    "name": "全名",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "intent": "我感兴趣的是",
+    "message": "留言",
     "send": "发送消息",
-    "success": "谢谢！Spencer 将尽快与您联系。"
+    "success": "谢谢！Spencer 将尽快与您联系。",
+    "intents": {
+      "buy": "购买房产",
+      "sell": "出售房产",
+      "invest": "投资机会",
+      "general": "一般咨询"
+    }
   },
-  "blog": {
-    "title": "市场洞察",
-    "subtitle": "纽约房地产专家分析",
-    "readMore": "阅读文章",
-    "noPosts": "暂无文章。",
-    "back": "返回洞察"
+  "footer": {
+    "tagline": "纽约市豪华房地产顾问服务",
+    "rights": "版权所有。",
+    "explore": "探索",
+    "services": "服务",
+    "connect": "联系"
   },
-  "about": {
-    "title": "您值得信赖的纽约房地产向导",
-    "subtitle": "Spencer Ting 为每笔交易带来深厚的市场知识、坚定捍卫和全球视野。"
+  "account": {
+    "signingIn": "请稍候…",
+    "errors": {
+      "invalidInput": "请检查您的输入并重试。",
+      "invalidCredentials": "电子邮箱或密码无效。",
+      "emailInUse": "该电子邮箱已注册。",
+      "permissionDenied": "您没有执行此操作的权限。",
+      "unavailable": "服务暂时不可用。",
+      "emailNotVerified": "请在登录前验证您的电子邮箱。",
+      "generic": "出了点问题。请重试。",
+      "signInRequired": "请登录以继续。",
+      "passwordMismatch": "密码不匹配。"
+    }
   },
   "pages": {
+    "login": {
+      "hero": "登录以保存房源并管理您的账户。",
+      "orContinueWith": "或",
+      "continueWithGoogle": "使用 Google 继续",
+      "emailVerified": "您的电子邮箱已验证。您现在可以登录。",
+      "emailVerifyInvalid": "该验证链接无效或已过期。",
+      "forgotPassword": "忘记密码？"
+    },
+    "forgotPassword": {
+      "title": "忘记密码？",
+      "hero": "我们将通过电子邮件向您发送重置链接。",
+      "instructions": "输入您账户的电子邮箱地址。如果找到匹配账户，我们将发送重置说明。",
+      "submit": "发送重置链接",
+      "sent": "如果存在使用该电子邮箱的账户，我们已发送密码重置说明。",
+      "checkSpam": "如果没有收到，请检查垃圾邮件文件夹。",
+      "backToLogin": "返回登录"
+    },
+    "resetPassword": {
+      "title": "设置新密码",
+      "hero": "为您的账户输入新密码。",
+      "submit": "更新密码",
+      "invalidLink": "该重置链接无效或已过期。",
+      "requestNew": "请求新的重置链接",
+      "successTitle": "密码已更新",
+      "successHero": "您可以使用新密码登录。",
+      "success": "您的密码已更新。",
+      "goToSignIn": "前往登录",
+      "backToLogin": "返回登录"
+    },
+    "verifyEmail": {
+      "title": "查看您的电子邮箱",
+      "hero": "激活账户还差一步。",
+      "instructions": "我们已向以下地址发送验证链接：",
+      "checkSpam": "如果没有收到，请检查垃圾邮件文件夹。",
+      "anyBrowser": "您可以在任何浏览器中打开链接。电子邮箱验证后，此页面将自动更新。",
+      "resend": "重新发送验证邮件",
+      "resent": "验证邮件已发送。",
+      "backToLogin": "返回登录",
+      "verifiedTitle": "电子邮箱已验证",
+      "verifiedHero": "您的账户已准备就绪。",
+      "verified": "您的电子邮箱已验证。您现在可以登录。",
+      "alreadyVerified": "该电子邮箱已验证。您现在可以登录。",
+      "invalidLink": "该验证链接无效或已过期。",
+      "returnToSignIn": "返回您开始操作的浏览器，或在此登录。",
+      "goToSignIn": "前往登录"
+    },
     "notFound": {
       "title": "页面未找到",
       "back": "返回首页"
     }
+  },
+  "cta": {
+    "readyTitle": "准备好迈出下一步了吗？",
+    "readySubtitle": "无论购房还是售房，Spencer 都能提供您应得的专业知识和倡导。",
+    "schedule": "预约咨询"
   }
 }

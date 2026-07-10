@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { AppLink, AppNavLink } from '../routing/AppLink';
 import { useTranslation } from 'react-i18next';
 import { useAccount, HeaderAccountMenu } from '../../accounts';
-import { useAppLanguage } from '../../hooks/useAppLanguage';
-import { LanguageSwitcher } from '../LanguageSwitcher';
 import { apiHttpUrl } from '../../services/api/transport';
 import { readSession } from '../../accounts/services/storage';
 import './Header.css';
@@ -51,7 +49,6 @@ export function Header() {
             </AppLink>
           </div>
           <div className="header-top-actions">
-            <LanguageSwitcher />
             <HeaderAccountMenu />
           </div>
         </div>
@@ -61,15 +58,15 @@ export function Header() {
         <AppLink to="/" className="logo" onClick={() => setMenuOpen(false)}>
           <span className="logo-mark">ST</span>
           <span>
-            <strong>Spencer Ting</strong>
-            <small>NYC Luxury Real Estate</small>
+            <strong>{t('brand.name')}</strong>
+            <small>{t('brand.tagline')}</small>
           </span>
         </AppLink>
 
         <button
           type="button"
           className="menu-toggle"
-          aria-label="Toggle menu"
+          aria-label={t('common.toggleMenu')}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((o) => !o)}
         >
@@ -101,7 +98,7 @@ export function Header() {
                     void openPostsAdmin();
                   }}
                 >
-                  Blog Admin
+                  {t('nav.blogAdmin')}
                 </button>
               </li>
             )}
