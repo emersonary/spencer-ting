@@ -40,7 +40,7 @@
   }
 
   .hero-bg {
-    background: url('/images/hero-nyc.jpg') center/cover no-repeat;
+    background: url('/images/hero-nyc.jpg?v=2') center/cover no-repeat;
   }
 }
 

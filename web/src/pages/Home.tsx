@@ -31,10 +31,10 @@ export function Home() {
             muted
             loop
             playsInline
-            preload="metadata"
-            poster="/images/hero-nyc.jpg"
+            preload="auto"
+            poster="/images/hero-nyc.jpg?v=2"
           >
-            <source src="/videos/hero-central-park.mp4" type="video/mp4" />
+            <source src="/videos/hero-central-park.mp4?v=2" type="video/mp4" />
           </video>
           <div className="hero-overlay" />
         </div>
