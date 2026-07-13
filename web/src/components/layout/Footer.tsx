@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { AppLink } from '../routing/AppLink';
+import { BrandWordmark } from '../BrandWordmark';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export function Footer() {
@@ -11,7 +12,9 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="footer-brand">{t('brand.name')}</div>
+            <div className="footer-brand">
+              <BrandWordmark />
+            </div>
             <p>{t('footer.tagline')}</p>
           </div>
           <div className="footer-col">

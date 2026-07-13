@@ -87,6 +87,10 @@
   color: var(--color-navy);
 }
 
+.logo .brand-lastname {
+  color: var(--color-gold);
+}
+
 .logo small {
   display: block;
   font-size: 0.65rem;

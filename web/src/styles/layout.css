@@ -18,7 +18,9 @@
   margin-bottom: 1rem;
 }
 
-.footer-brand span { color: var(--color-gold); }
+.footer-brand .brand-lastname {
+  color: var(--color-gold);
+}
 
 .footer-col h4 {
   color: var(--color-cream);

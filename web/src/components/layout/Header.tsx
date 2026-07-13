@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AppLink, AppNavLink } from '../routing/AppLink';
 import { useTranslation } from 'react-i18next';
 import { useAccount, HeaderAccountMenu } from '../../accounts';
+import { BrandWordmark } from '../BrandWordmark';
 import { apiHttpUrl } from '../../services/api/transport';
 import { readSession } from '../../accounts/services/storage';
 import './Header.css';
@@ -58,7 +59,9 @@ export function Header() {
         <AppLink to="/" className="logo" onClick={() => setMenuOpen(false)}>
           <span className="logo-mark">ST</span>
           <span>
-            <strong>{t('brand.name')}</strong>
+            <strong>
+              <BrandWordmark />
+            </strong>
             <small>{t('brand.tagline')}</small>
           </span>
         </AppLink>
