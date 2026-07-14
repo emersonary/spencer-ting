@@ -16,6 +16,7 @@ const VIDEO_THUMBS: Record<(typeof VIDEO_IDS)[number], string> = {
 export function Home() {
   const { t } = useTranslation();
   const [featured, setFeatured] = useState<Property[]>([]);
+  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     void propertyService.list({ featuredOnly: true, limit: 3 }).then((res) => setFeatured(res.properties));
@@ -26,15 +27,19 @@ export function Home() {
       <section className="hero">
         <div className="hero-bg" aria-hidden="true">
           <video
-            className="hero-video"
+            className={`hero-video${videoReady ? ' is-ready' : ''}`}
             autoPlay
             muted
             loop
             playsInline
             preload="auto"
-            poster="/images/hero-nyc.jpg?v=2"
+            onPlaying={() => setVideoReady(true)}
+            onLoadedData={(e) => {
+              // First frame is available — fade in even if autoplay is delayed
+              if (e.currentTarget.readyState >= 2) setVideoReady(true);
+            }}
           >
-            <source src="/videos/hero-central-park.mp4?v=2" type="video/mp4" />
+            <source src="/videos/hero-central-park.mp4?v=3" type="video/mp4" />
           </video>
           <div className="hero-overlay" />
         </div>

@@ -20,19 +20,35 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.hero-video.is-ready {
+  opacity: 1;
 }
 
 .hero-overlay {
-  display: none;
   position: absolute;
   inset: 0;
+  opacity: 0;
   background: linear-gradient(
     105deg,
-    rgba(26, 35, 50, 0.82) 0%,
-    rgba(26, 35, 50, 0.62) 45%,
-    rgba(26, 35, 50, 0.4) 100%
+    rgba(26, 35, 50, 0.55) 0%,
+    rgba(26, 35, 50, 0.4) 45%,
+    rgba(26, 35, 50, 0.25) 100%
   );
   pointer-events: none;
+  animation: hero-overlay-in 2s ease 3s forwards;
+}
+
+@keyframes hero-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -41,7 +57,17 @@
   }
 
   .hero-bg {
-    background: url('/images/hero-nyc.jpg?v=2') center/cover no-repeat;
+    background: url('/images/hero-nyc.jpg?v=3') center/cover no-repeat;
+  }
+
+  .hero-overlay {
+    opacity: 1;
+    animation: none;
+  }
+
+  .hero-panel {
+    opacity: 1;
+    animation: none;
   }
 }
 
@@ -56,6 +82,17 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 640px;
+  opacity: 0;
+  animation: hero-text-in 2s ease 3s forwards;
+}
+
+@keyframes hero-text-in {
+  from {
+    opacity: 0.45; /* 55% transparency */
+  }
+  to {
+    opacity: 1; /* 0% transparency */
+  }
 }
 
 .hero-panel h1 {
