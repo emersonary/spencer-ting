@@ -67,11 +67,11 @@
     "neighborhoods": "NYC-Stadtteile"
   },
   "about": {
-    "title": "Ihr vertrauenswürdiger Führer im NYC-Immobilienmarkt",
-    "subtitle": "Spencer Ting bringt tiefes Marktwissen, unermüdliche Vertretung und eine globale Perspektive in jede Transaktion ein.",
-    "bio1": "Als lizenzierter Immobilienmakler in New York ist Spencer auf Luxus-Eigentumswohnungen, Townhouses und Investmentimmobilien in Manhattan und Brooklyn spezialisiert.",
-    "bio2": "Kunden wählen Spencer wegen seiner Reaktionsgeschwindigkeit, Verhandlungsfähigkeiten und ehrlichen Beratung — ob Sie Ihre erste Wohnung kaufen oder ein mehrmillionenschweres Anwesen verkaufen.",
-    "bio3": "Mit fließenden Sprachkenntnissen und einem globalen Netzwerk von Käufern und Verkäufern macht Spencer komplexe NYC-Transaktionen mühelos.",
+    "title": "Lernen Sie Spencer Ting kennen",
+    "subtitle": "Spencer Ting bringt mehr als 17 Jahre Immobilienerfahrung in den Wohnungsmarkt von New York City ein.",
+    "bio1": "Spencer Ting bringt mehr als 17 Jahre Immobilienerfahrung in den Wohnungsmarkt von New York City ein und verbindet einen Hintergrund in Entwicklung, Finanzen und Maklerwesen, um Kunden zu helfen, fundierte Immobilienentscheidungen mit Zuversicht zu treffen. Er vertritt Käufer, Verkäufer, Vermieter, Mieter und Investoren und bietet durchdachte Beratung, klare Kommunikation und sorgfältige Ausführung in jeder Phase der Transaktion.",
+    "bio2": "Bevor er zu Corcoran kam, leitete Spencer fast zwei Jahrzehnte lang das Immobiliengeschäft seiner Familie und arbeitete in vielen Bereichen der Branche. Seine Karriere begann bei einer Boutique-Firma für Wohnungsverwaltung, wo er Expertise in der Townhouse-Entwicklung und Immobilienverwaltung aufbaute. Im Laufe der Jahre war er an jeder Phase der Wohnungsentwicklung beteiligt – von der Kapitalbeschaffung und Finanzierung über Planung, Bau und Marketing bis hin zu erfolgreichen Abschlüssen. Diese breite Perspektive ermöglicht es ihm, Chancen zu erkennen, Herausforderungen vorauszusehen und Kunden mit praktischer, erfahrungsbasierter Beratung zu führen.",
+    "bio3": "Spencer erwarb seinen MBA an der Johnson Graduate School of Management der Cornell University und stärkte damit weiter seine Expertise in Finanzen, Investitionsanalyse und strategischer Entscheidungsfindung. Zusammen mit seinem Hintergrund im Bankwesen ermöglicht ihm diese Grundlage, Chancen sowohl aus finanzieller als auch aus Immobilienperspektive zu bewerten und Kunden zu helfen, nicht nur die Immobilie selbst, sondern auch den langfristigen Wert ihrer Investition zu verstehen.",
     "values": {
       "knowledge": "Tiefes Marktwissen",
       "knowledgeDesc": "Stadtteilbezogene Einblicke auf Basis von Daten, nicht von Vermutungen.",
@@ -79,7 +79,11 @@
       "networkDesc": "Verbindungen zu qualifizierten Käufern und Verkäufern weltweit.",
       "advocacy": "Unermüdliche Vertretung",
       "advocacyDesc": "Ihre Interessen werden in jeder Phase des Geschäfts geschützt."
-    }
+    },
+    "bio4": "Bekannt für Professionalität, Integrität und Liebe zum Detail glaubt Spencer, dass jede erfolgreiche Transaktion damit beginnt, die Ziele seiner Kunden zu verstehen. Ob er einem Erstkäufer hilft, einen Luxus-Eigenheimbesitzer vertritt oder einen erfahrenen Investor berät – er verpflichtet sich zu ehrlicher Beratung, reaktionsschnellem Service und einem nahtlosen Erlebnis von der ersten Beratung bis zum Abschluss.",
+    "bio5": "Über seine berufliche Arbeit hinaus teilt Spencer seine Leidenschaft für Immobilien mit seiner Frau Alejandra und schätzt die Möglichkeit, Familien dabei zu helfen, Häuser zu finden, die jede Lebensphase unterstützen. Gemeinsam haben sie sich den Ruf erarbeitet, selbst die komplexesten Transaktionen organisiert, transparent und unkompliziert erscheinen zu lassen.",
+    "bio6": "Als lebenslanger Outdoor-Enthusiast ist Spencer auch ein begeisterter Kitesurfer, Surfer und Foiler. Er verbringt gerne Zeit auf dem Wasser an Orten wie Napeague, Pacasmayo und Jericoacoara, wo er oft mit Freunden, Kunden und Gleichgesinnten in Kontakt kommt, die seine Wertschätzung für Abenteuer und die Natur teilen.",
+    "bio7": "Für Spencer beruhen Immobilien auf Beziehungen. Er glaubt, dass Vertrauen durch Vorbereitung, Transparenz und das konsequente Voranstellen der Kundeninteressen verdient wird. Sein Ziel ist einfach: jedem Kunden zu helfen, selbstbewusst zu entscheiden, und dabei ein außergewöhnliches Serviceniveau von Anfang bis Ende zu bieten."
   },
   "properties": {
     "title": "Ausgewählte Immobilien",

@@ -67,11 +67,11 @@
     "neighborhoods": "NYC Mahalleleri"
   },
   "about": {
-    "title": "NYC gayrimenkulünde güvenilir rehberiniz",
-    "subtitle": "Spencer Ting her işleme derin pazar bilgisi, amansız savunuculuk ve küresel bir bakış açısı getirir.",
-    "bio1": "Lisanslı New York gayrimenkul brokeri olarak Spencer, Manhattan ve Brooklyn'deki lüks daireler, şehir evleri ve yatırım mülklerinde uzmanlaşmıştır.",
-    "bio2": "Müşteriler Spencer'ı hızlı yanıt vermesi, müzakere becerileri ve dürüst danışmanlığı için tercih eder — ister ilk dairenizi alıyor olun ister milyonlarca dolarlık bir mülk satıyor olun.",
-    "bio3": "Birden fazla dilde akıcı ve dünya çapında alıcı ve satıcı ağına bağlı olan Spencer, karmaşık NYC işlemlerini zahmetsiz hale getirir.",
+    "title": "Spencer Ting ile tanışın",
+    "subtitle": "Spencer Ting, New York City'nin konut piyasasına 17 yılı aşkın emlak deneyimi getiriyor.",
+    "bio1": "Spencer Ting, New York City'nin konut piyasasına 17 yılı aşkın emlak deneyimi getirerek; geliştirme, finans ve brokerlik geçmişini birleştirip müşterilerin bilinçli emlak kararlarını güvenle almasına yardımcı olur. Alıcıları, satıcıları, mülk sahiplerini, kiracıları ve yatırımcıları temsil eder; işlemin her aşamasında düşünceli rehberlik, net iletişim ve titiz uygulama sunar.",
+    "bio2": "Corcoran'a katılmadan önce Spencer, ailesinin emlak işini yöneterek ve sektörün birçok alanında çalışarak yaklaşık yirmi yıl geçirdi. Kariyeri, townhouse geliştirme ve mülk yönetiminde uzmanlık kazandığı butik bir konut yönetim firmasında başladı. Yıllar içinde sermaye artırımı ve finansmandan planlama, inşaat, pazarlama ve başarılı kapanışlara kadar konut geliştirmenin her aşamasında yer aldı. Bu geniş bakış açısı, fırsatları görmesini, zorlukları öngörmesini ve müşterilere deneyime dayalı pratik tavsiyelerle rehberlik etmesini sağlar.",
+    "bio3": "Spencer, MBA derecesini Cornell University'nin Johnson Graduate School of Management'tan alarak finans, yatırım analizi ve stratejik karar alma konusundaki uzmanlığını daha da güçlendirdi. Bankacılık geçmişiyle birleşen bu temel, fırsatları hem finansal hem de emlak perspektifinden değerlendirmesini sağlar; müşterilerin yalnızca mülkün kendisini değil, yatırımlarının uzun vadeli değerini de anlamasına yardımcı olur.",
     "values": {
       "knowledge": "Derin Pazar Bilgisi",
       "knowledgeDesc": "Tahminlere değil, verilere dayanan mahalle düzeyinde içgörüler.",
@@ -79,7 +79,11 @@
       "networkDesc": "Dünya genelinde nitelikli alıcı ve satıcılarla bağlantılar.",
       "advocacy": "Amansız Savunuculuk",
       "advocacyDesc": "Çıkarlarınız anlaşmanın her aşamasında korunur."
-    }
+    },
+    "bio4": "Profesyonelliği, dürüstlüğü ve detaylara verdiği önemle tanınan Spencer, her başarılı işlemin müşterilerinin hedeflerini anlamakla başladığına inanır. İster ilk kez ev alan bir alıcıya yardımcı olsun, ister lüks bir ev sahibini temsil etsin, ister deneyimli bir yatırımcıya danışmanlık yapsın; ilk görüşmeden kapanışa kadar dürüst tavsiye, hızlı hizmet ve sorunsuz bir deneyim sunmaya kararlıdır.",
+    "bio5": "Mesleki çalışmalarının ötesinde Spencer, emlak tutkusunu eşi Alejandra ile paylaşır ve ailelerin hayatlarının her aşamasını destekleyen evler bulmasına yardımcı olma fırsatını değerli bulur. Birlikte, en karmaşık işlemleri bile düzenli, şeffaf ve anlaşılır hâle getirme konusunda bir itibar oluşturdular.",
+    "bio6": "Hayatı boyunca açık hava tutkunu olan Spencer aynı zamanda hevesli bir kitesurf, sörf ve foil sporcusudur. Napeague, Pacasmayo ve Jericoacoara gibi destinasyonlarda suda vakit geçirmeyi sever; burada sıkça arkadaşları, müşterileri ve macera ile doğaya duyduğu takdiri paylaşan diğer meraklılarla buluşur.",
+    "bio7": "Spencer için emlak, ilişkiler üzerine kuruludur. Güvenin hazırlık, şeffaflık ve müşteri çıkarlarını sürekli ön planda tutmakla kazanıldığına inanır. Amacı basittir: her müşterinin güvenle karar almasına yardımcı olmak ve baştan sona olağanüstü bir hizmet sunmak."
   },
   "properties": {
     "title": "Öne Çıkan Mülkler",

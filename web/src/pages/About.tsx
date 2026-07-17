@@ -1,13 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { AppLink } from '../components/routing/AppLink';
 
+const BIO_KEYS = ['bio1', 'bio2', 'bio3', 'bio4', 'bio5', 'bio6', 'bio7'] as const;
+
 export function About() {
   const { t } = useTranslation();
 
   return (
     <section className="section">
       <div className="container">
-        <div className="grid-2" style={{ alignItems: 'center', gap: '4rem' }}>
+        <div className="grid-2" style={{ alignItems: 'start', gap: '4rem' }}>
           <div>
             <img
               src="/images/spencer-ting.png"
@@ -18,9 +20,11 @@ export function About() {
           <div>
             <h1>{t('about.title')}</h1>
             <div className="gold-line" style={{ margin: '1rem 0' }} />
-            <p>{t('about.bio1')}</p>
-            <p>{t('about.bio2')}</p>
-            <p>{t('about.bio3')}</p>
+            {BIO_KEYS.map((key) => (
+              <p key={key} style={{ marginBottom: '1.25rem' }}>
+                {t(`about.${key}`)}
+              </p>
+            ))}
             <div style={{ marginTop: '2rem' }}>
               <AppLink to="/contact" className="btn btn-primary">{t('hero.ctaTalk')}</AppLink>
             </div>

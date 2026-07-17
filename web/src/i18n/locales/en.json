@@ -67,11 +67,15 @@
     "neighborhoods": "NYC Neighborhoods"
   },
   "about": {
-    "title": "Your trusted guide to NYC real estate",
-    "subtitle": "Spencer Ting brings deep market knowledge, relentless advocacy, and a global perspective to every transaction.",
-    "bio1": "As a licensed New York real estate broker, Spencer specializes in luxury condominiums, townhouses, and investment properties across Manhattan and Brooklyn.",
-    "bio2": "Clients choose Spencer for his responsiveness, negotiation skills, and honest counsel — whether you're buying your first apartment or selling a multi-million dollar estate.",
-    "bio3": "Fluent in multiple languages and connected to a global network of buyers and sellers, Spencer makes complex NYC transactions feel effortless.",
+    "title": "Meet Spencer Ting",
+    "subtitle": "Spencer Ting brings more than 17 years of real estate experience to New York City's residential market.",
+    "bio1": "Spencer Ting brings more than 17 years of real estate experience to New York City's residential market, combining a background in development, finance, and brokerage to help clients make informed real estate decisions with confidence. He represents buyers, sellers, landlords, tenants, and investors, providing thoughtful guidance, clear communication, and meticulous execution throughout every stage of the transaction.",
+    "bio2": "Before joining Corcoran, Spencer spent nearly two decades leading his family's real estate business and working across multiple facets of the industry. His career began at a boutique residential management firm, where he developed expertise in townhouse development and property management. Over the years, he has been involved in every phase of residential development—from capital raising and financing to planning, construction, marketing, and successful closings. This broad perspective enables him to identify opportunities, anticipate challenges, and guide clients with practical, experience-driven advice.",
+    "bio3": "Spencer earned his MBA from Cornell University's Johnson Graduate School of Management, further strengthening his expertise in finance, investment analysis, and strategic decision-making. Combined with his background in banking, this foundation allows him to evaluate opportunities from both a financial and real estate perspective, helping clients understand not only the property itself but also the long-term value of their investment.",
+    "bio4": "Known for his professionalism, integrity, and attention to detail, Spencer believes that every successful transaction starts with understanding his clients' goals. Whether assisting a first-time buyer, representing a luxury homeowner, or advising an experienced investor, he is committed to providing honest advice, responsive service, and a seamless experience from the initial consultation through closing.",
+    "bio5": "Beyond his professional work, Spencer shares his passion for real estate with his wife, Alejandra, and values the opportunity to help families find homes that support every stage of their lives. Together, they have built a reputation for making even the most complex transactions feel organized, transparent, and straightforward.",
+    "bio6": "A lifelong outdoor enthusiast, Spencer is also an avid kitesurfer, surfer, and foiler. He enjoys spending time on the water in destinations such as Napeague, Pacasmayo, and Jericoacoara, where he often connects with friends, clients, and fellow enthusiasts who share his appreciation for adventure and the outdoors.",
+    "bio7": "For Spencer, real estate is built on relationships. He believes trust is earned through preparation, transparency, and consistently putting his clients' interests first. His objective is simple: to help every client make confident decisions while delivering an exceptional level of service from beginning to end.",
     "values": {
       "knowledge": "Deep Market Knowledge",
       "knowledgeDesc": "Neighborhood-level insights backed by data, not guesswork.",

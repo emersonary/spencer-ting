@@ -67,11 +67,11 @@
     "neighborhoods": "Barrios de NYC"
   },
   "about": {
-    "title": "Su guía de confianza en bienes raíces de NYC",
-    "subtitle": "Spencer Ting aporta un profundo conocimiento del mercado, una defensa incansable y una perspectiva global a cada transacción.",
-    "bio1": "Como corredor de bienes raíces con licencia en Nueva York, Spencer se especializa en condominios de lujo, casas adosadas y propiedades de inversión en Manhattan y Brooklyn.",
-    "bio2": "Los clientes eligen a Spencer por su capacidad de respuesta, sus habilidades de negociación y su asesoramiento honesto, ya sea que esté comprando su primer apartamento o vendiendo una propiedad multimillonaria.",
-    "bio3": "Con fluidez en varios idiomas y conectado a una red global de compradores y vendedores, Spencer hace que las complejas transacciones en NYC parezcan sencillas.",
+    "title": "Conozca a Spencer Ting",
+    "subtitle": "Spencer Ting aporta más de 17 años de experiencia inmobiliaria al mercado residencial de Nueva York.",
+    "bio1": "Spencer Ting aporta más de 17 años de experiencia inmobiliaria al mercado residencial de Nueva York, combinando una trayectoria en desarrollo, finanzas y corretaje para ayudar a sus clientes a tomar decisiones inmobiliarias informadas con confianza. Representa a compradores, vendedores, propietarios, inquilinos e inversores, ofreciendo orientación reflexiva, comunicación clara y una ejecución meticulosa en cada etapa de la transacción.",
+    "bio2": "Antes de unirse a Corcoran, Spencer dedicó casi dos décadas a dirigir el negocio inmobiliario de su familia y a trabajar en múltiples facetas del sector. Su carrera comenzó en una firma boutique de administración residencial, donde desarrolló experiencia en el desarrollo de townhouses y en la gestión de propiedades. A lo largo de los años, ha participado en todas las fases del desarrollo residencial, desde la captación de capital y el financiamiento hasta la planificación, la construcción, el marketing y los cierres exitosos. Esta amplia perspectiva le permite identificar oportunidades, anticipar desafíos y guiar a sus clientes con consejos prácticos basados en la experiencia.",
+    "bio3": "Spencer obtuvo su MBA en la Johnson Graduate School of Management de Cornell University, fortaleciendo aún más su experiencia en finanzas, análisis de inversiones y toma de decisiones estratégicas. Combinada con su trayectoria en la banca, esta formación le permite evaluar oportunidades desde una perspectiva tanto financiera como inmobiliaria, ayudando a sus clientes a comprender no solo la propiedad en sí, sino también el valor a largo plazo de su inversión.",
     "values": {
       "knowledge": "Profundo conocimiento del mercado",
       "knowledgeDesc": "Información a nivel de barrio respaldada por datos, no por suposiciones.",
@@ -79,7 +79,11 @@
       "networkDesc": "Conexiones con compradores y vendedores calificados en todo el mundo.",
       "advocacy": "Defensa incansable",
       "advocacyDesc": "Sus intereses protegidos en cada etapa del acuerdo."
-    }
+    },
+    "bio4": "Reconocido por su profesionalismo, integridad y atención al detalle, Spencer cree que toda transacción exitosa comienza por comprender los objetivos de sus clientes. Ya sea asistiendo a un comprador primerizo, representando a un propietario de lujo o asesorando a un inversor experimentado, se compromete a ofrecer consejos honestos, un servicio receptivo y una experiencia fluida desde la consulta inicial hasta el cierre.",
+    "bio5": "Más allá de su trabajo profesional, Spencer comparte su pasión por el sector inmobiliario con su esposa, Alejandra, y valora la oportunidad de ayudar a las familias a encontrar hogares que acompañen cada etapa de sus vidas. Juntos, se han ganado una reputación por hacer que incluso las transacciones más complejas se sientan organizadas, transparentes y sencillas.",
+    "bio6": "Entusiasta de las actividades al aire libre toda su vida, Spencer también es un ávido kitesurfista, surfista y foilista. Disfruta pasar tiempo en el agua en destinos como Napeague, Pacasmayo y Jericoacoara, donde a menudo se conecta con amigos, clientes y otros entusiastas que comparten su aprecio por la aventura y la naturaleza.",
+    "bio7": "Para Spencer, el sector inmobiliario se construye sobre las relaciones. Cree que la confianza se gana con preparación, transparencia y poniendo consistentemente los intereses de sus clientes en primer lugar. Su objetivo es simple: ayudar a cada cliente a tomar decisiones con confianza y ofrecer un nivel excepcional de servicio de principio a fin."
   },
   "properties": {
     "title": "Propiedades destacadas",

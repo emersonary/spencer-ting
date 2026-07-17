@@ -67,11 +67,11 @@
     "neighborhoods": "Bairros de NYC"
   },
   "about": {
-    "title": "Seu guia de confiança no mercado imobiliário de NYC",
-    "subtitle": "Spencer Ting traz profundo conhecimento de mercado, defesa incansável e uma perspectiva global para cada transação.",
-    "bio1": "Como corretor de imóveis licenciado em Nova York, Spencer é especialista em condomínios de luxo, townhouses e imóveis para investimento em Manhattan e Brooklyn.",
-    "bio2": "Os clientes escolhem Spencer pela sua agilidade, habilidades de negociação e orientação honesta — seja comprando seu primeiro apartamento ou vendendo um imóvel multimilionário.",
-    "bio3": "Fluente em vários idiomas e conectado a uma rede global de compradores e vendedores, Spencer torna as complexas transações em NYC simples e tranquilas.",
+    "title": "Conheça Spencer Ting",
+    "subtitle": "Spencer Ting traz mais de 17 anos de experiência imobiliária ao mercado residencial de Nova York.",
+    "bio1": "Spencer Ting traz mais de 17 anos de experiência imobiliária ao mercado residencial de Nova York, combinando uma trajetória em desenvolvimento, finanças e corretagem para ajudar os clientes a tomar decisões imobiliárias informadas com confiança. Ele representa compradores, vendedores, proprietários, inquilinos e investidores, oferecendo orientação cuidadosa, comunicação clara e execução meticulosa em cada etapa da transação.",
+    "bio2": "Antes de ingressar na Corcoran, Spencer passou quase duas décadas liderando o negócio imobiliário da família e atuando em múltiplas facetas do setor. Sua carreira começou em uma boutique de administração residencial, onde desenvolveu expertise em desenvolvimento de townhouses e gestão de propriedades. Ao longo dos anos, participou de todas as fases do desenvolvimento residencial, desde a captação de capital e o financiamento até o planejamento, a construção, o marketing e fechamentos bem-sucedidos. Essa ampla perspectiva permite que ele identifique oportunidades, antecipe desafios e oriente os clientes com conselhos práticos baseados na experiência.",
+    "bio3": "Spencer obteve seu MBA na Johnson Graduate School of Management da Cornell University, fortalecendo ainda mais sua expertise em finanças, análise de investimentos e tomada de decisões estratégicas. Combinada com sua trajetória no setor bancário, essa base permite que ele avalie oportunidades tanto do ponto de vista financeiro quanto imobiliário, ajudando os clientes a compreender não apenas o imóvel em si, mas também o valor de longo prazo do investimento.",
     "values": {
       "knowledge": "Profundo conhecimento de mercado",
       "knowledgeDesc": "Insights a nível de bairro respaldados por dados, não por suposições.",
@@ -79,7 +79,11 @@
       "networkDesc": "Conexões com compradores e vendedores qualificados em todo o mundo.",
       "advocacy": "Defesa incansável",
       "advocacyDesc": "Seus interesses protegidos em cada etapa do negócio."
-    }
+    },
+    "bio4": "Conhecido por seu profissionalismo, integridade e atenção aos detalhes, Spencer acredita que toda transação bem-sucedida começa com a compreensão dos objetivos de seus clientes. Seja auxiliando um comprador de primeira viagem, representando um proprietário de luxo ou aconselhando um investidor experiente, ele se compromete a oferecer conselhos honestos, um serviço ágil e uma experiência fluida desde a consulta inicial até o fechamento.",
+    "bio5": "Além do trabalho profissional, Spencer compartilha sua paixão pelo mercado imobiliário com sua esposa, Alejandra, e valoriza a oportunidade de ajudar famílias a encontrar lares que acompanhem cada etapa de suas vidas. Juntos, construíram uma reputação por tornar mesmo as transações mais complexas organizadas, transparentes e diretas.",
+    "bio6": "Entusiasta de atividades ao ar livre durante toda a vida, Spencer também é um ávido praticante de kitesurf, surf e foil. Ele gosta de passar tempo na água em destinos como Napeague, Pacasmayo e Jericoacoara, onde frequentemente se conecta com amigos, clientes e outros entusiastas que compartilham sua apreciação pela aventura e pela natureza.",
+    "bio7": "Para Spencer, o mercado imobiliário se constrói sobre relacionamentos. Ele acredita que a confiança se conquista com preparação, transparência e colocando consistentemente os interesses dos clientes em primeiro lugar. Seu objetivo é simples: ajudar cada cliente a tomar decisões com confiança e oferecer um nível excepcional de serviço do início ao fim."
   },
   "properties": {
     "title": "Imóveis em destaque",
