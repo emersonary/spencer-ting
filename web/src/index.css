@@ -9,6 +9,7 @@
   --color-text-muted: #6b7280;
   --color-border: #e5e2db;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Source Serif 4', 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
   --shadow-sm: 0 1px 3px rgba(26, 35, 50, 0.08);
   --shadow-md: 0 4px 20px rgba(26, 35, 50, 0.12);
@@ -98,38 +99,38 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: none;
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
   border-radius: var(--radius);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-.btn-primary {
+.btn:hover,
+.btn:focus-visible {
   background: var(--color-gold);
-  color: var(--color-navy);
-}
-.btn-primary:hover {
-  background: var(--color-gold-light);
-  color: var(--color-navy);
-}
-
-.btn-outline {
-  background: transparent;
   color: var(--color-cream);
-  border: 1px solid var(--color-cream);
-}
-.btn-outline:hover {
-  background: var(--color-cream);
-  color: var(--color-navy);
+  border-color: var(--color-gold);
 }
 
+.btn-primary,
+.btn-outline,
 .btn-dark {
-  background: var(--color-navy);
-  color: var(--color-cream);
+  background: transparent;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
 }
-.btn-dark:hover {
-  background: var(--color-navy-light);
+
+.btn-primary:hover,
+.btn-outline:hover,
+.btn-dark:hover,
+.btn-primary:focus-visible,
+.btn-outline:focus-visible,
+.btn-dark:focus-visible {
+  background: var(--color-gold);
   color: var(--color-cream);
+  border-color: var(--color-gold);
 }
 
 .page-hero {

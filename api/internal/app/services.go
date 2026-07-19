@@ -18,7 +18,7 @@ func WireDefaultServices(ctx context.Context, app *SpencerTingApplication) error
 	}
 
 	if app.Config.Properties.Enabled {
-		app.Properties = service.NewPropertyService()
+		app.Properties = service.NewPropertyService(app.Logger.Named("properties"))
 	}
 
 	app.Logger.Info("application services wired")

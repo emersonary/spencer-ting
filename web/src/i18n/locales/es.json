@@ -17,7 +17,7 @@
     "sell": "Vender",
     "blog": "Perspectivas",
     "tools": "Herramientas",
-    "mortgage": "Calculadora de hipoteca",
+    "mortgage": "Valoraciones de propiedades",
     "contact": "Contacto",
     "login": "Iniciar sesión",
     "logout": "Cerrar sesión",
@@ -64,7 +64,7 @@
     "experience": "Años de experiencia",
     "transactions": "Transacciones cerradas",
     "volume": "Volumen total de ventas",
-    "neighborhoods": "Barrios de NYC"
+    "listedProperties": "Propiedades listadas en NYC"
   },
   "about": {
     "title": "Conozca a Spencer Ting",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "Calculadora de hipoteca",
-    "subtitle": "Estime su pago mensual para propiedades en NYC",
+    "title": "Valoraciones de propiedades",
+    "subtitle": "Solicite una estimación gratuita del valor de mercado de su propiedad.",
     "homePrice": "Precio de la vivienda",
     "downPayment": "Pago inicial",
     "downPaymentPercent": "Pago inicial %",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "Seguro",
     "total": "Total mensual",
-    "disclaimer": "Esta calculadora proporciona solo estimaciones. Los pagos reales pueden variar. Consulte a un profesional hipotecario con licencia."
+    "disclaimer": "Esta calculadora proporciona solo estimaciones. Los pagos reales pueden variar. Consulte a un profesional hipotecario con licencia.",
+    "heroAlt": "Descubra el valor de su propiedad",
+    "address": "Dirección de la propiedad",
+    "requestValuation": "Solicitar valoración",
+    "share": "Compartir",
+    "shareText": "Descubra el valor de su propiedad con Spencer Ting.",
+    "shareCopied": "Enlace copiado al portapapeles.",
+    "formSuccess": "Gracias. Spencer se pondrá en contacto pronto con su valoración.",
+    "formDisclaimer": "Al enviar este formulario, acepta ser contactado sobre una valoración. Las estimaciones son solo informativas y no constituyen una tasación formal. Esta solicitud no genera ninguna obligación.",
+    "calculatorHeading": "Estimador de pagos",
+    "calculatorSubtitle": "Explore los costos mensuales estimados de propiedades en NYC.",
+    "heroHeadline": "Descubra el valor de su propiedad",
+    "formHeading": "Solicitar una valoración",
+    "resultHeading": "Pago estimado",
+    "calculatorFooter": "Use esta herramienta para explorar los costos mensuales estimados de propiedades en NYC. Estas cifras son solo estimaciones; los pagos reales pueden variar. Para una orientación personalizada, consulte a un profesional hipotecario con licencia."
   },
   "process": {
     "buyTitle": "El proceso de compra",

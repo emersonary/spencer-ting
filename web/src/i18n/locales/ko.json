@@ -17,7 +17,7 @@
     "sell": "판매",
     "blog": "인사이트",
     "tools": "도구",
-    "mortgage": "모기지 계산기",
+    "mortgage": "부동산 감정평가",
     "contact": "문의",
     "login": "로그인",
     "logout": "로그아웃",
@@ -64,7 +64,7 @@
     "experience": "경력 연수",
     "transactions": "완료된 거래",
     "volume": "총 판매 규모",
-    "neighborhoods": "NYC 동네"
+    "listedProperties": "NYC 등록 매물"
   },
   "about": {
     "title": "Spencer Ting을 만나보세요",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "모기지 계산기",
-    "subtitle": "NYC 부동산의 월 상환액을 추정하세요",
+    "title": "부동산 감정평가",
+    "subtitle": "부동산 시장 가치에 대한 무료 견적을 요청하세요.",
     "homePrice": "주택 가격",
     "downPayment": "계약금",
     "downPaymentPercent": "계약금 비율",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "보험",
     "total": "월 합계",
-    "disclaimer": "이 계산기는 추정치만 제공합니다. 실제 상환액은 다를 수 있습니다. 면허를 보유한 모기지 전문가와 상담하세요."
+    "disclaimer": "이 계산기는 추정치만 제공합니다. 실제 상환액은 다를 수 있습니다. 면허를 보유한 모기지 전문가와 상담하세요.",
+    "heroAlt": "부동산의 가치를 발견하세요",
+    "address": "부동산 주소",
+    "requestValuation": "감정 요청",
+    "share": "공유",
+    "shareText": "Spencer Ting과 함께 부동산의 가치를 알아보세요.",
+    "shareCopied": "링크가 클립보드에 복사되었습니다.",
+    "formSuccess": "감사합니다. Spencer가 곧 부동산 감정 관련으로 연락드리겠습니다.",
+    "formDisclaimer": "이 양식을 제출하면 부동산 감정에 관한 연락에 동의하는 것으로 간주됩니다. 견적은 참고용이며 공식 감정평가가 아닙니다. 이 요청으로 어떠한 의무도 발생하지 않습니다.",
+    "calculatorHeading": "납부액 추정",
+    "calculatorSubtitle": "NYC 매물의 예상 월 비용을 살펴보세요.",
+    "heroHeadline": "부동산의 가치를 발견하세요",
+    "formHeading": "감정 요청",
+    "resultHeading": "예상 납부액",
+    "calculatorFooter": "이 도구로 NYC 매물의 예상 월 비용을 살펴보세요. 표시된 금액은 추정치일 뿐이며 실제 납부액은 달라질 수 있습니다. 맞춤 안내가 필요하면 면허를 갖춘 모기지 전문가와 상담하세요."
   },
   "process": {
     "buyTitle": "구매 절차",

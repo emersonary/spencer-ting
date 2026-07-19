@@ -69,7 +69,7 @@ export function PropertyDetail() {
             <AppLink to="/contact" className="btn btn-primary" style={{ width: '100%' }}>
               {t('hero.ctaTalk')}
             </AppLink>
-            <AppLink to="/mortgage-calculator" className="btn btn-outline" style={{ width: '100%', marginTop: '1rem', color: 'var(--color-navy)', borderColor: 'var(--color-navy)' }}>
+            <AppLink to="/mortgage-calculator" className="btn btn-outline" style={{ width: '100%', marginTop: '1rem' }}>
               {t('nav.mortgage')}
             </AppLink>
           </div>

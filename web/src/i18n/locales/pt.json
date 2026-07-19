@@ -17,7 +17,7 @@
     "sell": "Vender",
     "blog": "Insights",
     "tools": "Ferramentas",
-    "mortgage": "Calculadora de financiamento",
+    "mortgage": "Avaliações de imóveis",
     "contact": "Contato",
     "login": "Entrar",
     "logout": "Sair",
@@ -64,7 +64,7 @@
     "experience": "Anos de experiência",
     "transactions": "Transações concluídas",
     "volume": "Volume total de vendas",
-    "neighborhoods": "Bairros de NYC"
+    "listedProperties": "Imóveis listados em NYC"
   },
   "about": {
     "title": "Conheça Spencer Ting",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "Calculadora de financiamento",
-    "subtitle": "Estime sua parcela mensal para imóveis em NYC",
+    "title": "Avaliações de imóveis",
+    "subtitle": "Solicite uma estimativa gratuita do valor de mercado do seu imóvel.",
     "homePrice": "Preço do imóvel",
     "downPayment": "Entrada",
     "downPaymentPercent": "Entrada %",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "Seguro",
     "total": "Total mensal",
-    "disclaimer": "Esta calculadora fornece apenas estimativas. Os pagamentos reais podem variar. Consulte um profissional de financiamento habilitado."
+    "disclaimer": "Esta calculadora fornece apenas estimativas. Os pagamentos reais podem variar. Consulte um profissional de financiamento habilitado.",
+    "heroAlt": "Descubra o valor do seu imóvel",
+    "address": "Endereço do imóvel",
+    "requestValuation": "Solicitar avaliação",
+    "share": "Compartilhar",
+    "shareText": "Descubra o valor do seu imóvel com Spencer Ting.",
+    "shareCopied": "Link copiado para a área de transferência.",
+    "formSuccess": "Obrigado. Spencer entrará em contato em breve com sua avaliação.",
+    "formDisclaimer": "Ao enviar este formulário, você concorda em ser contatado sobre uma avaliação. As estimativas são apenas informativas e não constituem um laudo formal. Este pedido não cria qualquer obrigação.",
+    "calculatorHeading": "Estimador de pagamentos",
+    "calculatorSubtitle": "Explore custos mensais estimados para imóveis em NYC.",
+    "heroHeadline": "Descubra o valor do seu imóvel",
+    "formHeading": "Solicitar uma avaliação",
+    "resultHeading": "Pagamento estimado",
+    "calculatorFooter": "Use esta ferramenta para explorar os custos mensuais estimados de imóveis em NYC. Esses valores são apenas estimativas—os pagamentos reais podem variar. Para orientação personalizada, consulte um profissional de financiamento licenciado."
   },
   "process": {
     "buyTitle": "O processo de compra",

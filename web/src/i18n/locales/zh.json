@@ -17,7 +17,7 @@
     "sell": "售房",
     "blog": "市场洞察",
     "tools": "工具",
-    "mortgage": "房贷计算器",
+    "mortgage": "房产估值",
     "contact": "联系我们",
     "login": "登录",
     "logout": "退出",
@@ -64,7 +64,7 @@
     "experience": "从业年限",
     "transactions": "成交笔数",
     "volume": "总销售额",
-    "neighborhoods": "NYC 社区"
+    "listedProperties": "NYC 在售房源"
   },
   "about": {
     "title": "认识 Spencer Ting",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "房贷计算器",
-    "subtitle": "估算 NYC 房产的月供",
+    "title": "房产估值",
+    "subtitle": "申请免费了解您房产的市场估值。",
     "homePrice": "房价",
     "downPayment": "首付",
     "downPaymentPercent": "首付比例",
@@ -138,7 +138,21 @@
     "hoaFee": "物业费",
     "insuranceFee": "保险",
     "total": "月度总计",
-    "disclaimer": "本计算器仅提供估算。实际还款可能有所不同。请咨询持牌房贷专业人士。"
+    "disclaimer": "本计算器仅提供估算。实际还款可能有所不同。请咨询持牌房贷专业人士。",
+    "heroAlt": "发现您房产的价值",
+    "address": "房产地址",
+    "requestValuation": "申请估值",
+    "share": "分享",
+    "shareText": "与 Spencer Ting 一起发现您房产的价值。",
+    "shareCopied": "链接已复制到剪贴板。",
+    "formSuccess": "感谢您。Spencer 将很快就房产估值与您联系。",
+    "formDisclaimer": "提交此表单即表示您同意就房产估值与我们联系。估值仅供参考，不构成正式评估报告。此申请不产生任何义务。",
+    "calculatorHeading": "月供估算",
+    "calculatorSubtitle": "了解纽约房产的预估月度费用。",
+    "heroHeadline": "发现您房产的价值",
+    "formHeading": "申请估值",
+    "resultHeading": "预估月供",
+    "calculatorFooter": "使用此工具了解纽约房产的预估月度费用。这些数字仅为估算，实际还款可能有所不同。如需个性化建议，请咨询持牌抵押贷款专业人士。"
   },
   "process": {
     "buyTitle": "购房流程",

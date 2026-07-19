@@ -17,7 +17,7 @@
     "sell": "売却",
     "blog": "インサイト",
     "tools": "ツール",
-    "mortgage": "住宅ローン計算機",
+    "mortgage": "物件査定",
     "contact": "お問い合わせ",
     "login": "ログイン",
     "logout": "ログアウト",
@@ -64,7 +64,7 @@
     "experience": "年の経験",
     "transactions": "成約件数",
     "volume": "総売上高",
-    "neighborhoods": "NYCのエリア"
+    "listedProperties": "NYC掲載物件"
   },
   "about": {
     "title": "Spencer Ting をご紹介",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "住宅ローン計算機",
-    "subtitle": "NYC物件の月々の支払いを試算",
+    "title": "物件査定",
+    "subtitle": "物件の市場価値の無料査定をご依頼ください。",
     "homePrice": "物件価格",
     "downPayment": "頭金",
     "downPaymentPercent": "頭金率",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "保険",
     "total": "月額合計",
-    "disclaimer": "この計算機は推定値のみを提供します。実際の支払いは異なる場合があります。免許を持つ住宅ローンの専門家にご相談ください。"
+    "disclaimer": "この計算機は推定値のみを提供します。実際の支払いは異なる場合があります。免許を持つ住宅ローンの専門家にご相談ください。",
+    "heroAlt": "あなたの物件の価値を発見",
+    "address": "物件住所",
+    "requestValuation": "査定を依頼",
+    "share": "共有",
+    "shareText": "Spencer Ting と一緒に物件の価値を見つけましょう。",
+    "shareCopied": "リンクをクリップボードにコピーしました。",
+    "formSuccess": "ありがとうございます。Spencer よりまもなく査定のご連絡をいたします。",
+    "formDisclaimer": "このフォームを送信すると、物件査定に関するご連絡に同意したものとみなされます。概算は参考情報であり、正式な鑑定ではありません。本リクエストにより義務は発生しません。",
+    "calculatorHeading": "支払額シミュレーター",
+    "calculatorSubtitle": "NYC物件の月々の目安コストを確認できます。",
+    "heroHeadline": "あなたの物件の価値を発見",
+    "formHeading": "査定を依頼",
+    "resultHeading": "推定支払額",
+    "calculatorFooter": "このツールでNYC物件の月々の目安コストを確認できます。表示額はあくまで概算であり、実際の支払額は異なる場合があります。個別のアドバイスについては、免許を持つ住宅ローンの専門家にご相談ください。"
   },
   "process": {
     "buyTitle": "購入プロセス",

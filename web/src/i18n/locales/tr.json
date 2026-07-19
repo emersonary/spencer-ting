@@ -17,7 +17,7 @@
     "sell": "Sat",
     "blog": "İçgörüler",
     "tools": "Araçlar",
-    "mortgage": "Mortgage Hesaplayıcı",
+    "mortgage": "Mülk Değerlemeleri",
     "contact": "İletişim",
     "login": "Giriş Yap",
     "logout": "Çıkış Yap",
@@ -64,7 +64,7 @@
     "experience": "Yıllık Deneyim",
     "transactions": "Tamamlanan İşlemler",
     "volume": "Toplam Satış Hacmi",
-    "neighborhoods": "NYC Mahalleleri"
+    "listedProperties": "NYC'de listelenen mülkler"
   },
   "about": {
     "title": "Spencer Ting ile tanışın",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "Mortgage Hesaplayıcı",
-    "subtitle": "NYC mülkleri için aylık ödemenizi tahmin edin",
+    "title": "Mülk Değerlemeleri",
+    "subtitle": "Mülkünüzün piyasa değeri için ücretsiz bir tahmin talep edin.",
     "homePrice": "Ev Fiyatı",
     "downPayment": "Peşinat",
     "downPaymentPercent": "Peşinat %",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "Sigorta",
     "total": "Aylık Toplam",
-    "disclaimer": "Bu hesaplayıcı yalnızca tahmin sağlar. Gerçek ödemeler farklılık gösterebilir. Lisanslı bir mortgage uzmanına danışın."
+    "disclaimer": "Bu hesaplayıcı yalnızca tahmin sağlar. Gerçek ödemeler farklılık gösterebilir. Lisanslı bir mortgage uzmanına danışın.",
+    "heroAlt": "Mülkünüzün değerini keşfedin",
+    "address": "Mülk adresi",
+    "requestValuation": "Değerleme talep et",
+    "share": "Paylaş",
+    "shareText": "Spencer Ting ile mülkünüzün değerini keşfedin.",
+    "shareCopied": "Bağlantı panoya kopyalandı.",
+    "formSuccess": "Teşekkürler. Spencer kısa süre içinde değerleme için sizinle iletişime geçecek.",
+    "formDisclaimer": "Bu formu göndererek bir mülk değerlemesi hakkında iletişime geçilmesini kabul edersiniz. Tahminler yalnızca bilgilendirme amaçlıdır ve resmi bir ekspertiz değildir. Bu talep herhangi bir yükümlülük doğurmaz.",
+    "calculatorHeading": "Ödeme tahmin aracı",
+    "calculatorSubtitle": "NYC mülkleri için tahmini aylık maliyetleri inceleyin.",
+    "heroHeadline": "Mülkünüzün değerini keşfedin",
+    "formHeading": "Değerleme talep edin",
+    "resultHeading": "Tahmini ödeme",
+    "calculatorFooter": "Bu aracı NYC mülkleri için tahmini aylık maliyetleri incelemek üzere kullanın. Bu rakamlar yalnızca tahmindir—gerçek ödemeler farklılık gösterebilir. Kişiselleştirilmiş rehberlik için lisanslı bir mortgage uzmanına danışın."
   },
   "process": {
     "buyTitle": "Satın Alma Süreci",

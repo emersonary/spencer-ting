@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AppLink } from '../components/routing/AppLink';
 import { PropertyCard } from '../components/property/PropertyCard';
+import { SocialIcon } from '../components/SocialIcon';
+import { StatCounter } from '../components/StatCounter';
 import { propertyService, type Property } from '../services/property';
 import '../styles/pages.css';
 
@@ -17,9 +19,29 @@ export function Home() {
   const { t } = useTranslation();
   const [featured, setFeatured] = useState<Property[]>([]);
   const [videoReady, setVideoReady] = useState(false);
+  const [statsActive, setStatsActive] = useState(false);
+  const statsRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     void propertyService.list({ featuredOnly: true, limit: 3 }).then((res) => setFeatured(res.properties));
+  }, []);
+
+  useEffect(() => {
+    const el = statsRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          setStatsActive(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -56,23 +78,23 @@ export function Home() {
         </div>
       </section>
 
-      <section className="stats-bar">
+      <section className="stats-bar" ref={statsRef}>
         <div className="container grid-4">
           <div className="stat-item">
-            <div className="stat-value">10+</div>
+            <StatCounter value={10} active={statsActive} suffix="+" />
             <div className="stat-label">{t('stats.experience')}</div>
           </div>
           <div className="stat-item">
-            <div className="stat-value">200+</div>
+            <StatCounter value={200} active={statsActive} suffix="+" />
             <div className="stat-label">{t('stats.transactions')}</div>
           </div>
           <div className="stat-item">
-            <div className="stat-value">$500M+</div>
+            <StatCounter value={800} active={statsActive} prefix="$" suffix="M+" />
             <div className="stat-label">{t('stats.volume')}</div>
           </div>
           <div className="stat-item">
-            <div className="stat-value">50+</div>
-            <div className="stat-label">{t('stats.neighborhoods')}</div>
+            <StatCounter value={1000} active={statsActive} suffix="+" />
+            <div className="stat-label">{t('stats.listedProperties')}</div>
           </div>
         </div>
       </section>
@@ -167,9 +189,11 @@ export function Home() {
           <div className="gold-line" />
           <div className="social-links" style={{ marginTop: '2rem' }}>
             <a href="https://www.instagram.com/artgroup.nyc" target="_blank" rel="noopener noreferrer" className="social-link">
-              {t('social.instagram')} · {t('social.instagramHandle')}
+              <SocialIcon network="instagram" />
+              {t('social.instagram')}
             </a>
             <a href="https://www.linkedin.com/in/spencer-ting-212036337/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <SocialIcon network="linkedin" />
               {t('social.linkedin')}
             </a>
           </div>

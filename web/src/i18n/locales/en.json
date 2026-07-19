@@ -17,7 +17,7 @@
     "sell": "Sell",
     "blog": "Insights",
     "tools": "Tools",
-    "mortgage": "Mortgage Calculator",
+    "mortgage": "Property Valuations",
     "contact": "Contact",
     "login": "Sign In",
     "logout": "Sign Out",
@@ -64,7 +64,7 @@
     "experience": "Years Experience",
     "transactions": "Transactions Closed",
     "volume": "Total Sales Volume",
-    "neighborhoods": "NYC Neighborhoods"
+    "listedProperties": "NYC Listed Properties"
   },
   "about": {
     "title": "Meet Spencer Ting",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "Mortgage Calculator",
-    "subtitle": "Estimate your monthly payment for NYC properties",
+    "title": "Property Valuations",
+    "subtitle": "Request a complimentary estimate of your property market value.",
     "homePrice": "Home Price",
     "downPayment": "Down Payment",
     "downPaymentPercent": "Down Payment %",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "Insurance",
     "total": "Total Monthly",
-    "disclaimer": "This calculator provides estimates only. Actual payments may vary. Consult a licensed mortgage professional."
+    "disclaimer": "This calculator provides estimates only. Actual payments may vary. Consult a licensed mortgage professional.",
+    "heroAlt": "Discover the value of your property",
+    "address": "Property address",
+    "requestValuation": "Request valuation",
+    "share": "Share",
+    "shareText": "Discover the value of your property with Spencer Ting.",
+    "shareCopied": "Link copied to clipboard.",
+    "formSuccess": "Thank you. Spencer will follow up with your property valuation shortly.",
+    "formDisclaimer": "By submitting this form, you agree to be contacted about a property valuation. Estimates are informational only and are not a formal appraisal. No obligation is created by this request.",
+    "calculatorHeading": "Payment estimator",
+    "calculatorSubtitle": "Explore estimated monthly costs for NYC properties.",
+    "heroHeadline": "Discover the value of your property",
+    "formHeading": "Request a valuation",
+    "resultHeading": "Estimated payment",
+    "calculatorFooter": "Use this tool to explore estimated monthly costs for NYC properties. These figures are estimates only—actual payments may vary. For personalized guidance, consult a licensed mortgage professional."
   },
   "process": {
     "buyTitle": "The Buying Process",

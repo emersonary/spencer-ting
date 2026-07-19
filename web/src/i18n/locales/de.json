@@ -17,7 +17,7 @@
     "sell": "Verkaufen",
     "blog": "Einblicke",
     "tools": "Werkzeuge",
-    "mortgage": "Hypothekenrechner",
+    "mortgage": "Immobilienbewertungen",
     "contact": "Kontakt",
     "login": "Anmelden",
     "logout": "Abmelden",
@@ -64,7 +64,7 @@
     "experience": "Jahre Erfahrung",
     "transactions": "Abgeschlossene Transaktionen",
     "volume": "Gesamtverkaufsvolumen",
-    "neighborhoods": "NYC-Stadtteile"
+    "listedProperties": "In NYC gelistete Immobilien"
   },
   "about": {
     "title": "Lernen Sie Spencer Ting kennen",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "Hypothekenrechner",
-    "subtitle": "Schätzen Sie Ihre monatliche Rate für NYC-Immobilien",
+    "title": "Immobilienbewertungen",
+    "subtitle": "Fordern Sie eine unverbindliche Einschätzung des Marktwerts Ihrer Immobilie an.",
     "homePrice": "Kaufpreis",
     "downPayment": "Anzahlung",
     "downPaymentPercent": "Anzahlung %",
@@ -138,7 +138,21 @@
     "hoaFee": "HOA",
     "insuranceFee": "Versicherung",
     "total": "Monatlich gesamt",
-    "disclaimer": "Dieser Rechner liefert nur Schätzungen. Die tatsächlichen Zahlungen können abweichen. Konsultieren Sie einen lizenzierten Hypothekenexperten."
+    "disclaimer": "Dieser Rechner liefert nur Schätzungen. Die tatsächlichen Zahlungen können abweichen. Konsultieren Sie einen lizenzierten Hypothekenexperten.",
+    "heroAlt": "Entdecken Sie den Wert Ihrer Immobilie",
+    "address": "Immobilienadresse",
+    "requestValuation": "Bewertung anfordern",
+    "share": "Teilen",
+    "shareText": "Entdecken Sie den Wert Ihrer Immobilie mit Spencer Ting.",
+    "shareCopied": "Link in die Zwischenablage kopiert.",
+    "formSuccess": "Vielen Dank. Spencer meldet sich in Kürze mit Ihrer Bewertung.",
+    "formDisclaimer": "Mit dem Absenden dieses Formulars erklären Sie sich damit einverstanden, bezüglich einer Immobilienbewertung kontaktiert zu werden. Schätzungen dienen nur der Information und sind keine formellen Gutachten. Mit dieser Anfrage entsteht keine Verpflichtung.",
+    "calculatorHeading": "Zahlungsrechner",
+    "calculatorSubtitle": "Schätzen Sie monatliche Kosten für Immobilien in NYC.",
+    "heroHeadline": "Entdecken Sie den Wert Ihrer Immobilie",
+    "formHeading": "Bewertung anfordern",
+    "resultHeading": "Geschätzte Zahlung",
+    "calculatorFooter": "Nutzen Sie dieses Tool, um geschätzte monatliche Kosten für Immobilien in NYC zu prüfen. Diese Angaben sind nur Schätzungen—tatsächliche Zahlungen können abweichen. Für eine persönliche Beratung wenden Sie sich an einen zugelassenen Hypothekenexperten."
   },
   "process": {
     "buyTitle": "Der Kaufprozess",

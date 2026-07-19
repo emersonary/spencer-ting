@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { AppLink } from '../routing/AppLink';
 import { BrandWordmark } from '../BrandWordmark';
 import { LanguageSwitcher } from '../LanguageSwitcher';
+import { SocialIcon } from '../SocialIcon';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -32,10 +33,12 @@ export function Footer() {
           </div>
           <div className="footer-col">
             <h4>{t('footer.connect')}</h4>
-            <a href="https://www.linkedin.com/in/spencer-ting-212036337/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/spencer-ting-212036337/" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+              <SocialIcon network="linkedin" />
               {t('social.linkedin')}
             </a>
-            <a href="https://www.instagram.com/artgroup.nyc" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/artgroup.nyc" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+              <SocialIcon network="instagram" />
               {t('social.instagram')}
             </a>
           </div>

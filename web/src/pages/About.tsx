@@ -9,29 +9,23 @@ export function About() {
   return (
     <section className="section">
       <div className="container">
-        <div className="grid-2" style={{ alignItems: 'start', gap: '4rem' }}>
-          <div>
-            <img
-              src="/images/spencer-ting.png"
-              alt={t('brand.name')}
-              style={{ borderRadius: '4px', boxShadow: 'var(--shadow-md)' }}
-            />
+        <article className="about-article">
+          <h1>{t('about.title')}</h1>
+          <div className="gold-line" />
+          <img
+            className="about-portrait"
+            src="/images/spencer-ting.jpg"
+            alt={t('brand.name')}
+          />
+          {BIO_KEYS.map((key) => (
+            <p key={key}>{t(`about.${key}`)}</p>
+          ))}
+          <div className="about-cta">
+            <AppLink to="/contact" className="btn btn-primary">{t('hero.ctaTalk')}</AppLink>
           </div>
-          <div>
-            <h1>{t('about.title')}</h1>
-            <div className="gold-line" style={{ margin: '1rem 0' }} />
-            {BIO_KEYS.map((key) => (
-              <p key={key} style={{ marginBottom: '1.25rem' }}>
-                {t(`about.${key}`)}
-              </p>
-            ))}
-            <div style={{ marginTop: '2rem' }}>
-              <AppLink to="/contact" className="btn btn-primary">{t('hero.ctaTalk')}</AppLink>
-            </div>
-          </div>
-        </div>
+        </article>
 
-        <div className="grid-3" style={{ marginTop: '5rem' }}>
+        <div className="grid-3 about-values">
           <div className="card" style={{ padding: '2rem' }}>
             <h3 className="text-gold">{t('about.values.knowledge')}</h3>
             <p className="text-muted">{t('about.values.knowledgeDesc')}</p>

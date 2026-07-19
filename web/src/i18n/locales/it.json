@@ -17,7 +17,7 @@
     "sell": "Vendi",
     "blog": "Approfondimenti",
     "tools": "Strumenti",
-    "mortgage": "Calcolatore mutuo",
+    "mortgage": "Valutazioni immobiliari",
     "contact": "Contatti",
     "login": "Accedi",
     "logout": "Esci",
@@ -64,7 +64,7 @@
     "experience": "Anni di esperienza",
     "transactions": "Transazioni concluse",
     "volume": "Volume totale delle vendite",
-    "neighborhoods": "Quartieri di NYC"
+    "listedProperties": "Immobili in vendita a NYC"
   },
   "about": {
     "title": "Incontra Spencer Ting",
@@ -122,8 +122,8 @@
     }
   },
   "mortgage": {
-    "title": "Calcolatore mutuo",
-    "subtitle": "Stima la rata mensile per proprietà a NYC",
+    "title": "Valutazioni immobiliari",
+    "subtitle": "Richiedi una stima gratuita del valore di mercato della tua proprietà.",
     "homePrice": "Prezzo della casa",
     "downPayment": "Anticipo",
     "downPaymentPercent": "Anticipo %",
@@ -138,7 +138,21 @@
     "hoaFee": "Condominio",
     "insuranceFee": "Assicurazione",
     "total": "Totale mensile",
-    "disclaimer": "Questo calcolatore fornisce solo stime. I pagamenti effettivi possono variare. Consulta un professionista del mutuo autorizzato."
+    "disclaimer": "Questo calcolatore fornisce solo stime. I pagamenti effettivi possono variare. Consulta un professionista del mutuo autorizzato.",
+    "heroAlt": "Scopri il valore della tua proprietà",
+    "address": "Indirizzo della proprietà",
+    "requestValuation": "Richiedi valutazione",
+    "share": "Condividi",
+    "shareText": "Scopri il valore della tua proprietà con Spencer Ting.",
+    "shareCopied": "Link copiato negli appunti.",
+    "formSuccess": "Grazie. Spencer ti contatterà a breve con la valutazione.",
+    "formDisclaimer": "Inviando questo modulo, accetti di essere contattato per una valutazione. Le stime sono solo informative e non costituiscono una perizia formale. Questa richiesta non crea alcun obbligo.",
+    "calculatorHeading": "Stimatore dei pagamenti",
+    "calculatorSubtitle": "Esplora i costi mensili stimati per immobili a NYC.",
+    "heroHeadline": "Scopri il valore della tua proprietà",
+    "formHeading": "Richiedi una valutazione",
+    "resultHeading": "Pagamento stimato",
+    "calculatorFooter": "Usa questo strumento per esplorare i costi mensili stimati delle proprietà a NYC. Queste cifre sono solo stime—i pagamenti reali possono variare. Per una guida personalizzata, consulta un professionista dei mutui autorizzato."
   },
   "process": {
     "buyTitle": "Il processo di acquisto",

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { SocialIcon } from '../components/SocialIcon';
 import { propertyService } from '../services/property';
 
 export function Contact() {
@@ -76,10 +77,12 @@ export function Contact() {
 
         <div className="social-links" style={{ marginTop: '3rem' }}>
           <a href="https://www.linkedin.com/in/spencer-ting-212036337/" target="_blank" rel="noopener noreferrer" className="social-link">
+            <SocialIcon network="linkedin" />
             {t('social.linkedin')}
           </a>
           <a href="https://www.instagram.com/artgroup.nyc" target="_blank" rel="noopener noreferrer" className="social-link">
-            {t('social.instagram')} {t('social.instagramHandle')}
+            <SocialIcon network="instagram" />
+            {t('social.instagram')}
           </a>
         </div>
       </div>

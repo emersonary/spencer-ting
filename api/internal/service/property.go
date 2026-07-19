@@ -6,8 +6,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/google/uuid"
 	propertyv1 "github.com/emersonary/spencer-ting/api/gen/property/v1"
+	"github.com/google/uuid"
+	"go.uber.org/zap"
 )
 
 var (
@@ -18,10 +19,16 @@ var (
 type PropertyService struct {
 	mu        sync.Mutex
 	inquiries []propertyv1.SubmitInquiryRequest
+	logger    *zap.Logger
 }
 
-func NewPropertyService() *PropertyService {
-	return &PropertyService{}
+func NewPropertyService(logger *zap.Logger) *PropertyService {
+	if logger == nil {
+		logger = zap.NewNop()
+	}
+	s := &PropertyService{logger: logger}
+	s.logger.Info("properties service enabled")
+	return s
 }
 
 func (s *PropertyService) ListProperties(_ context.Context, req *propertyv1.ListPropertiesRequest) ([]*propertyv1.Property, int32, error) {
