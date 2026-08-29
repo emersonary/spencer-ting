@@ -155,6 +155,9 @@ jobs:
             api/config/config.production.yaml \
             "$TARGET:/opt/spencer-ting-api/config.yaml"
 
+          ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
+            'sudo mkdir -p /tmp/spencer-ting-deploy'
+
           rsync -avz -e "$RSYNC_RSH" \
             deploy/nginx-api-proxy.conf \
             deploy/nginx-spencer-ting.conf \
@@ -163,7 +166,7 @@ jobs:
             deploy/install-nginx-site.sh \
             deploy/check-service.sh \
             deploy/configure-dns.sh \
-            "$TARGET:/tmp/"
+            "$TARGET:/tmp/spencer-ting-deploy/"
 
           if [ -n "$SPENCER_TING_DATABASE_PASSWORD" ]; then
             DB_PASSWORD="$SPENCER_TING_DATABASE_PASSWORD"
@@ -200,10 +203,10 @@ jobs:
             'set -e; bash /tmp/check-service.sh spencer-ting-api 18084 /healthz'
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
-            'set -e; bash /tmp/install-nginx-site.sh /tmp/nginx-spencer-ting.conf /tmp/nginx-api-proxy.conf'
+            'set -e; bash /tmp/spencer-ting-deploy/install-nginx-site.sh /tmp/spencer-ting-deploy/nginx-spencer-ting.conf /tmp/spencer-ting-deploy/nginx-api-proxy.conf'
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
-            "set -e; GODADDY_API_KEY='${GODADDY_API_KEY:-}' GODADDY_API_SECRET='${GODADDY_API_SECRET:-}' bash /tmp/configure-dns.sh '$DEPLOY_HOST'"
+            "set -e; GODADDY_API_KEY='${GODADDY_API_KEY:-}' GODADDY_API_SECRET='${GODADDY_API_SECRET:-}' bash /tmp/spencer-ting-deploy/configure-dns.sh '$DEPLOY_HOST'"
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
             'if ! sudo test -f /etc/letsencrypt/live/spencerting.solidia.app/fullchain.pem; then
