@@ -156,7 +156,7 @@ jobs:
             "$TARGET:/opt/spencer-ting-api/config.yaml"
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
-            'sudo mkdir -p /tmp/spencer-ting-deploy'
+            'sudo mkdir -p /tmp/spencer-ting-deploy && sudo chown -R '"$DEPLOY_USER"':'"$DEPLOY_USER"' /tmp/spencer-ting-deploy'
 
           rsync -avz -e "$RSYNC_RSH" \
             deploy/nginx-api-proxy.conf \
