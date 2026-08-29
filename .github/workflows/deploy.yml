@@ -197,10 +197,10 @@ jobs:
             'set -e; DB_PASSWORD="$(sudo awk '\''BEGIN { FS="=" } $1 == "SPENCER_TING_DATABASE_PASSWORD" { sub(/^[^=]*=/, ""); sub(/\r$/, ""); print; exit }'\'' /etc/spencer-ting-api.env)"; export PGPASSWORD="$DB_PASSWORD"; if ! psql -h 127.0.0.1 -U postgres -d postgres -tAc "SELECT 1 FROM pg_database WHERE datname = '\''spencer_ting'\''" | grep -q 1; then createdb -h 127.0.0.1 -U postgres spencer_ting; fi; unset PGPASSWORD'
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
-            'set -e; bash /tmp/install-systemd-service.sh spencer-ting-api /opt/spencer-ting-api/server /tmp/spencer-ting-api.service /etc/spencer-ting-api.env'
+            'set -e; bash /tmp/spencer-ting-deploy/install-systemd-service.sh spencer-ting-api /opt/spencer-ting-api/server /tmp/spencer-ting-deploy/spencer-ting-api.service /etc/spencer-ting-api.env'
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
-            'set -e; bash /tmp/check-service.sh spencer-ting-api 18084 /healthz'
+            'set -e; bash /tmp/spencer-ting-deploy/check-service.sh spencer-ting-api 18084 /healthz'
 
           ssh -i ~/.ssh/deploy_key -p "$PORT" -o StrictHostKeyChecking=yes "$TARGET" \
             'set -e; bash /tmp/spencer-ting-deploy/install-nginx-site.sh /tmp/spencer-ting-deploy/nginx-spencer-ting.conf /tmp/spencer-ting-deploy/nginx-api-proxy.conf'
