@@ -89,9 +89,11 @@ services:
       - "50056:50051"
     environment:
       POSTS_CONFIG: /app/config/config.yaml
-      POSTS_AUTH_JWT_SECRET: local-dev-jwt-secret-change-in-production
+      POSTS_ACCOUNTS_JWT_SECRET: local-dev-jwt-secret-change-in-production
     volumes:
-      - ${DEV_ROOT:-..}/posts/api/config/config.sahar.docker.yaml:/app/config/config.yaml:ro
+      - ${DEV_ROOT:-..}/posts/api/config/config.yaml:/app/config/config.yaml:ro
+      - ${DEV_ROOT:-..}/posts/api/config/menu.yaml:/app/config/menu.yaml:ro
+      - ${DEV_ROOT:-..}/posts/api/config/permissions.yaml:/app/config/permissions.yaml:ro
 
   posts-web:
     image: node:20-alpine

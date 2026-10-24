@@ -12,6 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@emersonary/appkit-accounts': path.resolve(repoRoot, '../via-jeri/appkit/blocks/account/web/src/index.ts'),
+      '@emersonary/appkit-ui': path.resolve(repoRoot, '../via-jeri/appkit/web/ui/src/index.ts'),
     },
     dedupe: ['react', 'react-dom'],
   },
@@ -21,7 +22,13 @@ export default defineConfig({
   cacheDir: path.join(os.tmpdir(), 'vite-cache-spencer-ting'),
   server: {
     fs: {
-      allow: [repoRoot, path.resolve(repoRoot, '../via-jeri/appkit/blocks/account/web')],
+      allow: [
+        repoRoot,
+        path.resolve(__dirname),
+        process.cwd(),
+        path.resolve(repoRoot, '../via-jeri/appkit/blocks/account/web'),
+        path.resolve(repoRoot, '../via-jeri/appkit/web/ui'),
+      ],
     },
     port: 5182,
     proxy: {

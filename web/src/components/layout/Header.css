@@ -152,7 +152,8 @@
 
 .main-nav a:hover,
 .nav-parent:hover,
-.main-nav a.active {
+.main-nav a.active,
+.nav-parent.active {
   color: var(--color-gold);
 }
 
@@ -161,12 +162,77 @@
   font-weight: 600;
 }
 
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  min-width: 16rem;
+  max-width: min(22rem, calc(100vw - 2rem));
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  list-style: none;
+  padding: 0.4rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  z-index: 20;
+}
+
+.dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown li {
+  display: block;
+}
+
+.dropdown a {
+  display: block;
+  min-width: 0;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: start;
+  padding: 0.55rem 1rem;
+  font-size: 0.75rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-dropdown-empty {
+  display: block;
+  padding: 0.55rem 1rem;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
 @media (max-width: 1100px) {
   .main-nav a,
   .nav-parent {
     min-width: 4.75rem;
     font-size: 0.7rem;
     padding: 0.5rem 0.4rem;
+  }
+}
+
+@media (min-width: 961px) {
+  .has-dropdown:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }
 
@@ -206,5 +272,28 @@
     text-align: start;
     font-size: 0.875rem;
     padding: 0.75rem 1rem;
+  }
+
+  .dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    display: none;
+    min-width: 0;
+    max-width: none;
+    padding-inline-start: 0.75rem;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+
+  .dropdown a,
+  .nav-dropdown-empty {
+    font-size: 0.8125rem;
+    padding-block: 0.55rem;
   }
 }

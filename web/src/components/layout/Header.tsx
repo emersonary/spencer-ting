@@ -1,44 +1,48 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { AppLink, AppNavLink } from '../routing/AppLink';
 import { useTranslation } from 'react-i18next';
-import { useAccount, HeaderAccountMenu } from '../../accounts';
+import { HeaderAccountMenu } from '../../accounts';
 import { BrandWordmark } from '../BrandWordmark';
-import { apiHttpUrl } from '../../services/api/transport';
-import { readSession } from '../../accounts/services/storage';
+import { blogService, type BlogPostSummary } from '../../services/blog';
 import './Header.css';
+
+const INSIGHTS_MENU_LIMIT = 8;
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { isAdmin } = useAccount();
-  const { t } = useTranslation();
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [insightPosts, setInsightPosts] = useState<BlogPostSummary[]>([]);
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const insightsActive = location.pathname.startsWith('/blog');
 
-  const navItems = [
+  const leadingNav = [
     { to: '/about', label: t('nav.about') },
     { to: '/properties', label: t('nav.properties') },
     { to: '/neighborhoods', label: t('nav.neighborhoods') },
     { to: '/buy', label: t('nav.buy') },
     { to: '/sell', label: t('nav.sell') },
-    { to: '/blog', label: t('nav.blog') },
+  ];
+  const trailingNav = [
     { to: '/mortgage-calculator', label: t('nav.mortgage') },
     { to: '/contact', label: t('nav.contact') },
   ];
 
-  async function openPostsAdmin() {
-    const session = readSession();
-    if (!session?.accessToken) return;
-    try {
-      const res = await fetch(apiHttpUrl('/account/posts-admin-launch'), {
-        headers: { Authorization: `Bearer ${session.accessToken}` },
+  useEffect(() => {
+    let cancelled = false;
+    void blogService
+      .listPublished(i18n.language)
+      .then((posts) => {
+        if (!cancelled) setInsightPosts(posts.slice(0, INSIGHTS_MENU_LIMIT));
+      })
+      .catch(() => {
+        if (!cancelled) setInsightPosts([]);
       });
-      if (!res.ok) return;
-      const payload = (await res.json()) as { url?: string };
-      if (payload.url) {
-        window.open(payload.url, '_blank', 'noopener,noreferrer');
-      }
-    } catch {
-      /* ignore */
-    }
-  }
+    return () => {
+      cancelled = true;
+    };
+  }, [i18n.language]);
 
   return (
     <header className="site-header">
@@ -80,7 +84,7 @@ export function Header() {
 
         <nav className={`main-nav ${menuOpen ? 'open' : ''}`}>
           <ul>
-            {navItems.map((item) => (
+            {leadingNav.map((item) => (
               <li key={item.to}>
                 <AppNavLink
                   to={item.to}
@@ -91,20 +95,51 @@ export function Header() {
                 </AppNavLink>
               </li>
             ))}
-            {isAdmin && (
-              <li>
-                <button
-                  type="button"
-                  className="nav-parent nav-admin"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    void openPostsAdmin();
-                  }}
+            <li
+              className="has-dropdown"
+              onMouseEnter={() => setOpenDropdown('insights')}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <button
+                type="button"
+                className={`nav-parent${insightsActive ? ' active' : ''}`}
+                aria-expanded={openDropdown === 'insights'}
+                onClick={() => setOpenDropdown((d) => (d === 'insights' ? null : 'insights'))}
+              >
+                {t('nav.blog')}
+              </button>
+              <ul className={`dropdown ${openDropdown === 'insights' ? 'show' : ''}`}>
+                <li>
+                  <AppNavLink to="/blog" onClick={() => setMenuOpen(false)}>
+                    {t('nav.blogAll')}
+                  </AppNavLink>
+                </li>
+                {insightPosts.length === 0 ? (
+                  <li>
+                    <span className="nav-dropdown-empty">{t('blog.noPosts')}</span>
+                  </li>
+                ) : (
+                  insightPosts.map((post) => (
+                    <li key={post.id}>
+                      <AppNavLink to={`/blog/${post.slug}`} onClick={() => setMenuOpen(false)}>
+                        {post.title}
+                      </AppNavLink>
+                    </li>
+                  ))
+                )}
+              </ul>
+            </li>
+            {trailingNav.map((item) => (
+              <li key={item.to}>
+                <AppNavLink
+                  to={item.to}
+                  onClick={() => setMenuOpen(false)}
+                  className={({ isActive }) => (isActive ? 'active' : undefined)}
                 >
-                  {t('nav.blogAdmin')}
-                </button>
+                  {item.label}
+                </AppNavLink>
               </li>
-            )}
+            ))}
           </ul>
         </nav>
       </div>

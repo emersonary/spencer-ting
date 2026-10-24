@@ -287,9 +287,13 @@ export function AccountWorkflow({ step: routeStep }: AccountWorkflowProps) {
         </div>
       </section>
       <style>{`
+        .account-workflow .card {
+          background: var(--color-cream);
+          box-shadow: none;
+        }
         .account-workflow .appkit-login-workflow__tabs {
           --appkit-account-border: var(--color-border);
-          --appkit-account-surface: var(--color-surface);
+          --appkit-account-surface: var(--color-cream);
           --appkit-account-primary: var(--color-primary);
           --appkit-account-on-primary: var(--color-cream);
           --appkit-account-radius: var(--radius);
