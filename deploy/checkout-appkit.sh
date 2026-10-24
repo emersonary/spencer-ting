@@ -25,6 +25,7 @@ git clone --depth 1 --branch "$REF" "$REPO" "$DEST"
 test -f "$DEST/blocks/account/web/package.json"
 test -f "$DEST/go/go.mod"
 test -f "$DEST/blocks/account/go/go.mod"
+test -f "$DEST/blocks/messenger/go/go.mod"
 
 echo "==> Installing appkit-accounts npm dependencies..."
 npm install --prefix "$DEST/blocks/account/web" --no-audit --no-fund

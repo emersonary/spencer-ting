@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { AnimatedStats } from '@emersonary/appkit-ui';
 import { AppLink } from '../components/routing/AppLink';
 import { PropertyCard } from '../components/property/PropertyCard';
 import { SocialIcon } from '../components/SocialIcon';
-import { StatCounter } from '../components/StatCounter';
 import { propertyService, type Property } from '../services/property';
 import '../styles/pages.css';
 
@@ -19,29 +19,9 @@ export function Home() {
   const { t } = useTranslation();
   const [featured, setFeatured] = useState<Property[]>([]);
   const [videoReady, setVideoReady] = useState(false);
-  const [statsActive, setStatsActive] = useState(false);
-  const statsRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     void propertyService.list({ featuredOnly: true, limit: 3 }).then((res) => setFeatured(res.properties));
-  }, []);
-
-  useEffect(() => {
-    const el = statsRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) {
-          setStatsActive(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25 },
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
   }, []);
 
   return (
@@ -78,24 +58,17 @@ export function Home() {
         </div>
       </section>
 
-      <section className="stats-bar" ref={statsRef}>
-        <div className="container grid-4">
-          <div className="stat-item">
-            <StatCounter value={10} active={statsActive} suffix="+" />
-            <div className="stat-label">{t('stats.experience')}</div>
-          </div>
-          <div className="stat-item">
-            <StatCounter value={200} active={statsActive} suffix="+" />
-            <div className="stat-label">{t('stats.transactions')}</div>
-          </div>
-          <div className="stat-item">
-            <StatCounter value={800} active={statsActive} prefix="$" suffix="M+" />
-            <div className="stat-label">{t('stats.volume')}</div>
-          </div>
-          <div className="stat-item">
-            <StatCounter value={1000} active={statsActive} suffix="+" />
-            <div className="stat-label">{t('stats.listedProperties')}</div>
-          </div>
+      <section className="stats-bar">
+        <div className="container">
+          <AnimatedStats
+            className="grid-4"
+            items={[
+              [t('stats.experience'), 10, { suffix: '+' }],
+              [t('stats.transactions'), 200, { suffix: '+' }],
+              [t('stats.volume'), 800, { prefix: '$', suffix: 'M+' }],
+              [t('stats.listedProperties'), 1000, { suffix: '+' }],
+            ]}
+          />
         </div>
       </section>
 

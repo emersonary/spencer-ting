@@ -56,6 +56,7 @@ jobs:
           go mod edit -replace=github.com/emersonary/appkit/accounts=../../via-jeri/appkit/blocks/account/go
           go mod edit -replace=github.com/emersonary/appkit/menu=../../via-jeri/appkit/blocks/menu/go
           go mod edit -replace=github.com/emersonary/appkit/tenants=../../via-jeri/appkit/blocks/tenant/go
+          go mod edit -replace=github.com/emersonary/appkit/messenger=../../via-jeri/appkit/blocks/messenger/go
           go mod tidy
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server ./cmd/server
 
@@ -107,6 +108,7 @@ jobs:
           go mod edit -replace=github.com/emersonary/appkit/accounts=../../via-jeri/appkit/blocks/account/go
           go mod edit -replace=github.com/emersonary/appkit/menu=../../via-jeri/appkit/blocks/menu/go
           go mod edit -replace=github.com/emersonary/appkit/tenants=../../via-jeri/appkit/blocks/tenant/go
+          go mod edit -replace=github.com/emersonary/appkit/messenger=../../via-jeri/appkit/blocks/messenger/go
           go mod tidy
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server ./cmd/server
 

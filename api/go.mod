@@ -16,7 +16,9 @@ require (
 require (
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
+	github.com/coder/websocket v1.8.14 // indirect
 	github.com/emersonary/appkit/menu v0.0.0 // indirect
+	github.com/emersonary/appkit/messenger v0.0.0 // indirect
 	github.com/emersonary/appkit/tenants v0.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
@@ -60,3 +62,5 @@ replace github.com/emersonary/appkit/accounts => ../../via-jeri/appkit/blocks/ac
 replace github.com/emersonary/appkit/menu => ../../via-jeri/appkit/blocks/menu/go
 
 replace github.com/emersonary/appkit/tenants => ../../via-jeri/appkit/blocks/tenant/go
+
+replace github.com/emersonary/appkit/messenger => ../../via-jeri/appkit/blocks/messenger/go
