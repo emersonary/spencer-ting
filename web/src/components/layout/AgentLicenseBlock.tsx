@@ -20,7 +20,6 @@ export function AgentLicenseBlock({ className }: AgentLicenseBlockProps) {
     <address className={className ? `agent-license ${className}` : 'agent-license'}>
       <p className="agent-license-name">{t('brand.name')}</p>
       <p>{t('brand.licenseTitle')}</p>
-      <p>{t('brand.affiliation')}</p>
       <p>{AGENT_OFFICE_ADDRESS}</p>
       <p>
         <span>

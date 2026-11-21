@@ -4,10 +4,8 @@ import { AppLink, AppNavLink } from '../routing/AppLink';
 import { useTranslation } from 'react-i18next';
 import { HeaderAccountMenu } from '../../accounts';
 import { BrandWordmark } from '../BrandWordmark';
-import { CorcoranLockup } from '../CorcoranLockup';
 import { FairHousingBanner } from '../FairHousingBanner';
 import { blogService, type BlogPostSummary } from '../../services/blog';
-import { CORCORAN_SITE_LABEL, CORCORAN_SITE_URL } from '../../compliance/corcoran';
 import './Header.css';
 
 const INSIGHTS_MENU_LIMIT = 8;
@@ -50,13 +48,8 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="header-top">
-        <div className="header-fair-housing">
-          <div className="container">
-            <FairHousingBanner />
-          </div>
-        </div>
         <div className="container header-top-inner">
-          <p className="header-affiliation">{t('brand.affiliation')}</p>
+          <FairHousingBanner />
           <div className="header-top-actions">
             <AppLink to="/contact" className="header-cta">
               {t('hero.ctaTalk')}
@@ -76,12 +69,6 @@ export function Header() {
             <small>{t('brand.tagline')}</small>
           </span>
         </AppLink>
-        <div className="header-corcoran">
-          <CorcoranLockup />
-          <a href={CORCORAN_SITE_URL} className="header-corcoran-text" rel="noopener noreferrer">
-            {CORCORAN_SITE_LABEL}
-          </a>
-        </div>
 
         <button
           type="button"

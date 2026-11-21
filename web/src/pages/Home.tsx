@@ -4,9 +4,7 @@ import { AnimatedStats } from '@emersonary/appkit-ui';
 import { AppLink } from '../components/routing/AppLink';
 import { PropertyCard } from '../components/property/PropertyCard';
 import { SocialIcon } from '../components/SocialIcon';
-import { CorcoranLockup } from '../components/CorcoranLockup';
 import { propertyService, type Property } from '../services/property';
-import { CORCORAN_SITE_LABEL, CORCORAN_SITE_URL } from '../compliance/corcoran';
 import '../styles/pages.css';
 
 const TESTIMONIAL_IDS = ['james', 'david', 'chen'] as const;
@@ -52,13 +50,6 @@ export function Home() {
         </div>
         <div className="container hero-content">
           <div className="hero-panel">
-            <p className="hero-affiliation">{t('brand.affiliation')}</p>
-            <div className="hero-corcoran">
-              <CorcoranLockup className="hero-corcoran-lockup" />
-              <a href={CORCORAN_SITE_URL} className="hero-corcoran-text" rel="noopener noreferrer">
-                {CORCORAN_SITE_LABEL}
-              </a>
-            </div>
             <h1>{t('hero.headline')}</h1>
             <p>{t('hero.subtitle')}</p>
             <div className="hero-actions">

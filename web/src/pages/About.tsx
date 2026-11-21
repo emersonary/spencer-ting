@@ -11,8 +11,6 @@ export function About() {
       <div className="container">
         <article className="about-article">
           <h1>{t('about.title')}</h1>
-          <p className="about-affiliation">{t('brand.affiliation')}</p>
-          <p className="about-license-title">{t('brand.licenseTitle')}</p>
           <div className="gold-line" />
           <img
             className="about-portrait"

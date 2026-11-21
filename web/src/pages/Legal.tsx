@@ -1,12 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { AgentLicenseBlock } from '../components/layout/AgentLicenseBlock';
-import { CorcoranLockup } from '../components/CorcoranLockup';
 import { EqualHousingMark } from '../components/EqualHousingMark';
-import {
-  CORCORAN_SITE_LABEL,
-  CORCORAN_SITE_URL,
-  FAIR_HOUSING_NOTICE_URL,
-} from '../compliance/corcoran';
+import { FAIR_HOUSING_NOTICE_URL } from '../compliance/corcoran';
 
 export function Legal() {
   const { t } = useTranslation();
@@ -19,16 +13,6 @@ export function Legal() {
           <div className="gold-line" />
           <p>{t('legal.subtitle')}</p>
         </div>
-
-        <div className="legal-identity">
-          <p className="legal-affiliation">{t('brand.affiliation')}</p>
-          <CorcoranLockup />
-          <a href={CORCORAN_SITE_URL} rel="noopener noreferrer">
-            {CORCORAN_SITE_LABEL}
-          </a>
-        </div>
-
-        <AgentLicenseBlock className="legal-license" />
 
         <article className="legal-article">
           <h2>{t('legal.equalHousing')}</h2>

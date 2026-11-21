@@ -22,16 +22,22 @@
   color: var(--color-gold);
 }
 
-.footer-affiliation {
-  margin: 0 0 1rem;
-  font-size: 1rem;
-  color: var(--color-cream);
-}
-
 .footer-corcoran-lockup {
   display: inline-block;
-  margin-bottom: 0.35rem;
-  color: var(--color-cream);
+  margin: 0.5rem 0 0.35rem;
+}
+
+.corcoran-lockup {
+  color: var(--color-navy);
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.corcoran-lockup:hover {
+  color: var(--color-gold);
 }
 
 .site-footer .corcoran-lockup {
@@ -47,11 +53,6 @@
   margin-bottom: 1rem;
   font-size: 0.875rem;
   color: var(--color-gold);
-}
-
-.footer-tagline {
-  margin: 0;
-  max-width: 22rem;
 }
 
 .footer-legal {

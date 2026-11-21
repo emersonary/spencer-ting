@@ -99,49 +99,11 @@
   margin-bottom: 1.25rem;
 }
 
-.hero-affiliation {
-  margin: 0 0 0.5rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-gold);
-  max-width: none;
-}
-
-.hero-corcoran {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.75rem 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.hero-corcoran-lockup,
-.hero .corcoran-lockup {
-  color: var(--color-cream);
-}
-
-.hero .corcoran-lockup:hover {
-  color: var(--color-gold);
-}
-
-.hero-corcoran-text {
-  font-size: 0.875rem;
-  color: var(--color-gold);
-}
-
 .hero-panel > p {
   font-size: 1.125rem;
   color: rgba(248, 246, 241, 0.8);
   margin-bottom: 2rem;
   max-width: 520px;
-}
-
-.hero-panel > p.hero-affiliation {
-  font-size: 0.8rem;
-  color: var(--color-gold);
-  margin-bottom: 0.5rem;
-  max-width: none;
 }
 
 .hero-actions {
@@ -877,17 +839,6 @@
   .video-grid { grid-template-columns: 1fr; }
 }
 
-.about-affiliation,
-.about-license-title {
-  margin: 0 0 0.25rem;
-  font-size: 1rem;
-  color: var(--color-text-muted);
-}
-
-.about-license-title {
-  margin-bottom: 0.75rem;
-}
-
 .properties-empty {
   max-width: 40rem;
   margin: 0 auto;
@@ -900,32 +851,8 @@
   color: var(--color-text-muted);
 }
 
-.contact-license {
-  margin: 0 auto 2rem;
-  max-width: 100%;
-  color: var(--color-text);
-}
-
 .legal-page {
   max-width: 48rem;
-}
-
-.legal-identity {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.35rem;
-  margin-bottom: 2rem;
-}
-
-.legal-affiliation {
-  margin: 0;
-  font-size: 1.125rem;
-}
-
-.legal-license {
-  margin-bottom: 2.5rem;
-  color: var(--color-text);
 }
 
 .legal-article h2 {

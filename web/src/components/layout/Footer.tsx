@@ -24,12 +24,10 @@ export function Footer() {
             <div className="footer-brand">
               <BrandWordmark />
             </div>
-            <p className="footer-affiliation">{t('brand.affiliation')}</p>
             <CorcoranLockup className="footer-corcoran-lockup" />
             <a href={CORCORAN_SITE_URL} className="footer-corcoran-text-link" rel="noopener noreferrer">
               {CORCORAN_SITE_LABEL}
             </a>
-            <p className="footer-tagline">{t('footer.tagline')}</p>
           </div>
           <div className="footer-col">
             <h4>{t('footer.explore')}</h4>

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { SocialIcon } from '../components/SocialIcon';
-import { AgentLicenseBlock } from '../components/layout/AgentLicenseBlock';
 import { propertyService } from '../services/property';
 
 export function Contact() {
@@ -40,8 +39,6 @@ export function Contact() {
           <div className="gold-line" />
           <p>{t('contact.subtitle')}</p>
         </div>
-
-        <AgentLicenseBlock className="contact-license" />
 
         {sent ? (
           <div className="alert alert-success">{t('contact.success')}</div>
