@@ -25,7 +25,8 @@
     "logout": "Выйти",
     "account": "Мой аккаунт",
     "accountMenu": "Меню аккаунта",
-    "blogAdmin": "Администрирование блога"
+    "blogAdmin": "Администрирование блога",
+    "legal": "Правовая информация"
   },
   "common": {
     "email": "Электронная почта",
@@ -45,7 +46,11 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "Элитная недвижимость в NYC"
+    "tagline": "в The Corcoran Group",
+    "affiliation": "Spencer Ting в The Corcoran Group",
+    "licenseTitle": "Лицензированный специалист по недвижимости",
+    "officePhone": "Офис",
+    "mobilePhone": "Мобильный"
   },
   "meta": {
     "title": "Spencer Ting | Элитная недвижимость в NYC",
@@ -88,8 +93,8 @@
     "bio7": "Для Spencer недвижимость строится на отношениях. Он считает, что доверие зарабатывается подготовкой, прозрачностью и неизменным приоритетом интересов клиентов. Его цель проста: помочь каждому клиенту принимать уверенные решения и обеспечить исключительный уровень сервиса от начала до конца."
   },
   "properties": {
-    "title": "Избранные объекты",
-    "subtitle": "Тщательно отобранные лучшие резиденции Нью-Йорка",
+    "title": "Объекты",
+    "subtitle": "Текущие эксклюзивы Corcoran и объекты, которые Spencer ранее продавал или сдавал.",
     "search": "Поиск объектов",
     "searchPlaceholder": "Район, адрес или ключевое слово...",
     "filters": "Фильтры",
@@ -121,7 +126,8 @@
       "co-op": "Кооператив",
       "townhouse": "Таунхаус",
       "penthouse": "Пентхаус"
-    }
+    },
+    "emptyCatalog": "Объекты появятся здесь, если это текущие эксклюзивы Corcoran Spencer или объекты, которые он ранее продавал или сдавал. Свяжитесь со Spencer по наличию."
   },
   "mortgage": {
     "title": "Оценка недвижимости",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "Консультации по элитной недвижимости в Нью-Йорке",
+    "tagline": "Лицензированный специалист The Corcoran Group в Нью-Йорке.",
     "rights": "Все права защищены.",
     "explore": "Исследовать",
     "services": "Услуги",
@@ -369,5 +375,23 @@
     "readyTitle": "Готовы сделать следующий шаг?",
     "readySubtitle": "Покупаете или продаёте — Spencer предоставит экспертизу и защиту, которых вы заслуживаете.",
     "schedule": "Записаться на консультацию"
+  },
+  "legal": {
+    "title": "Legal notices",
+    "subtitle": "Required disclosures for this personal agent website.",
+    "equalHousing": "Equal Housing Opportunity",
+    "fairHousingCopy": "We are committed to upholding the principles of all applicable fair housing laws.",
+    "fairHousingLink": "New York Fair Housing Notice (PDF)",
+    "disclaimersHeading": "Website disclaimers",
+    "notOfficialSite": "This is not the official website of The Corcoran Group.",
+    "accuracy": "The Corcoran Group does not warrant the accuracy of information on this site.",
+    "noOfferOutsideNy": "Nothing on this site is an offer to sell real estate in any jurisdiction outside New York where such an offer would be unlawful.",
+    "sopHeading": "Standardized Operating Procedures",
+    "sopIntro": "In accordance with New York Real Property Law §442-H, Spencer Ting’s standardized operating procedures include the following:",
+    "sopId": "Prospective clients are not generally required to show photo identification.",
+    "sopBuyerAgreement": "An exclusive buyer brokerage agreement is not required.",
+    "sopPreApproval": "Mortgage pre-approval is not generally required.",
+    "sopSummary": "Standardized operating procedures under NY Real Property Law §442-H: photo ID is not generally required; an exclusive buyer agreement is not required; mortgage pre-approval is not generally required.",
+    "readFull": "Read the full legal notices."
   }
 }

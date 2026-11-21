@@ -4,7 +4,9 @@ import { AnimatedStats } from '@emersonary/appkit-ui';
 import { AppLink } from '../components/routing/AppLink';
 import { PropertyCard } from '../components/property/PropertyCard';
 import { SocialIcon } from '../components/SocialIcon';
+import { CorcoranLockup } from '../components/CorcoranLockup';
 import { propertyService, type Property } from '../services/property';
+import { CORCORAN_SITE_LABEL, CORCORAN_SITE_URL } from '../compliance/corcoran';
 import '../styles/pages.css';
 
 const TESTIMONIAL_IDS = ['james', 'david', 'chen'] as const;
@@ -21,7 +23,10 @@ export function Home() {
   const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
-    void propertyService.list({ featuredOnly: true, limit: 3 }).then((res) => setFeatured(res.properties));
+    void propertyService
+      .list({ featuredOnly: true, limit: 3 })
+      .then((res) => setFeatured(res.properties))
+      .catch(() => setFeatured([]));
   }, []);
 
   return (
@@ -47,6 +52,13 @@ export function Home() {
         </div>
         <div className="container hero-content">
           <div className="hero-panel">
+            <p className="hero-affiliation">{t('brand.affiliation')}</p>
+            <div className="hero-corcoran">
+              <CorcoranLockup className="hero-corcoran-lockup" />
+              <a href={CORCORAN_SITE_URL} className="hero-corcoran-text" rel="noopener noreferrer">
+                {CORCORAN_SITE_LABEL}
+              </a>
+            </div>
             <h1>{t('hero.headline')}</h1>
             <p>{t('hero.subtitle')}</p>
             <div className="hero-actions">
@@ -79,14 +91,23 @@ export function Home() {
             <div className="gold-line" />
             <p>{t('properties.subtitle')}</p>
           </div>
-          <div className="grid-3">
-            {featured.map((p) => (
-              <PropertyCard key={p.id} property={p} />
-            ))}
-          </div>
-          <div className="text-center" style={{ marginTop: '3rem' }}>
-            <AppLink to="/properties" className="btn btn-dark">{t('properties.viewDetails')}</AppLink>
-          </div>
+          {featured.length > 0 ? (
+            <>
+              <div className="grid-3">
+                {featured.map((p) => (
+                  <PropertyCard key={p.id} property={p} />
+                ))}
+              </div>
+              <div className="text-center" style={{ marginTop: '3rem' }}>
+                <AppLink to="/properties" className="btn btn-dark">{t('properties.viewDetails')}</AppLink>
+              </div>
+            </>
+          ) : (
+            <div className="properties-empty">
+              <p>{t('properties.emptyCatalog')}</p>
+              <AppLink to="/contact" className="btn btn-dark">{t('hero.ctaTalk')}</AppLink>
+            </div>
+          )}
         </div>
       </section>
 

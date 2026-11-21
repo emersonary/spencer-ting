@@ -3,6 +3,14 @@ import { AppLink } from '../routing/AppLink';
 import { BrandWordmark } from '../BrandWordmark';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 import { SocialIcon } from '../SocialIcon';
+import { CorcoranLockup } from '../CorcoranLockup';
+import { EqualHousingMark } from '../EqualHousingMark';
+import { AgentLicenseBlock } from './AgentLicenseBlock';
+import {
+  CORCORAN_SITE_LABEL,
+  CORCORAN_SITE_URL,
+  FAIR_HOUSING_NOTICE_URL,
+} from '../../compliance/corcoran';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -12,11 +20,16 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container">
         <div className="footer-grid">
-          <div>
+          <div className="footer-identity">
             <div className="footer-brand">
               <BrandWordmark />
             </div>
-            <p>{t('footer.tagline')}</p>
+            <p className="footer-affiliation">{t('brand.affiliation')}</p>
+            <CorcoranLockup className="footer-corcoran-lockup" />
+            <a href={CORCORAN_SITE_URL} className="footer-corcoran-text-link" rel="noopener noreferrer">
+              {CORCORAN_SITE_LABEL}
+            </a>
+            <p className="footer-tagline">{t('footer.tagline')}</p>
           </div>
           <div className="footer-col">
             <h4>{t('footer.explore')}</h4>
@@ -30,6 +43,7 @@ export function Footer() {
             <AppLink to="/buy">{t('nav.buy')}</AppLink>
             <AppLink to="/sell">{t('nav.sell')}</AppLink>
             <AppLink to="/contact">{t('nav.contact')}</AppLink>
+            <AppLink to="/legal">{t('nav.legal')}</AppLink>
           </div>
           <div className="footer-col">
             <h4>{t('footer.connect')}</h4>
@@ -43,6 +57,29 @@ export function Footer() {
             </a>
           </div>
         </div>
+
+        <div className="footer-legal">
+          <AgentLicenseBlock />
+          <div className="footer-disclaimers">
+            <div className="footer-equal-housing">
+              <EqualHousingMark title={t('legal.equalHousing')} />
+              <p>{t('legal.equalHousing')}</p>
+            </div>
+            <p>{t('legal.notOfficialSite')}</p>
+            <p>{t('legal.accuracy')}</p>
+            <p>{t('legal.noOfferOutsideNy')}</p>
+            <p>
+              {t('legal.sopSummary')}{' '}
+              <AppLink to="/legal">{t('legal.readFull')}</AppLink>
+            </p>
+            <p>
+              <a href={FAIR_HOUSING_NOTICE_URL} target="_blank" rel="noopener noreferrer">
+                {t('legal.fairHousingLink')}
+              </a>
+            </p>
+          </div>
+        </div>
+
         <div className="footer-bottom">
           <LanguageSwitcher />
           <span>© {year} {t('brand.name')}. {t('footer.rights')}</span>

@@ -25,7 +25,8 @@
     "logout": "ログアウト",
     "account": "マイアカウント",
     "accountMenu": "アカウントメニュー",
-    "blogAdmin": "ブログ管理"
+    "blogAdmin": "ブログ管理",
+    "legal": "法的通知"
   },
   "common": {
     "email": "メールアドレス",
@@ -45,7 +46,11 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "NYCの高級不動産"
+    "tagline": "The Corcoran Group 所属",
+    "affiliation": "Spencer Ting（The Corcoran Group）",
+    "licenseTitle": "ライセンス取得不動産業者",
+    "officePhone": "オフィス",
+    "mobilePhone": "携帯"
   },
   "meta": {
     "title": "Spencer Ting | NYCの高級不動産",
@@ -88,8 +93,8 @@
     "bio7": "Spencer にとって不動産は関係性の上に築かれます。信頼は準備、透明性、そして常にクライアントの利益を最優先することによって得られると信じています。目標はシンプルです。すべてのクライアントが自信を持って決断できるよう支援し、最初から最後まで卓越したサービスを届けることです。"
   },
   "properties": {
-    "title": "注目物件",
-    "subtitle": "ニューヨーク最高の住まいを厳選",
+    "title": "物件",
+    "subtitle": "Spencer の現在の Corcoran 専任物件、および以前に売却または賃貸した物件。",
     "search": "物件を検索",
     "searchPlaceholder": "エリア、住所、キーワード...",
     "filters": "フィルター",
@@ -121,7 +126,8 @@
       "co-op": "コープ",
       "townhouse": "タウンハウス",
       "penthouse": "ペントハウス"
-    }
+    },
+    "emptyCatalog": "掲載されるのは、Spencer の現在の Corcoran 専任物件、または以前に売却・賃貸した物件のみです。空室状況は Spencer にお問い合わせください。"
   },
   "mortgage": {
     "title": "物件査定",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "ニューヨーク市の高級不動産アドバイザリー",
+    "tagline": "ニューヨーク市 The Corcoran Group 所属のライセンス取得不動産業者。",
     "rights": "無断転載を禁じます。",
     "explore": "探索",
     "services": "サービス",
@@ -369,5 +375,23 @@
     "readyTitle": "次の一歩を踏み出す準備はできていますか？",
     "readySubtitle": "購入でも売却でも、Spencerはあなたにふさわしい専門知識と擁護を提供します。",
     "schedule": "相談を予約"
+  },
+  "legal": {
+    "title": "Legal notices",
+    "subtitle": "Required disclosures for this personal agent website.",
+    "equalHousing": "Equal Housing Opportunity",
+    "fairHousingCopy": "We are committed to upholding the principles of all applicable fair housing laws.",
+    "fairHousingLink": "New York Fair Housing Notice (PDF)",
+    "disclaimersHeading": "Website disclaimers",
+    "notOfficialSite": "This is not the official website of The Corcoran Group.",
+    "accuracy": "The Corcoran Group does not warrant the accuracy of information on this site.",
+    "noOfferOutsideNy": "Nothing on this site is an offer to sell real estate in any jurisdiction outside New York where such an offer would be unlawful.",
+    "sopHeading": "Standardized Operating Procedures",
+    "sopIntro": "In accordance with New York Real Property Law §442-H, Spencer Ting’s standardized operating procedures include the following:",
+    "sopId": "Prospective clients are not generally required to show photo identification.",
+    "sopBuyerAgreement": "An exclusive buyer brokerage agreement is not required.",
+    "sopPreApproval": "Mortgage pre-approval is not generally required.",
+    "sopSummary": "Standardized operating procedures under NY Real Property Law §442-H: photo ID is not generally required; an exclusive buyer agreement is not required; mortgage pre-approval is not generally required.",
+    "readFull": "Read the full legal notices."
   }
 }

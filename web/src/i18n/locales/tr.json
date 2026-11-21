@@ -25,7 +25,8 @@
     "logout": "Çıkış Yap",
     "account": "Hesabım",
     "accountMenu": "Hesap menüsü",
-    "blogAdmin": "Blog Yönetimi"
+    "blogAdmin": "Blog Yönetimi",
+    "legal": "Yasal bildirimler"
   },
   "common": {
     "email": "E-posta",
@@ -45,7 +46,11 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "NYC Lüks Gayrimenkul"
+    "tagline": "The Corcoran Group bünyesinde",
+    "affiliation": "Spencer Ting, The Corcoran Group",
+    "licenseTitle": "Lisanslı emlak satış danışmanı",
+    "officePhone": "Ofis",
+    "mobilePhone": "Cep"
   },
   "meta": {
     "title": "Spencer Ting | NYC Lüks Gayrimenkul",
@@ -88,8 +93,8 @@
     "bio7": "Spencer için emlak, ilişkiler üzerine kuruludur. Güvenin hazırlık, şeffaflık ve müşteri çıkarlarını sürekli ön planda tutmakla kazanıldığına inanır. Amacı basittir: her müşterinin güvenle karar almasına yardımcı olmak ve baştan sona olağanüstü bir hizmet sunmak."
   },
   "properties": {
-    "title": "Öne Çıkan Mülkler",
-    "subtitle": "New York'un en iyi konutlarından özenle seçilmiş koleksiyon",
+    "title": "Mülkler",
+    "subtitle": "Spencer’ın güncel Corcoran münhasır ilanları ve daha önce sattığı veya kiraladığı mülkler.",
     "search": "Mülk ara",
     "searchPlaceholder": "Mahalle, adres veya anahtar kelime...",
     "filters": "Filtreler",
@@ -121,7 +126,8 @@
       "co-op": "Kooperatif",
       "townhouse": "Şehir Evi",
       "penthouse": "Çatı Katı"
-    }
+    },
+    "emptyCatalog": "İlanlar, Spencer’ın güncel Corcoran münhasır ilanları veya daha önce sattığı/kiraladığı mülkler olduğunda burada görünür. Müsaitlik için Spencer ile iletişime geçin."
   },
   "mortgage": {
     "title": "Mülk Değerlemeleri",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "New York City'de lüks gayrimenkul danışmanlığı",
+    "tagline": "New York City’de The Corcoran Group lisanslı emlak satış danışmanı.",
     "rights": "Tüm hakları saklıdır.",
     "explore": "Keşfet",
     "services": "Hizmetler",
@@ -369,5 +375,23 @@
     "readyTitle": "Harekete geçmeye hazır mısınız?",
     "readySubtitle": "İster alıyor ister satıyor olun, Spencer hak ettiğiniz uzmanlık ve savunuculuğu sağlar.",
     "schedule": "Danışmanlık Planla"
+  },
+  "legal": {
+    "title": "Legal notices",
+    "subtitle": "Required disclosures for this personal agent website.",
+    "equalHousing": "Equal Housing Opportunity",
+    "fairHousingCopy": "We are committed to upholding the principles of all applicable fair housing laws.",
+    "fairHousingLink": "New York Fair Housing Notice (PDF)",
+    "disclaimersHeading": "Website disclaimers",
+    "notOfficialSite": "This is not the official website of The Corcoran Group.",
+    "accuracy": "The Corcoran Group does not warrant the accuracy of information on this site.",
+    "noOfferOutsideNy": "Nothing on this site is an offer to sell real estate in any jurisdiction outside New York where such an offer would be unlawful.",
+    "sopHeading": "Standardized Operating Procedures",
+    "sopIntro": "In accordance with New York Real Property Law §442-H, Spencer Ting’s standardized operating procedures include the following:",
+    "sopId": "Prospective clients are not generally required to show photo identification.",
+    "sopBuyerAgreement": "An exclusive buyer brokerage agreement is not required.",
+    "sopPreApproval": "Mortgage pre-approval is not generally required.",
+    "sopSummary": "Standardized operating procedures under NY Real Property Law §442-H: photo ID is not generally required; an exclusive buyer agreement is not required; mortgage pre-approval is not generally required.",
+    "readFull": "Read the full legal notices."
   }
 }

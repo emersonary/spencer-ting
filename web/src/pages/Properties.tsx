@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { PropertyCard } from '../components/property/PropertyCard';
+import { AppLink } from '../components/routing/AppLink';
 import { propertyService, type Property } from '../services/property';
 
 export function Properties() {
@@ -17,6 +18,7 @@ export function Properties() {
     void propertyService
       .search({ query, borough, propertyType, luxuryOnly })
       .then((res) => setProperties(res.properties))
+      .catch(() => setProperties([]))
       .finally(() => setLoading(false));
   }, [query, borough, propertyType, luxuryOnly]);
 
@@ -56,7 +58,10 @@ export function Properties() {
         {loading ? (
           <div className="page-loading">{t('common.loading')}</div>
         ) : properties.length === 0 ? (
-          <p className="text-center text-muted">{t('properties.noResults')}</p>
+          <div className="properties-empty">
+            <p>{query || borough || propertyType || luxuryOnly ? t('properties.noResults') : t('properties.emptyCatalog')}</p>
+            <AppLink to="/contact" className="btn btn-dark">{t('hero.ctaTalk')}</AppLink>
+          </div>
         ) : (
           <div className="grid-3">
             {properties.map((p) => (

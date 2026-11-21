@@ -25,7 +25,8 @@
     "logout": "Cerrar sesión",
     "account": "Mi cuenta",
     "accountMenu": "Menú de cuenta",
-    "blogAdmin": "Administración del blog"
+    "blogAdmin": "Administración del blog",
+    "legal": "Legal"
   },
   "common": {
     "email": "Correo electrónico",
@@ -45,11 +46,15 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "Bienes raíces de lujo en NYC"
+    "tagline": "en The Corcoran Group",
+    "affiliation": "Spencer Ting en The Corcoran Group",
+    "licenseTitle": "Agente inmobiliario con licencia",
+    "officePhone": "Oficina",
+    "mobilePhone": "Móvil"
   },
   "meta": {
-    "title": "Spencer Ting | Bienes raíces de lujo en NYC",
-    "description": "Spencer Ting — asesor de bienes raíces de lujo en Nueva York. Experiencia local, asesoramiento honesto e información basada en datos."
+    "title": "Spencer Ting en The Corcoran Group | Bienes raíces en Nueva York",
+    "description": "Spencer Ting, agente inmobiliario con licencia en The Corcoran Group."
   },
   "boroughs": {
     "manhattan": "Manhattan",
@@ -88,8 +93,8 @@
     "bio7": "Para Spencer, el sector inmobiliario se construye sobre las relaciones. Cree que la confianza se gana con preparación, transparencia y poniendo consistentemente los intereses de sus clientes en primer lugar. Su objetivo es simple: ayudar a cada cliente a tomar decisiones con confianza y ofrecer un nivel excepcional de servicio de principio a fin."
   },
   "properties": {
-    "title": "Propiedades destacadas",
-    "subtitle": "Selección curada de las mejores residencias de Nueva York",
+    "title": "Propiedades",
+    "subtitle": "Exclusivas actuales de Corcoran y propiedades que Spencer vendio o alquilo anteriormente.",
     "search": "Buscar propiedades",
     "searchPlaceholder": "Barrio, dirección o palabra clave...",
     "filters": "Filtros",
@@ -121,7 +126,8 @@
       "co-op": "Cooperativa",
       "townhouse": "Casa adosada",
       "penthouse": "Ático"
-    }
+    },
+    "emptyCatalog": "Los listados apareceran aqui cuando sean exclusivas actuales de Corcoran de Spencer o propiedades que el vendio o alquilo. Contacte a Spencer para disponibilidad."
   },
   "mortgage": {
     "title": "Valoraciones de propiedades",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "Asesoría inmobiliaria de lujo en la ciudad de Nueva York",
+    "tagline": "Agente inmobiliario con licencia de The Corcoran Group en la ciudad de Nueva York.",
     "rights": "Todos los derechos reservados.",
     "explore": "Explorar",
     "services": "Servicios",
@@ -369,5 +375,23 @@
     "readyTitle": "¿Listo para dar el siguiente paso?",
     "readySubtitle": "Ya sea comprando o vendiendo, Spencer le ofrece la experiencia y la defensa que merece.",
     "schedule": "Programar una consulta"
+  },
+  "legal": {
+    "title": "Avisos legales",
+    "subtitle": "Divulgaciones exigidas para este sitio personal del agente.",
+    "equalHousing": "Igualdad de oportunidad de vivienda",
+    "fairHousingCopy": "Nos comprometemos a respetar los principios de todas las leyes de vivienda justa aplicables.",
+    "fairHousingLink": "Aviso de vivienda justa de Nueva York (PDF)",
+    "disclaimersHeading": "Descargos de responsabilidad",
+    "notOfficialSite": "Este no es el sitio web oficial de The Corcoran Group.",
+    "accuracy": "The Corcoran Group no garantiza la exactitud de la informacion de este sitio.",
+    "noOfferOutsideNy": "Nada en este sitio constituye una oferta de venta de bienes raices fuera de Nueva York donde esa oferta seria ilegal.",
+    "sopHeading": "Procedimientos operativos estandarizados",
+    "sopIntro": "De conformidad con la Ley de Bienes Raices de Nueva York 442-H, los procedimientos operativos estandarizados de Spencer Ting incluyen lo siguiente:",
+    "sopId": "En general, no se exige a los clientes potenciales mostrar una identificacion con foto.",
+    "sopBuyerAgreement": "No se exige un acuerdo exclusivo de comprador.",
+    "sopPreApproval": "En general, no se exige una preaprobacion hipotecaria.",
+    "sopSummary": "Procedimientos operativos estandarizados segun NY Real Property Law 442-H: en general no se exige identificacion con foto; no se exige un acuerdo exclusivo de comprador; en general no se exige preaprobacion hipotecaria.",
+    "readFull": "Leer los avisos legales completos."
   }
 }

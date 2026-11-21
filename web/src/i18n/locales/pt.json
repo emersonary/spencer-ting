@@ -25,7 +25,8 @@
     "logout": "Sair",
     "account": "Minha conta",
     "accountMenu": "Menu da conta",
-    "blogAdmin": "Admin do blog"
+    "blogAdmin": "Admin do blog",
+    "legal": "Jurídico"
   },
   "common": {
     "email": "E-mail",
@@ -45,11 +46,15 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "Imóveis de luxo em NYC"
+    "tagline": "na The Corcoran Group",
+    "affiliation": "Spencer Ting na The Corcoran Group",
+    "licenseTitle": "Corretor de imóveis licenciado",
+    "officePhone": "Escritório",
+    "mobilePhone": "Celular"
   },
   "meta": {
-    "title": "Spencer Ting | Imóveis de luxo em NYC",
-    "description": "Spencer Ting — consultor de imóveis de luxo em Nova York. Experiência local, orientação honesta e insights baseados em dados."
+    "title": "Spencer Ting na The Corcoran Group | Imoveis em Nova York",
+    "description": "Spencer Ting, corretor de imoveis licenciado na The Corcoran Group."
   },
   "boroughs": {
     "manhattan": "Manhattan",
@@ -88,8 +93,8 @@
     "bio7": "Para Spencer, o mercado imobiliário se constrói sobre relacionamentos. Ele acredita que a confiança se conquista com preparação, transparência e colocando consistentemente os interesses dos clientes em primeiro lugar. Seu objetivo é simples: ajudar cada cliente a tomar decisões com confiança e oferecer um nível excepcional de serviço do início ao fim."
   },
   "properties": {
-    "title": "Imóveis em destaque",
-    "subtitle": "Seleção curada das melhores residências de Nova York",
+    "title": "Imoveis",
+    "subtitle": "Exclusividades atuais da Corcoran e imoveis que Spencer vendeu ou alugou anteriormente.",
     "search": "Buscar imóveis",
     "searchPlaceholder": "Bairro, endereço ou palavra-chave...",
     "filters": "Filtros",
@@ -121,7 +126,8 @@
       "co-op": "Cooperativa",
       "townhouse": "Townhouse",
       "penthouse": "Cobertura"
-    }
+    },
+    "emptyCatalog": "Os anuncios aparecerao aqui quando forem exclusividades atuais da Corcoran de Spencer ou imoveis que ele vendeu ou alugou. Fale com Spencer sobre disponibilidade."
   },
   "mortgage": {
     "title": "Avaliações de imóveis",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "Consultoria imobiliária de luxo na cidade de Nova York",
+    "tagline": "Corretor de imoveis licenciado da The Corcoran Group na cidade de Nova York.",
     "rights": "Todos os direitos reservados.",
     "explore": "Explorar",
     "services": "Serviços",
@@ -369,5 +375,23 @@
     "readyTitle": "Pronto para dar o próximo passo?",
     "readySubtitle": "Seja comprando ou vendendo, Spencer oferece a experiência e a defesa que você merece.",
     "schedule": "Agendar uma consulta"
+  },
+  "legal": {
+    "title": "Avisos legais",
+    "subtitle": "Divulgacoes obrigatorias deste site pessoal do corretor.",
+    "equalHousing": "Igualdade de oportunidade habitacional",
+    "fairHousingCopy": "Estamos comprometidos em defender os principios de todas as leis de moradia justa aplicaveis.",
+    "fairHousingLink": "Aviso de moradia justa de Nova York (PDF)",
+    "disclaimersHeading": "Isencoes de responsabilidade",
+    "notOfficialSite": "Este nao e o site oficial da The Corcoran Group.",
+    "accuracy": "The Corcoran Group nao garante a precisao das informacoes neste site.",
+    "noOfferOutsideNy": "Nada neste site constitui oferta de venda de imoveis fora de Nova York onde essa oferta seria ilegal.",
+    "sopHeading": "Procedimentos operacionais padronizados",
+    "sopIntro": "De acordo com a New York Real Property Law 442-H, os procedimentos operacionais padronizados de Spencer Ting incluem o seguinte:",
+    "sopId": "Em geral, clientes em potencial nao precisam apresentar documento com foto.",
+    "sopBuyerAgreement": "Nao e exigido um contrato exclusivo de comprador.",
+    "sopPreApproval": "Em geral, nao e exigida pre-aprovacao hipotecaria.",
+    "sopSummary": "Procedimentos operacionais padronizados segundo a NY Real Property Law 442-H: em geral nao se exige documento com foto; nao se exige contrato exclusivo de comprador; em geral nao se exige pre-aprovacao hipotecaria.",
+    "readFull": "Ler os avisos legais completos."
   }
 }
