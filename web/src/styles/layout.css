@@ -7,19 +7,23 @@
 .footer-grid {
   display: grid;
   grid-template-columns: minmax(16rem, 1.6fr) 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 1.5rem 2rem;
+  grid-template-rows: auto auto auto;
+  column-gap: 2rem;
+  row-gap: 0;
   align-items: start;
   margin-bottom: 0.85rem;
 }
 
 .footer-identity {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-rows: subgrid;
   grid-column: 1;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
   max-width: 22rem;
+}
+
+.footer-col {
+  grid-row: 1 / 3;
 }
 
 .footer-brand {
@@ -27,6 +31,7 @@
   font-size: 1.75rem;
   color: var(--color-cream);
   line-height: 1.15;
+  margin-bottom: 0.15rem;
 }
 
 .footer-brand .brand-lastname {
@@ -37,10 +42,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.45rem;
-  margin: 1.15rem 0 0.5rem;
-  padding-top: 1.05rem;
-  border-top: 1px solid rgba(201, 169, 98, 0.28);
+  align-self: stretch;
+  gap: 0;
+  margin: 0.35rem 0 0;
+  padding: 0;
 }
 
 .corcoran-lockup {
@@ -69,9 +74,11 @@
 
 .footer-corcoran-text-link {
   display: block;
+  margin-top: -0.35rem;
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.18em;
+  line-height: 1;
   color: var(--color-gold);
 }
 
@@ -114,7 +121,7 @@
   align-items: flex-end;
   gap: 0.75rem;
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
   align-self: end;
   color: var(--color-cream);
   font-size: 0.75rem;
@@ -129,7 +136,7 @@
   display: inline-flex;
   align-items: flex-end;
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 3;
   align-self: end;
   justify-self: start;
   font-size: 0.75rem;
@@ -163,7 +170,11 @@
   display: block;
   color: rgba(248, 246, 241, 0.6);
   font-size: 0.875rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a:last-child {
+  margin-bottom: 0;
 }
 
 .footer-col a.footer-social-link {
@@ -199,9 +210,16 @@
   }
 
   .footer-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     grid-column: 1 / -1;
     grid-row: auto;
     max-width: none;
+  }
+
+  .footer-col {
+    grid-row: auto;
   }
 
   .footer-equal-housing {

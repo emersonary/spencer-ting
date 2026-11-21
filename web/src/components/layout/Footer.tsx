@@ -23,13 +23,13 @@ export function Footer() {
             <div className="footer-brand">
               <BrandWordmark />
             </div>
+            <AgentLicenseBlock omitName />
             <div className="footer-affiliation">
               <CorcoranLockup />
               <a href={CORCORAN_SITE_URL} className="footer-corcoran-text-link" rel="noopener noreferrer">
                 {CORCORAN_SITE_LABEL}
               </a>
             </div>
-            <AgentLicenseBlock omitName />
           </div>
           <div className="footer-col">
             <h4>{t('footer.explore')}</h4>
