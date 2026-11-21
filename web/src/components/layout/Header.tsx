@@ -4,6 +4,7 @@ import { AppLink, AppNavLink } from '../routing/AppLink';
 import { useTranslation } from 'react-i18next';
 import { HeaderAccountMenu } from '../../accounts';
 import { BrandWordmark } from '../BrandWordmark';
+import { FairHousingBanner } from '../FairHousingBanner';
 import { blogService, type BlogPostSummary } from '../../services/blog';
 import './Header.css';
 
@@ -48,12 +49,11 @@ export function Header() {
     <header className="site-header">
       <div className="header-top">
         <div className="container header-top-inner">
-          <div className="header-contact">
+          <FairHousingBanner />
+          <div className="header-top-actions">
             <AppLink to="/contact" className="header-cta">
               {t('hero.ctaTalk')}
             </AppLink>
-          </div>
-          <div className="header-top-actions">
             <HeaderAccountMenu />
           </div>
         </div>

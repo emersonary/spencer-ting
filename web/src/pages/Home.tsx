@@ -21,7 +21,10 @@ export function Home() {
   const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
-    void propertyService.list({ featuredOnly: true, limit: 3 }).then((res) => setFeatured(res.properties));
+    void propertyService
+      .list({ featuredOnly: true, limit: 3 })
+      .then((res) => setFeatured(res.properties))
+      .catch(() => setFeatured([]));
   }, []);
 
   return (
@@ -61,12 +64,11 @@ export function Home() {
       <section className="stats-bar">
         <div className="container">
           <AnimatedStats
-            className="grid-4"
+            className="grid-3"
             items={[
               [t('stats.experience'), 10, { suffix: '+' }],
               [t('stats.transactions'), 200, { suffix: '+' }],
               [t('stats.volume'), 800, { prefix: '$', suffix: 'M+' }],
-              [t('stats.listedProperties'), 1000, { suffix: '+' }],
             ]}
           />
         </div>
@@ -79,14 +81,23 @@ export function Home() {
             <div className="gold-line" />
             <p>{t('properties.subtitle')}</p>
           </div>
-          <div className="grid-3">
-            {featured.map((p) => (
-              <PropertyCard key={p.id} property={p} />
-            ))}
-          </div>
-          <div className="text-center" style={{ marginTop: '3rem' }}>
-            <AppLink to="/properties" className="btn btn-dark">{t('properties.viewDetails')}</AppLink>
-          </div>
+          {featured.length > 0 ? (
+            <>
+              <div className="grid-3">
+                {featured.map((p) => (
+                  <PropertyCard key={p.id} property={p} />
+                ))}
+              </div>
+              <div className="text-center" style={{ marginTop: '3rem' }}>
+                <AppLink to="/properties" className="btn btn-dark">{t('properties.viewDetails')}</AppLink>
+              </div>
+            </>
+          ) : (
+            <div className="properties-empty">
+              <p>{t('properties.emptyCatalog')}</p>
+              <AppLink to="/contact" className="btn btn-dark">{t('hero.ctaTalk')}</AppLink>
+            </div>
+          )}
         </div>
       </section>
 

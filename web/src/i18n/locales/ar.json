@@ -25,7 +25,8 @@
     "logout": "تسجيل الخروج",
     "account": "حسابي",
     "accountMenu": "قائمة الحساب",
-    "blogAdmin": "إدارة المدونة"
+    "blogAdmin": "إدارة المدونة",
+    "legal": "إشعارات قانونية"
   },
   "common": {
     "email": "البريد الإلكتروني",
@@ -45,7 +46,11 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "عقارات فاخرة في NYC"
+    "tagline": "في The Corcoran Group",
+    "affiliation": "سبنسر تينغ في The Corcoran Group",
+    "licenseTitle": "مندوب مبيعات عقارية مرخّص",
+    "officePhone": "المكتب",
+    "mobilePhone": "الجوال"
   },
   "meta": {
     "title": "Spencer Ting | عقارات فاخرة في NYC",
@@ -88,8 +93,8 @@
     "bio7": "بالنسبة إلى Spencer، تُبنى العقارات على العلاقات. يؤمن بأن الثقة تُكتسب من خلال التحضير والشفافية ووضع مصالح العملاء دائماً في المقام الأول. هدفه بسيط: مساعدة كل عميل على اتخاذ قرارات واثقة وتقديم مستوى استثنائي من الخدمة من البداية إلى النهاية."
   },
   "properties": {
-    "title": "عقارات مميزة",
-    "subtitle": "مجموعة منتقاة من أفضل المساكن في نيويورك",
+    "title": "العقارات",
+    "subtitle": "حصر Corcoran الحالي والعقارات التي باعها أو أجّرها سبنسر سابقًا.",
     "search": "البحث عن عقارات",
     "searchPlaceholder": "الحي، العنوان، أو كلمة مفتاحية...",
     "filters": "الفلاتر",
@@ -121,7 +126,8 @@
       "co-op": "تعاونية سكنية",
       "townhouse": "منزل متلاصق",
       "penthouse": "بنتهاوس"
-    }
+    },
+    "emptyCatalog": "ستظهر الإدراجات هنا عندما تكون حصر Corcoran الحالي لسبنسر أو عقارات باعها أو أجّرها سابقًا. تواصل مع سبنسر لمعرفة التوفر."
   },
   "mortgage": {
     "title": "تقييمات العقارات",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "استشارات عقارية فاخرة في مدينة نيويورك",
+    "tagline": "مندوب مبيعات عقارية مرخّص لدى The Corcoran Group في مدينة نيويورك.",
     "rights": "جميع الحقوق محفوظة.",
     "explore": "استكشف",
     "services": "الخدمات",
@@ -369,5 +375,23 @@
     "readyTitle": "مستعد لاتخاذ الخطوة التالية؟",
     "readySubtitle": "سواء كنت تشتري أو تبيع، يقدّم Spencer الخبرة والدفاع الذي تستحقه.",
     "schedule": "حجز استشارة"
+  },
+  "legal": {
+    "title": "Legal notices",
+    "subtitle": "Required disclosures for this personal agent website.",
+    "equalHousing": "Equal Housing Opportunity",
+    "fairHousingCopy": "We are committed to upholding the principles of all applicable fair housing laws.",
+    "fairHousingLink": "New York Fair Housing Notice (PDF)",
+    "disclaimersHeading": "Website disclaimers",
+    "disclaimerOfficial": "Equal Housing Opportunity. This website is not the official website of The Corcoran Group or its affiliated companies, and neither The Corcoran Group nor its affiliated companies in any way warrant the accuracy of any information contained herein. Any property or services offered for sale on this website shall not be considered an offer to sell such goods or services in any state other New York.",
+    "disclaimerAffiliation": "Real estate agents affiliated with The Corcoran Group are independent contractor sales associates and are not employees of The Corcoran Group. The Corcoran Group is a licensed real estate broker located at 590 Madison Avenue, New York, NY 10022.",
+    "sopHeading": "Standardized Operating Procedures for Purchasers of Real Estate Pursuant to Real Property Law §442‑H",
+    "sopIntro": "Corcoran is making these Standardized Operating Procedures available to the public. Hard copies of these Standardized Operating Procedures are available upon request at any Corcoran office location.",
+    "sopForBuyers": "Standardized Operating Procedures for Prospective Homebuyers in Order to Receive Services from Corcoran:",
+    "sopId": "There is no general requirement to provide photo identification in order to work with Corcoran. However, prior to entry to a Corcoran office, customers may be required to present photo identification for security or similar purposes. Also, individual property owners, certain sponsor/developer-clients or managing agents, or certain listing brokers may require photo identification prior to a showing or to work with them, and we will communicate this information to buyers when such a situation arises.",
+    "sopBuyerAgreement": "An exclusive buyer representation agreement is not required to work with Corcoran.",
+    "sopPreApproval": "A pre-approval for a mortgage loan is not required to work with Corcoran, per se, however, individual property owners, certain sponsor/developer-clients, or certain listing brokers may require one – and if so, we will communicate such fact to buyers when such a situation arises.",
+    "sopSummary": "Standardized Operating Procedures for Purchasers of Real Estate Pursuant to Real Property Law §442-H. Photo identification is not generally required, though office security, owners, sponsors, or listing brokers may require it. An exclusive buyer representation agreement is not required. A mortgage pre-approval is not required, though some owners, sponsors, or listing brokers may require one.",
+    "readFull": "Read the full legal notices."
   }
 }

@@ -25,7 +25,8 @@
     "logout": "Cerrar sesión",
     "account": "Mi cuenta",
     "accountMenu": "Menú de cuenta",
-    "blogAdmin": "Administración del blog"
+    "blogAdmin": "Administración del blog",
+    "legal": "Legal"
   },
   "common": {
     "email": "Correo electrónico",
@@ -45,11 +46,15 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "Bienes raíces de lujo en NYC"
+    "tagline": "en The Corcoran Group",
+    "affiliation": "Spencer Ting en The Corcoran Group",
+    "licenseTitle": "Agente inmobiliario con licencia",
+    "officePhone": "Oficina",
+    "mobilePhone": "Móvil"
   },
   "meta": {
-    "title": "Spencer Ting | Bienes raíces de lujo en NYC",
-    "description": "Spencer Ting — asesor de bienes raíces de lujo en Nueva York. Experiencia local, asesoramiento honesto e información basada en datos."
+    "title": "Spencer Ting en The Corcoran Group | Bienes raíces en Nueva York",
+    "description": "Spencer Ting, agente inmobiliario con licencia en The Corcoran Group."
   },
   "boroughs": {
     "manhattan": "Manhattan",
@@ -88,8 +93,8 @@
     "bio7": "Para Spencer, el sector inmobiliario se construye sobre las relaciones. Cree que la confianza se gana con preparación, transparencia y poniendo consistentemente los intereses de sus clientes en primer lugar. Su objetivo es simple: ayudar a cada cliente a tomar decisiones con confianza y ofrecer un nivel excepcional de servicio de principio a fin."
   },
   "properties": {
-    "title": "Propiedades destacadas",
-    "subtitle": "Selección curada de las mejores residencias de Nueva York",
+    "title": "Propiedades",
+    "subtitle": "Exclusivas actuales de Corcoran y propiedades que Spencer vendio o alquilo anteriormente.",
     "search": "Buscar propiedades",
     "searchPlaceholder": "Barrio, dirección o palabra clave...",
     "filters": "Filtros",
@@ -121,7 +126,8 @@
       "co-op": "Cooperativa",
       "townhouse": "Casa adosada",
       "penthouse": "Ático"
-    }
+    },
+    "emptyCatalog": "Los listados apareceran aqui cuando sean exclusivas actuales de Corcoran de Spencer o propiedades que el vendio o alquilo. Contacte a Spencer para disponibilidad."
   },
   "mortgage": {
     "title": "Valoraciones de propiedades",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "Asesoría inmobiliaria de lujo en la ciudad de Nueva York",
+    "tagline": "Agente inmobiliario con licencia de The Corcoran Group en la ciudad de Nueva York.",
     "rights": "Todos los derechos reservados.",
     "explore": "Explorar",
     "services": "Servicios",
@@ -369,5 +375,23 @@
     "readyTitle": "¿Listo para dar el siguiente paso?",
     "readySubtitle": "Ya sea comprando o vendiendo, Spencer le ofrece la experiencia y la defensa que merece.",
     "schedule": "Programar una consulta"
+  },
+  "legal": {
+    "title": "Avisos legales",
+    "subtitle": "Divulgaciones exigidas para este sitio personal del agente.",
+    "equalHousing": "Igualdad de oportunidad de vivienda",
+    "fairHousingCopy": "Nos comprometemos a respetar los principios de todas las leyes de vivienda justa aplicables.",
+    "fairHousingLink": "Aviso de vivienda justa de Nueva York (PDF)",
+    "disclaimersHeading": "Descargos de responsabilidad",
+    "disclaimerOfficial": "Equal Housing Opportunity. This website is not the official website of The Corcoran Group or its affiliated companies, and neither The Corcoran Group nor its affiliated companies in any way warrant the accuracy of any information contained herein. Any property or services offered for sale on this website shall not be considered an offer to sell such goods or services in any state other New York.",
+    "disclaimerAffiliation": "Real estate agents affiliated with The Corcoran Group are independent contractor sales associates and are not employees of The Corcoran Group. The Corcoran Group is a licensed real estate broker located at 590 Madison Avenue, New York, NY 10022.",
+    "sopHeading": "Standardized Operating Procedures for Purchasers of Real Estate Pursuant to Real Property Law §442‑H",
+    "sopIntro": "Corcoran is making these Standardized Operating Procedures available to the public. Hard copies of these Standardized Operating Procedures are available upon request at any Corcoran office location.",
+    "sopForBuyers": "Standardized Operating Procedures for Prospective Homebuyers in Order to Receive Services from Corcoran:",
+    "sopId": "There is no general requirement to provide photo identification in order to work with Corcoran. However, prior to entry to a Corcoran office, customers may be required to present photo identification for security or similar purposes. Also, individual property owners, certain sponsor/developer-clients or managing agents, or certain listing brokers may require photo identification prior to a showing or to work with them, and we will communicate this information to buyers when such a situation arises.",
+    "sopBuyerAgreement": "An exclusive buyer representation agreement is not required to work with Corcoran.",
+    "sopPreApproval": "A pre-approval for a mortgage loan is not required to work with Corcoran, per se, however, individual property owners, certain sponsor/developer-clients, or certain listing brokers may require one – and if so, we will communicate such fact to buyers when such a situation arises.",
+    "sopSummary": "Standardized Operating Procedures for Purchasers of Real Estate Pursuant to Real Property Law §442-H. Photo identification is not generally required, though office security, owners, sponsors, or listing brokers may require it. An exclusive buyer representation agreement is not required. A mortgage pre-approval is not required, though some owners, sponsors, or listing brokers may require one.",
+    "readFull": "Leer los avisos legales completos."
   }
 }

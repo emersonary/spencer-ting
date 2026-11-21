@@ -74,7 +74,7 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 3.5rem 0;
+  padding-block: 3.5rem;
 }
 
 .hero-panel {
@@ -112,7 +112,6 @@
   gap: 0.75rem;
   width: 100%;
   max-width: 24rem;
-  padding-inline: 0.75rem;
   box-sizing: border-box;
 }
 
@@ -723,7 +722,7 @@
 @media (max-width: 1024px) {
   .hero-content {
     text-align: center;
-    padding: 3rem 0;
+    padding-block: 3rem;
   }
 
   .hero-panel {
@@ -761,7 +760,6 @@
   .hero-actions {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.5rem;
-    padding-inline: 0.5rem;
     max-width: 100%;
     width: 100%;
   }
@@ -837,4 +835,45 @@
 
 @media (max-width: 768px) {
   .video-grid { grid-template-columns: 1fr; }
+}
+
+.properties-empty {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.properties-empty p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+}
+
+.legal-page {
+  max-width: 48rem;
+}
+
+.legal-article h2 {
+  margin-top: 2rem;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.25;
+}
+
+.legal-equal-housing {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.legal-equal-housing .equal-housing-mark {
+  color: var(--color-navy);
+}
+
+.legal-article ul {
+  padding-inline-start: 1.25rem;
+}
+
+.legal-article li {
+  margin-bottom: 0.85rem;
 }

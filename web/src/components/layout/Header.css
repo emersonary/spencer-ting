@@ -12,6 +12,27 @@
   font-size: 0.85rem;
 }
 
+.fair-housing-banner {
+  margin: 0;
+  flex: 1;
+  min-width: 12rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-cream);
+}
+
+.fair-housing-banner a {
+  color: var(--color-gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.fair-housing-banner a:hover {
+  color: var(--color-gold-light);
+}
+
 .header-top-inner {
   display: flex;
   justify-content: space-between;

@@ -3,6 +3,13 @@ import { AppLink } from '../routing/AppLink';
 import { BrandWordmark } from '../BrandWordmark';
 import { LanguageSwitcher } from '../LanguageSwitcher';
 import { SocialIcon } from '../SocialIcon';
+import { CorcoranLockup } from '../CorcoranLockup';
+import { EqualHousingMark } from '../EqualHousingMark';
+import { AgentLicenseBlock } from './AgentLicenseBlock';
+import {
+  CORCORAN_SITE_LABEL,
+  CORCORAN_SITE_URL,
+} from '../../compliance/corcoran';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -12,11 +19,17 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container">
         <div className="footer-grid">
-          <div>
+          <div className="footer-identity">
             <div className="footer-brand">
               <BrandWordmark />
             </div>
-            <p>{t('footer.tagline')}</p>
+            <div className="footer-affiliation">
+              <CorcoranLockup />
+              <a href={CORCORAN_SITE_URL} className="footer-corcoran-text-link" rel="noopener noreferrer">
+                {CORCORAN_SITE_LABEL}
+              </a>
+            </div>
+            <AgentLicenseBlock omitName />
           </div>
           <div className="footer-col">
             <h4>{t('footer.explore')}</h4>
@@ -30,6 +43,7 @@ export function Footer() {
             <AppLink to="/buy">{t('nav.buy')}</AppLink>
             <AppLink to="/sell">{t('nav.sell')}</AppLink>
             <AppLink to="/contact">{t('nav.contact')}</AppLink>
+            <AppLink to="/legal">{t('nav.legal')}</AppLink>
           </div>
           <div className="footer-col">
             <h4>{t('footer.connect')}</h4>
@@ -42,7 +56,17 @@ export function Footer() {
               {t('social.instagram')}
             </a>
           </div>
+          <div className="footer-legal">
+            <div className="footer-equal-housing">
+              <EqualHousingMark title={t('legal.equalHousing')} />
+              <span>{t('legal.equalHousing')}</span>
+            </div>
+            <AppLink to="/legal" className="footer-legal-link">
+              {t('legal.readFull')}
+            </AppLink>
+          </div>
         </div>
+
         <div className="footer-bottom">
           <LanguageSwitcher />
           <span>© {year} {t('brand.name')}. {t('footer.rights')}</span>

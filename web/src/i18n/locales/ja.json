@@ -25,7 +25,8 @@
     "logout": "ログアウト",
     "account": "マイアカウント",
     "accountMenu": "アカウントメニュー",
-    "blogAdmin": "ブログ管理"
+    "blogAdmin": "ブログ管理",
+    "legal": "法的通知"
   },
   "common": {
     "email": "メールアドレス",
@@ -45,7 +46,11 @@
   },
   "brand": {
     "name": "Spencer Ting",
-    "tagline": "NYCの高級不動産"
+    "tagline": "The Corcoran Group 所属",
+    "affiliation": "Spencer Ting（The Corcoran Group）",
+    "licenseTitle": "ライセンス取得不動産業者",
+    "officePhone": "オフィス",
+    "mobilePhone": "携帯"
   },
   "meta": {
     "title": "Spencer Ting | NYCの高級不動産",
@@ -88,8 +93,8 @@
     "bio7": "Spencer にとって不動産は関係性の上に築かれます。信頼は準備、透明性、そして常にクライアントの利益を最優先することによって得られると信じています。目標はシンプルです。すべてのクライアントが自信を持って決断できるよう支援し、最初から最後まで卓越したサービスを届けることです。"
   },
   "properties": {
-    "title": "注目物件",
-    "subtitle": "ニューヨーク最高の住まいを厳選",
+    "title": "物件",
+    "subtitle": "Spencer の現在の Corcoran 専任物件、および以前に売却または賃貸した物件。",
     "search": "物件を検索",
     "searchPlaceholder": "エリア、住所、キーワード...",
     "filters": "フィルター",
@@ -121,7 +126,8 @@
       "co-op": "コープ",
       "townhouse": "タウンハウス",
       "penthouse": "ペントハウス"
-    }
+    },
+    "emptyCatalog": "掲載されるのは、Spencer の現在の Corcoran 専任物件、または以前に売却・賃貸した物件のみです。空室状況は Spencer にお問い合わせください。"
   },
   "mortgage": {
     "title": "物件査定",
@@ -293,7 +299,7 @@
     }
   },
   "footer": {
-    "tagline": "ニューヨーク市の高級不動産アドバイザリー",
+    "tagline": "ニューヨーク市 The Corcoran Group 所属のライセンス取得不動産業者。",
     "rights": "無断転載を禁じます。",
     "explore": "探索",
     "services": "サービス",
@@ -369,5 +375,23 @@
     "readyTitle": "次の一歩を踏み出す準備はできていますか？",
     "readySubtitle": "購入でも売却でも、Spencerはあなたにふさわしい専門知識と擁護を提供します。",
     "schedule": "相談を予約"
+  },
+  "legal": {
+    "title": "Legal notices",
+    "subtitle": "Required disclosures for this personal agent website.",
+    "equalHousing": "Equal Housing Opportunity",
+    "fairHousingCopy": "We are committed to upholding the principles of all applicable fair housing laws.",
+    "fairHousingLink": "New York Fair Housing Notice (PDF)",
+    "disclaimersHeading": "Website disclaimers",
+    "disclaimerOfficial": "Equal Housing Opportunity. This website is not the official website of The Corcoran Group or its affiliated companies, and neither The Corcoran Group nor its affiliated companies in any way warrant the accuracy of any information contained herein. Any property or services offered for sale on this website shall not be considered an offer to sell such goods or services in any state other New York.",
+    "disclaimerAffiliation": "Real estate agents affiliated with The Corcoran Group are independent contractor sales associates and are not employees of The Corcoran Group. The Corcoran Group is a licensed real estate broker located at 590 Madison Avenue, New York, NY 10022.",
+    "sopHeading": "Standardized Operating Procedures for Purchasers of Real Estate Pursuant to Real Property Law §442‑H",
+    "sopIntro": "Corcoran is making these Standardized Operating Procedures available to the public. Hard copies of these Standardized Operating Procedures are available upon request at any Corcoran office location.",
+    "sopForBuyers": "Standardized Operating Procedures for Prospective Homebuyers in Order to Receive Services from Corcoran:",
+    "sopId": "There is no general requirement to provide photo identification in order to work with Corcoran. However, prior to entry to a Corcoran office, customers may be required to present photo identification for security or similar purposes. Also, individual property owners, certain sponsor/developer-clients or managing agents, or certain listing brokers may require photo identification prior to a showing or to work with them, and we will communicate this information to buyers when such a situation arises.",
+    "sopBuyerAgreement": "An exclusive buyer representation agreement is not required to work with Corcoran.",
+    "sopPreApproval": "A pre-approval for a mortgage loan is not required to work with Corcoran, per se, however, individual property owners, certain sponsor/developer-clients, or certain listing brokers may require one – and if so, we will communicate such fact to buyers when such a situation arises.",
+    "sopSummary": "Standardized Operating Procedures for Purchasers of Real Estate Pursuant to Real Property Law §442-H. Photo identification is not generally required, though office security, owners, sponsors, or listing brokers may require it. An exclusive buyer representation agreement is not required. A mortgage pre-approval is not required, though some owners, sponsors, or listing brokers may require one.",
+    "readFull": "Read the full legal notices."
   }
 }

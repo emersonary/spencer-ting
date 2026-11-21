@@ -97,7 +97,7 @@ language:
     - tr
 
 email:
-  from: spencer@spencerting.com
+  from: spencer.ting@corcoran.com
   brand: Spencer Ting
   smtp:
     host: ""

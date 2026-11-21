@@ -13,6 +13,7 @@ import { Neighborhoods } from './pages/Neighborhoods';
 import { Blog } from './pages/Blog';
 import { BlogDetail } from './pages/BlogDetail';
 import { Contact } from './pages/Contact';
+import { Legal } from './pages/Legal';
 import { NotFound } from './pages/NotFound';
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="blog/:slug" element={<BlogDetail />} />
             <Route path="mortgage-calculator" element={<MortgageCalculatorPage />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="legal" element={<Legal />} />
             <Route path="login" element={<AccountWorkflow step="sign-in" />} />
             <Route path="forgot-password" element={<AccountWorkflow step="forgot" />} />
             <Route path="reset-password" element={<AccountWorkflow step="reset" />} />
