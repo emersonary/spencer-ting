@@ -9,7 +9,6 @@ import { AgentLicenseBlock } from './AgentLicenseBlock';
 import {
   CORCORAN_SITE_LABEL,
   CORCORAN_SITE_URL,
-  FAIR_HOUSING_NOTICE_URL,
 } from '../../compliance/corcoran';
 
 export function Footer() {
@@ -24,10 +23,13 @@ export function Footer() {
             <div className="footer-brand">
               <BrandWordmark />
             </div>
-            <CorcoranLockup className="footer-corcoran-lockup" />
-            <a href={CORCORAN_SITE_URL} className="footer-corcoran-text-link" rel="noopener noreferrer">
-              {CORCORAN_SITE_LABEL}
-            </a>
+            <div className="footer-affiliation">
+              <CorcoranLockup />
+              <a href={CORCORAN_SITE_URL} className="footer-corcoran-text-link" rel="noopener noreferrer">
+                {CORCORAN_SITE_LABEL}
+              </a>
+            </div>
+            <AgentLicenseBlock omitName />
           </div>
           <div className="footer-col">
             <h4>{t('footer.explore')}</h4>
@@ -54,27 +56,14 @@ export function Footer() {
               {t('social.instagram')}
             </a>
           </div>
-        </div>
-
-        <div className="footer-legal">
-          <AgentLicenseBlock />
-          <div className="footer-disclaimers">
+          <div className="footer-legal">
             <div className="footer-equal-housing">
               <EqualHousingMark title={t('legal.equalHousing')} />
-              <p>{t('legal.equalHousing')}</p>
+              <span>{t('legal.equalHousing')}</span>
             </div>
-            <p>{t('legal.notOfficialSite')}</p>
-            <p>{t('legal.accuracy')}</p>
-            <p>{t('legal.noOfferOutsideNy')}</p>
-            <p>
-              {t('legal.sopSummary')}{' '}
-              <AppLink to="/legal">{t('legal.readFull')}</AppLink>
-            </p>
-            <p>
-              <a href={FAIR_HOUSING_NOTICE_URL} target="_blank" rel="noopener noreferrer">
-                {t('legal.fairHousingLink')}
-              </a>
-            </p>
+            <AppLink to="/legal" className="footer-legal-link">
+              {t('legal.readFull')}
+            </AppLink>
           </div>
         </div>
 

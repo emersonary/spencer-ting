@@ -1,39 +1,58 @@
 .site-footer {
   background: var(--color-navy);
   color: rgba(248, 246, 241, 0.7);
-  padding: 4rem 0 2rem;
+  padding: 2.25rem 0 2rem;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
+  grid-template-columns: minmax(16rem, 1.6fr) 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem 2rem;
+  align-items: start;
+  margin-bottom: 0.85rem;
+}
+
+.footer-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: 1;
+  grid-row: 1 / 3;
+  max-width: 22rem;
 }
 
 .footer-brand {
   font-family: var(--font-serif);
   font-size: 1.75rem;
   color: var(--color-cream);
-  margin-bottom: 0.5rem;
+  line-height: 1.15;
 }
 
 .footer-brand .brand-lastname {
   color: var(--color-gold);
 }
 
-.footer-corcoran-lockup {
-  display: inline-block;
-  margin: 0.5rem 0 0.35rem;
+.footer-affiliation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin: 1.15rem 0 0.5rem;
+  padding-top: 1.05rem;
+  border-top: 1px solid rgba(201, 169, 98, 0.28);
 }
 
 .corcoran-lockup {
+  display: inline-block;
   color: var(--color-navy);
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
+  line-height: 0;
+}
+
+.corcoran-lockup-mark {
+  display: block;
+  width: 7.7rem;
+  height: auto;
 }
 
 .corcoran-lockup:hover {
@@ -49,19 +68,19 @@
 }
 
 .footer-corcoran-text-link {
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-size: 0.875rem;
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   color: var(--color-gold);
 }
 
+.footer-corcoran-text-link:hover {
+  color: var(--color-cream);
+}
+
 .footer-legal {
-  display: grid;
-  grid-template-columns: minmax(16rem, 1fr) minmax(20rem, 2fr);
-  gap: 2.5rem;
-  padding: 2rem 0;
-  border-top: 1px solid rgba(248, 246, 241, 0.1);
-  margin-bottom: 1.5rem;
+  display: contents;
 }
 
 .agent-license {
@@ -71,45 +90,62 @@
 }
 
 .site-footer .agent-license {
-  color: var(--color-cream);
+  color: rgba(248, 246, 241, 0.72);
+  font-size: 0.8125rem;
+  line-height: 1.7;
 }
 
 .agent-license p {
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.2rem;
 }
 
 .agent-license-name {
   font-weight: 600;
+  color: var(--color-cream);
+  letter-spacing: 0.02em;
 }
 
 .agent-license a {
   color: var(--color-gold);
 }
 
-.footer-disclaimers {
-  font-size: 0.875rem;
-  color: rgba(248, 246, 241, 0.78);
-}
-
-.footer-disclaimers p {
-  margin: 0 0 0.75rem;
-}
-
 .footer-equal-housing {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: end;
   color: var(--color-cream);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.footer-equal-housing p {
-  margin: 0;
-  font-weight: 600;
+.footer-legal-link {
+  display: inline-flex;
+  align-items: flex-end;
+  grid-column: 3;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: var(--color-gold);
+}
+
+.footer-legal-link:hover {
+  color: var(--color-cream);
 }
 
 .equal-housing-mark {
   flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
   color: var(--color-cream);
 }
 
@@ -146,7 +182,7 @@
 
 .footer-bottom {
   border-top: 1px solid rgba(248, 246, 241, 0.1);
-  padding-top: 2rem;
+  padding-top: 0.85rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,13 +192,31 @@
 }
 
 @media (max-width: 768px) {
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2.5rem 2rem;
+  }
 
-  .footer-legal {
-    grid-template-columns: 1fr;
+  .footer-identity {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    max-width: none;
+  }
+
+  .footer-equal-housing {
+    grid-column: 1;
+    grid-row: auto;
+    align-self: start;
+  }
+
+  .footer-legal-link {
+    grid-column: 2;
+    grid-row: auto;
+    align-self: start;
   }
 }
 
 .main-content {
-  min-height: 100vh;
+  min-height: 0;
 }

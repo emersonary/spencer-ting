@@ -11,14 +11,15 @@ import {
 
 type AgentLicenseBlockProps = {
   className?: string;
+  omitName?: boolean;
 };
 
-export function AgentLicenseBlock({ className }: AgentLicenseBlockProps) {
+export function AgentLicenseBlock({ className, omitName = false }: AgentLicenseBlockProps) {
   const { t } = useTranslation();
 
   return (
     <address className={className ? `agent-license ${className}` : 'agent-license'}>
-      <p className="agent-license-name">{t('brand.name')}</p>
+      {omitName ? null : <p className="agent-license-name">{t('brand.name')}</p>}
       <p>{t('brand.licenseTitle')}</p>
       <p>{AGENT_OFFICE_ADDRESS}</p>
       <p>

@@ -25,14 +25,12 @@ export function Legal() {
               {t('legal.fairHousingLink')}
             </a>
           </p>
-
-          <h2>{t('legal.disclaimersHeading')}</h2>
-          <p>{t('legal.notOfficialSite')}</p>
-          <p>{t('legal.accuracy')}</p>
-          <p>{t('legal.noOfferOutsideNy')}</p>
+          <p>{t('legal.disclaimerOfficial')}</p>
+          <p>{t('legal.disclaimerAffiliation')}</p>
 
           <h2>{t('legal.sopHeading')}</h2>
           <p>{t('legal.sopIntro')}</p>
+          <p>{t('legal.sopForBuyers')}</p>
           <ul>
             <li>{t('legal.sopId')}</li>
             <li>{t('legal.sopBuyerAgreement')}</li>

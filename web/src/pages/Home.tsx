@@ -64,12 +64,11 @@ export function Home() {
       <section className="stats-bar">
         <div className="container">
           <AnimatedStats
-            className="grid-4"
+            className="grid-3"
             items={[
               [t('stats.experience'), 10, { suffix: '+' }],
               [t('stats.transactions'), 200, { suffix: '+' }],
               [t('stats.volume'), 800, { prefix: '$', suffix: 'M+' }],
-              [t('stats.listedProperties'), 1000, { suffix: '+' }],
             ]}
           />
         </div>
